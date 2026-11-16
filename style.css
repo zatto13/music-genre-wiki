@@ -1,0 +1,109 @@
+:root{--bg:#eef1f4;--panel:#fff;--ink:#1b2430;--sub:#6a7685;--line:#d3d9e0;--grid:#e1e6ec;--node:#fff;--hier:#2f63c7;--infl:#d9772b;--sel:#1b2430;color-scheme:light}
+@media (prefers-color-scheme:dark){:root{--bg:#141a22;--panel:#1c242e;--ink:#e6ebf1;--sub:#8e9aa9;--line:#34404e;--grid:#222c37;--node:#232d39;--hier:#6f9bf0;--infl:#f0a05f;--sel:#e6ebf1;color-scheme:dark}}
+*{box-sizing:border-box}
+html,body{height:100%;margin:0}
+body{font:14px/1.5 "Hiragino Sans","Yu Gothic UI","Noto Sans JP",system-ui,sans-serif;background:var(--bg);color:var(--ink);display:flex;flex-direction:column}
+header{display:flex;flex-wrap:wrap;gap:10px 16px;align-items:center;padding:10px 16px;background:var(--panel);border-bottom:1px solid var(--line)}
+h1{font-size:16px;margin:0 8px 0 0}
+button,select,input,textarea{font:inherit;color:inherit}
+button{background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:5px 12px;cursor:pointer}
+button:hover{border-color:var(--sub)}
+button.primary{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:2px solid var(--hier);outline-offset:1px}
+.legend{display:flex;gap:14px;color:var(--sub);font-size:12px;align-items:center}
+.legend i{display:inline-block;width:26px;border-top:2px solid var(--hier);vertical-align:middle;margin-right:5px}
+.legend i.d{border-top:2px dashed var(--infl)}
+.zoom{display:flex;gap:6px;align-items:center;color:var(--sub);font-size:12px;margin-left:auto}
+main{flex:1;min-height:0;display:flex}
+#tl{flex:1;overflow:auto;min-width:0}
+aside{width:340px;flex:none;background:var(--panel);border-left:1px solid var(--line);overflow:auto;padding:14px 16px}
+@media (max-width:760px){main{flex-direction:column}aside{width:100%;height:45%;border-left:0;border-top:1px solid var(--line)}}
+label{display:block;margin-bottom:10px;color:var(--sub);font-size:12px}
+label input,label textarea{display:block;width:100%;margin-top:3px;padding:6px 8px;background:var(--bg);border:1px solid var(--line);border-radius:6px;color:var(--ink);font-size:14px}
+textarea{min-height:84px;resize:vertical}
+.rel{margin:14px 0;padding-top:10px;border-top:1px solid var(--line)}
+.rel h4{margin:0 0 6px;font-size:13px;display:flex;align-items:center;gap:6px}
+.rel h4 b{display:inline-block;width:18px;border-top:2px solid var(--hier)}
+.rel.i h4 b{border-top:2px dashed var(--infl)}
+.chips{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:6px;min-height:6px}
+.chip{display:inline-flex;align-items:center;gap:2px;background:var(--bg);border:1px solid var(--line);border-radius:99px;padding:1px 3px 1px 10px}
+.chip span{cursor:pointer}.chip span:hover{text-decoration:underline}
+.chip button{border:0;background:none;padding:0 6px;color:var(--sub)}
+.rel select{width:100%;padding:5px;background:var(--bg);border:1px solid var(--line);border-radius:6px}
+.hint{color:var(--sub);font-size:12px}
+.dot{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:5px;vertical-align:-1px}
+.chk{display:flex;align-items:center;gap:6px;margin:4px 0 8px}
+.chk label{margin:0;font-size:13px;color:var(--ink)}
+label input[type=color]{height:34px;padding:2px;cursor:pointer}
+.del{margin-top:8px;color:#c0392b}
+svg text{font-family:inherit}
+header label.opt{display:flex;gap:6px;align-items:center;margin:0;color:var(--ink);font-size:13px}
+header label.opt input{display:inline-block;width:auto;margin:0}
+.legend i.m{border-top:3px solid var(--sub)}
+.flag{cursor:pointer}.flag.sel rect{stroke:var(--sel);stroke-width:2}
+.dot{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:5px}
+.chip.inh{opacity:.75}
+.node{cursor:pointer}
+.node rect{fill:var(--node);fill-opacity:.7;stroke:var(--line);stroke-width:1.2}
+.node.sel rect{stroke:var(--sel);stroke-width:2.2}
+.node text.n{font-size:13px;fill:var(--ink)}
+.node text.y{font-size:10px;fill:var(--sub)}
+.dim{opacity:.15}
+.e.dim{display:none}
+.e{fill:none;stroke-width:1.5}
+.e.h{stroke:var(--hier)}.e.i{stroke:var(--infl);stroke-dasharray:6 4}
+.e.on{stroke-width:2.6}
+#relbar{display:flex;flex-wrap:wrap;gap:6px 8px;align-items:center;padding:8px 16px;background:var(--panel);border-bottom:1px solid var(--line)}
+#relbar[hidden]{display:none}
+.work{cursor:pointer}.work rect{fill:var(--node);fill-opacity:.7;stroke:var(--line);stroke-width:1.2}.work.sel rect{stroke:var(--sel);stroke-width:2.2}.work text{font-size:11.5px;fill:var(--ink)}
+.dgrid{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:8px}
+label select{display:block;width:100%;margin-top:3px;padding:6px 8px;background:var(--bg);border:1px solid var(--line);border-radius:6px;color:var(--ink);font-size:14px}
+.vopt select{display:inline-block;width:auto;margin:0;padding:3px 6px;font-size:12px}
+.vopt{display:flex;align-items:center;gap:6px;margin:0;font-size:12px;color:var(--sub)}
+.vopt input{display:inline-block;width:90px;margin:0;padding:0;border:0;background:none}
+.vopt b{min-width:3ch;font-weight:500;color:var(--ink)}
+.rchip{display:inline-flex;align-items:center;border-radius:99px;padding:2px 12px}
+.rchip.off{opacity:.55;text-decoration:line-through}
+#rel[aria-pressed=true]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+#tooltip {
+  position: absolute;
+  pointer-events: none;
+  background: var(--panel);
+  color: var(--ink);
+  border: 1px solid var(--line);
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 13px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  z-index: 1000;
+  max-width: 280px;
+  white-space: pre-wrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.15s;
+}
+#tooltip.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+#context-menu {
+  position: absolute;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  border-radius: 6px;
+  padding: 4px 0;
+  z-index: 2000;
+  display: none;
+  min-width: 180px;
+}
+#context-menu .menu-item {
+  padding: 8px 16px;
+  font-size: 13px;
+  cursor: pointer;
+  color: var(--ink);
+}
+#context-menu .menu-item:hover {
+  background: var(--bg);
+}
