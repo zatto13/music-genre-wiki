@@ -48,3 +48,48 @@ $('#majorSort').onchange = e => { viewOpt.majorSort = e.target.value; saveView()
 $('#bandOrder').value = viewOpt.bandOrder;
 $('#bandOrder').onchange = e => { viewOpt.bandOrder = e.target.value; saveView(); drawTimeline(); };
 
+// controls.js の末尾に追加（出来事表示切替・ズーム・JSON入出力・選択周辺表示）
+if ($('#showE')) {
+  $('#showE').checked = viewOpt.showEvents !== false;
+  $('#showE').onchange = e => { viewOpt.showEvents = e.target.checked; saveView(); render(); };
+}
+if ($('#zoom')) {
+  if (viewOpt.zoom) $('#zoom').value = viewOpt.zoom;
+  $('#zoom').oninput = e => { viewOpt.zoom = +e.target.value; saveView(); drawTimeline(); };
+}
+if ($('#focusMode')) {
+  $('#focusMode').checked = focusTreeIds !== null;
+  $('#focusMode').onchange = e => {
+    if (e.target.checked) {
+      const start = sel ? [sel] : selM ? [...membersOf(db.majors.find(x => x.id === selM) || {roots:[]})] : [];
+      focusTreeIds = start.length ? getConnected(start) : null;
+    } else {
+      focusTreeIds = null;
+    }
+    render();
+  };
+}
+if ($('#exp')) {
+  $('#exp').onclick = () => {
+    const blob = new Blob([JSON.stringify(db, null, 2)], {type: 'application/json'});
+    const a = document.createElement('a');
+    a.href = URL.createObjectURL(blob);
+    a.download = 'genre-wiki.json';
+    a.click();
+  };
+}
+if ($('#imp') && $('#file')) {
+  $('#imp').onclick = () => $('#file').click();
+  $('#file').onchange = e => {
+    const f = e.target.files[0]; if (!f) return;
+    const r = new FileReader();
+    r.onload = () => {
+      try {
+        db = JSON.parse(r.result);
+        normalize(); save(); render();
+      } catch (err) { alert('JSONの読み込みに失敗しました'); }
+    };
+    r.readAsText(f);
+    e.target.value = '';
+  };
+}

@@ -2,10 +2,12 @@
 .rel h4{margin:0 0 6px;font-size:13px;display:flex;align-items:center;gap:6px}
 .rel h4 b{display:inline-block;width:18px;border-top:2px solid var(--hier)}
 .rel.i h4 b{border-top:2px dashed var(--infl)}
+
 .chips{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:6px;min-height:6px}
 .chip{display:inline-flex;align-items:center;gap:2px;background:var(--bg);border:1px solid var(--line);border-radius:99px;padding:1px 3px 1px 10px}
 .chip span{cursor:pointer}.chip span:hover{text-decoration:underline}
 .chip button{border:0;background:none;padding:0 6px;color:var(--sub)}
+
 .rel select{width:100%;padding:5px;background:var(--bg);border:1px solid var(--line);border-radius:6px}
 .hint{color:var(--sub);font-size:12px}
 .dot{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:5px;vertical-align:-1px}

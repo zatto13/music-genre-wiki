@@ -1,7 +1,9 @@
 function normalize() {
   if (!Array.isArray(db.majors)) db.majors = [];
   if (!Array.isArray(db.works)) db.works = [];
+  if (!Array.isArray(db.events)) db.events = [];
   db.works.forEach(w => { w.title = String(w.title ?? ''); w.artist = String(w.artist ?? ''); w.audio = String(w.audio ?? ''); const y = parseInt(w.year, 10); w.year = isNaN(y) ? null : y; if (!Array.isArray(w.genres)) w.genres = []; });
+  db.events.forEach(ev => { ev.title = String(ev.title ?? ''); ev.desc = String(ev.desc ?? ''); const y = parseInt(ev.year, 10); ev.year = isNaN(y) ? null : y; if (!Array.isArray(ev.genres)) ev.genres = []; });
   db.genres.forEach(g => { const n = parseInt(g.born, 10); g.born = isNaN(n) ? null : n; const w = parseFloat(g.weight); g.weight = isNaN(w) ? null : w; g.name = String(g.name ?? ''); });
   const normD = (o, m, d, p) => {
     const v = (k, lo, hi) => { const n = parseInt(o[k], 10); o[k] = isNaN(n) || n < lo || n > hi ? null : n; };
@@ -9,12 +11,32 @@ function normalize() {
   };
   db.genres.forEach(g => normD(g, 'bm', 'bd', 'bp'));
   db.works.forEach(w => normD(w, 'ym', 'yd', 'yp'));
+  db.events.forEach(ev => normD(ev, 'ym', 'yd', 'yp'));
   db.majors.forEach(m => {
     if (!/^#[0-9a-f]{6}$/i.test(m.color)) m.color = '#888888';
+    m.desc = String(m.desc ?? '');
     if (!Array.isArray(m.roots)) m.roots = [];
     if (!Array.isArray(m.subs)) m.subs = [];
-    m.subs.forEach(sb => { if (!/^#[0-9a-f]{6}$/i.test(sb.color)) sb.color = '#888888'; if (!Array.isArray(sb.roots)) sb.roots = []; sb.name = String(sb.name ?? ''); });
+    m.subs.forEach(sb => {
+      if (!/^#[0-9a-f]{6}$/i.test(sb.color)) sb.color = '#888888';
+      if (!Array.isArray(sb.roots)) sb.roots = [];
+      sb.name = String(sb.name ?? '');
+      sb.desc = String(sb.desc ?? '');
+    });
   });
+}
+
+function getConnected(startIds) {
+  const visited = new Set(startIds);
+  const q = [...startIds];
+  while (q.length) {
+    const cur = q.shift();
+    db.edges.forEach(e => {
+      if (e.a === cur && !visited.has(e.b)) { visited.add(e.b); q.push(e.b); }
+      if (e.b === cur && !visited.has(e.a)) { visited.add(e.a); q.push(e.a); }
+    });
+  }
+  return visited;
 }
 
 function activeMajors() { return viewOpt.release ? db.majors.filter(m => !viewOpt.released.includes(m.id)) : db.majors; }

@@ -9,6 +9,7 @@ if (!tipEl) {
 document.addEventListener('mouseover', e => {
   const node = e.target.closest('.node');
   const work = e.target.closest('.work');
+  const evnode = e.target.closest('.evnode');
   const flag = e.target.closest('.flag');
   
   if (node) {
@@ -23,10 +24,20 @@ document.addEventListener('mouseover', e => {
       tipEl.innerHTML = `<strong>${esc(w.title || '(無題)')}</strong>${w.artist ? ' / ' + esc(w.artist) : ''}<div style="margin-top:4px;font-size:12px;color:var(--sub)">${tOf(w) != null ? dlabel(w) : ''}${w.desc ? '<br>' + esc(w.desc) : ''}</div>`;
       tipEl.classList.add('show');
     }
+  } else if (evnode) {
+    const ev = (db.events || []).find(x => x.id === evnode.dataset.event);
+    if (ev) {
+      tipEl.innerHTML = `<strong>${esc(ev.title || '(無題)')}</strong> <span style="font-size:11px;color:var(--infl)">[出来事]</span><div style="margin-top:4px;font-size:12px;color:var(--sub)">${tOf(ev) != null ? dlabel(ev) : ''}${ev.desc ? '<br>' + esc(ev.desc) : ''}</div>`;
+      tipEl.classList.add('show');
+    }
   } else if (flag) {
     const m = db.majors.find(x => x.id === flag.dataset.major);
-    if (m) {
-      tipEl.innerHTML = `<strong>${esc(m.name)}</strong><div style="margin-top:4px;font-size:12px;color:var(--sub)">大ジャンル</div>`;
+    const sb = m && flag.dataset.sub ? m.subs.find(x => x.id === flag.dataset.sub) : null;
+    if (sb) {
+      tipEl.innerHTML = `<strong>${esc(sb.name)}</strong> <span style="font-size:11px;color:var(--sub)">[中ジャンル / ${esc(m.name)}]</span>${sb.desc ? '<div style="margin-top:4px;font-size:12px;color:var(--sub)">' + esc(sb.desc) + '</div>' : ''}`;
+      tipEl.classList.add('show');
+    } else if (m) {
+      tipEl.innerHTML = `<strong>${esc(m.name)}</strong> <span style="font-size:11px;color:var(--sub)">[大ジャンル]</span>${m.desc ? '<div style="margin-top:4px;font-size:12px;color:var(--sub)">' + esc(m.desc) + '</div>' : ''}`;
       tipEl.classList.add('show');
     }
   }
@@ -44,8 +55,7 @@ document.addEventListener('mousemove', e => {
 });
 
 document.addEventListener('mouseout', e => {
-  if (e.target.closest('.node') || e.target.closest('.work') || e.target.closest('.flag')) {
+  if (e.target.closest('.node') || e.target.closest('.work') || e.target.closest('.evnode') || e.target.closest('.flag')) {
     tipEl.classList.remove('show');
   }
 });
-

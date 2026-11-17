@@ -33,7 +33,10 @@ function dlabel(o) {
 }
 const dprev = o => dd(o).y == null ? '年が空欄のため、年代未分類です。' : '年表上の表示: ' + dlabel(o);
 const updatePrev = o => { const pv = $('#dprev'); if (pv) pv.textContent = dprev(o); };
-const DMAP = {'f-born':'born','f-bm':'bm','f-bd':'bd','f-bp':'bp','f-wyear':'year','f-wm':'ym','f-wd':'yd','f-wp':'yp'};
+const DMAP = {
+  'f-born':'born','f-bm':'bm','f-bd':'bd','f-bp':'bp',
+  'f-wyear':'year','f-wm':'ym','f-wd':'yd','f-wp':'yp',
+  'f-eyear':'year','f-em':'ym','f-ed':'yd','f-ep':'yp'};
 function setDateField(o, id, v) {
   const k = DMAP[id];
   if (k === 'bp' || k === 'yp') o[k] = v || null;

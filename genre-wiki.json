@@ -14,7 +14,7 @@
       "id": "gmv9cc68b",
       "name": "雅楽",
       "born": 800,
-      "desc": "",
+      "desc": "古代日本の貴族社会に成立した声楽・舞楽・器楽の総称であり、1200年以上の歴史を持つ日本の古典音楽である。主に宮廷や寺院、神社で演奏され、現在も伝承され続けている。",
       "weight": null,
       "bm": null,
       "bd": null,
@@ -94,7 +94,7 @@
       "id": "gmv9dbjdu",
       "name": "バロック音楽",
       "born": 1597,
-      "desc": "",
+      "desc": "16世紀後半から1750年頃までの約150年間を指し、オペラや器楽アンサンブル、オーケストラの誕生が特徴。和声を重視し、音楽理論の基礎が確立された時代。",
       "weight": null,
       "bm": null,
       "bd": null,
@@ -474,7 +474,7 @@
       "id": "gmv9cfxyl",
       "name": "Progressive Rock",
       "born": 1969,
-      "desc": "",
+      "desc": "1960年代後半に英国で生まれた実験的・芸術性を追求したロックで、クラシックやジャズの影響を受け、変拍子や長尺な曲構成、高度な技術、シンセサイザーなどを駆使した音楽。",
       "weight": null,
       "bm": null,
       "bd": null,
@@ -484,7 +484,7 @@
       "id": "gmv9bwled",
       "name": "Chiptune",
       "born": 1970,
-      "desc": "",
+      "desc": "コンピュータ音楽の黎明期において厳しい制約のある音源チップのみで作られた音楽のスタイルを志向した音楽ジャンル。",
       "weight": null,
       "bm": null,
       "bd": null,
@@ -534,7 +534,7 @@
       "id": "gmv9cf1pw",
       "name": "Hip Hop",
       "born": 1973,
-      "desc": "",
+      "desc": "1970年代のニューヨークで誕生した音楽ジャンルで、現行のHIPHOPシーンには多くの人気ラッパーが存在する。",
       "weight": null,
       "bm": null,
       "bd": null,
@@ -684,7 +684,7 @@
       "id": "tbk010",
       "name": "EDM",
       "born": 1984,
-      "desc": "",
+      "desc": "電子楽器を使ったダンスミュージック全般を指し、テクノやBig Room Houseなどの狭義の定義が存在する。",
       "weight": null,
       "bm": null,
       "bd": null,
@@ -694,7 +694,7 @@
       "id": "tbk017",
       "name": "House",
       "born": 1984,
-      "desc": "",
+      "desc": "主に1980年代にディスコ音楽から発展したEDMの一ジャンルで、4つ打ちのビートが特徴。シンセサイザーやパーカッションを用いた反復的なメロディーが特徴で、通常115～135 BPMのテンポで演奏される。",
       "weight": null,
       "bm": null,
       "bd": null,
@@ -774,7 +774,7 @@
       "id": "gmv9c2x3w",
       "name": "Techno",
       "born": 1985,
-      "desc": "",
+      "desc": "ビートのはっきりした電子音楽の一種で、狭義では特定のジャンルとして細分化される。特徴としてループ性のあるドラムトラックや重いサブベースが挙げられる。",
       "weight": null,
       "bm": null,
       "bd": null,
@@ -854,7 +854,7 @@
       "id": "tbk035",
       "name": "Trance",
       "born": 1988,
-      "desc": "",
+      "desc": "機械的な4つ打ちのビートと急速なマイナー・アルペジオが特徴で、緊張感を高めながらトランス状態を喚起する音楽ジャンル。130～150 BPMの速いテンポで、陶酔的で催眠的な状態を生み出す。",
       "weight": null,
       "bm": null,
       "bd": null,
@@ -884,7 +884,7 @@
       "id": "tbk016",
       "name": "Hardcore Techno",
       "born": 1989,
-      "desc": "",
+      "desc": "テンポが速くエネルギッシュな多種多様なEDMのスタイルを総称する言葉で、1990年代初頭から発展してきた。大きく2種類に分類され、Gabba系とBreakbeat Hardcore系がある。",
       "weight": null,
       "bm": null,
       "bd": null,
@@ -944,7 +944,7 @@
       "id": "gmv9e0yz7",
       "name": "J-CORE",
       "born": 1990,
-      "desc": "",
+      "desc": "DJ SHARPNELやm1dyといったアーティストが海外に流出した際に定義された逆輸入的な側面を持つ音楽ジャンルで、アニメ・ゲームサンプリングを特徴とするハードコアテクノの一種。",
       "weight": null,
       "bm": null,
       "bd": null,
@@ -1144,7 +1144,7 @@
       "id": "gmv9cjprw",
       "name": "Drum & Bass",
       "born": 1994,
-      "desc": "",
+      "desc": "\t\n1994年～1995年頃のイギリスが発祥で、速くシンコペーションの効いたブレイクビートのパターンが特徴。多くの場合、サンプリングまたはプログラミングによるもので、際立ったベースラインを持ち、一般的にBPMは160～180の範囲。",
       "weight": null,
       "bm": null,
       "bd": null,
@@ -1164,7 +1164,7 @@
       "id": "gmv9d3r55",
       "name": "Breakcore",
       "born": 1995,
-      "desc": "",
+      "desc": "非常に高速なテンポで、サンプリングを多用し、断片的で複雑、ノイジーなBreakbeatsを特徴とする音楽ジャンル。",
       "weight": null,
       "bm": null,
       "bd": null,
@@ -1364,7 +1364,7 @@
       "id": "gmv9cr4je",
       "name": "Dubstep",
       "born": 2000,
-      "desc": "",
+      "desc": "シンコペーションを効かせた控えめなビートに重厚なサブベースを組み合わせたスタイルで、140 BPM前後のテンポで2000年代初頭に南ロンドンで登場。最大の特徴は重低音と劇的なドロップで、未来的なサウンドが特徴。",
       "weight": null,
       "bm": null,
       "bd": null,
@@ -1414,7 +1414,7 @@
       "id": "gmv9bucf9",
       "name": "音MAD",
       "born": 2003,
-      "desc": "",
+      "desc": "音楽の一ジャンルで、既存の楽曲を「原曲」として流し、そのうえで「素材」と呼ばれるさまざまな音声メディアが原曲に合わせて鳴らされる作品",
       "weight": 50,
       "bm": null,
       "bd": null,
@@ -1544,7 +1544,7 @@
       "id": "gmv9d28y0",
       "name": "Vaporwave",
       "born": 2010,
-      "desc": "",
+      "desc": "2010年代初めにインターネットから自然発生した音楽・アート運動で、過去の大衆文化への奇妙なノスタルジーや失われた未来への感情が特徴。サンプリングと加工を用い、商業BGMを実験音楽の手法で再構築した。",
       "weight": null,
       "bm": null,
       "bd": null,
@@ -1624,7 +1624,7 @@
       "id": "gmv9dhp61",
       "name": "Future Bass",
       "born": 2013,
-      "desc": "",
+      "desc": "BPM130〜160の範囲で、Trapのビートを基本とし、きらびやかな音作りや派手な展開が特徴の音楽ジャンルである。",
       "weight": null,
       "bm": null,
       "bd": null,
@@ -1634,7 +1634,7 @@
       "id": "gmv9ef0mn",
       "name": "Future Funk",
       "born": 2013,
-      "desc": "",
+      "desc": "シティポップをサンプリングした音楽ジャンルで、2013～2015年に形成された。シティポップブームの火付け役となり、著作権の問題を抱えつつも、現在はNight Tempoなどのアーティストが公式リミックスを行い、シーンの発展を図っている。",
       "weight": null,
       "bm": null,
       "bd": null,
@@ -1754,7 +1754,7 @@
       "id": "gmv9dkn4x",
       "name": "Hyperflip",
       "born": 2021,
-      "desc": "",
+      "desc": "音楽性に傾向があるが明確に定義されたジャンルではなく、サンプリングを多量に含んで新たな文脈に再構成した音楽を制作するムーブメントである。",
       "weight": null,
       "bm": null,
       "bd": null,
@@ -2367,6 +2367,16 @@
       "desc": "Rolandから「ミュージくん」発売",
       "weight": null,
       "bm": 3,
+      "bd": null,
+      "bp": null
+    },
+    {
+      "id": "gmwjbvpqe",
+      "name": "Plunderphonics",
+      "born": 1985,
+      "desc": "",
+      "weight": null,
+      "bm": null,
       "bd": null,
       "bp": null
     }
@@ -3546,11 +3556,6 @@
       "t": "i",
       "a": "gmv9ifkxi",
       "b": "gmvabt85b"
-    },
-    {
-      "t": "h",
-      "a": "tbk016",
-      "b": "gmv9dqd09"
     },
     {
       "t": "i",
@@ -5711,9 +5716,40 @@
       "t": "h",
       "a": "gmvabjb6n",
       "b": "gmv9kske2"
+    },
+    {
+      "t": "h",
+      "a": "gmv9bup7y",
+      "b": "gmwjbvpqe"
+    },
+    {
+      "t": "h",
+      "a": "gmv9c9c50",
+      "b": "gmvaav2sh"
     }
   ],
   "majors": [
+    {
+      "id": "mmv9l31ep",
+      "name": "Hiphop",
+      "color": "#aab4b6",
+      "roots": [
+        "gmv9cf1pw",
+        "gmv9mkc5x",
+        "gmv9ioazj",
+        "gmv9jiacc",
+        "gmv9df34q",
+        "gmvacw9ql",
+        "gmvameusb",
+        "gmvanxma7",
+        "gmvapydbu",
+        "gmvaqm0ls",
+        "gmvas6pqb"
+      ],
+      "top": true,
+      "subs": [],
+      "desc": ""
+    },
     {
       "id": "mmv9fx8g4",
       "name": "Hardcore Techno",
@@ -5731,7 +5767,27 @@
         "tbk006"
       ],
       "top": true,
-      "subs": []
+      "subs": [
+        {
+          "id": "smwk8ywyf",
+          "name": "Gabber",
+          "color": "#e42f2f",
+          "roots": [
+            "gmv9cxx9n"
+          ],
+          "desc": ""
+        },
+        {
+          "id": "smwk9u9b7",
+          "name": "Core",
+          "color": "#e42f2f",
+          "desc": "",
+          "roots": [
+            "gmv9c9c50"
+          ]
+        }
+      ],
+      "desc": ""
     },
     {
       "id": "mmv9g3pcv",
@@ -5758,9 +5814,11 @@
           "color": "#4a3564",
           "roots": [
             "gmv9cjprw"
-          ]
+          ],
+          "desc": ""
         }
-      ]
+      ],
+      "desc": ""
     },
     {
       "id": "mmv9m8rxi",
@@ -5777,7 +5835,8 @@
         "tbk035"
       ],
       "top": true,
-      "subs": []
+      "subs": [],
+      "desc": ""
     },
     {
       "id": "mmv9g87d8",
@@ -5804,7 +5863,8 @@
         "tbk017"
       ],
       "top": true,
-      "subs": []
+      "subs": [],
+      "desc": ""
     },
     {
       "id": "mmwgyqisc",
@@ -5816,7 +5876,8 @@
         "tbk010",
         "tbk013"
       ],
-      "subs": []
+      "subs": [],
+      "desc": ""
     },
     {
       "id": "mmv9ntmle",
@@ -5834,51 +5895,8 @@
         "gmvacb6xq",
         "gmvab1dfl"
       ],
-      "subs": []
-    },
-    {
-      "id": "mmv9n27ok",
-      "name": "Pops",
-      "color": "#e3c635",
-      "roots": [
-        "gmv9fndyt",
-        "gmv9n3umc",
-        "gmv9n5xd8",
-        "gmv9ii37b",
-        "gmv9nend8",
-        "gmv9ngsu2",
-        "gmv9dny20",
-        "gmv9gcxqm",
-        "gmv9eckdj",
-        "gmvaac7ez",
-        "gmvas2i5f",
-        "gmvat1afm",
-        "gmvad8uo3"
-      ],
-      "subs": []
-    },
-    {
-      "id": "mmv9g96n7",
-      "name": "Rock Music",
-      "color": "#755938",
-      "roots": [
-        "gmv9i3ou7",
-        "gmv9g9tvv",
-        "gmv9cfxyl",
-        "gmv9jklwz",
-        "gmv9fo7v1",
-        "gmvaaegrv",
-        "gmvaagzxe",
-        "gmvacqf32",
-        "gmvacsxdg",
-        "gmvad5f9o",
-        "gmvasagkr",
-        "tbk024",
-        "gmv9gvn96",
-        "tbk026"
-      ],
-      "top": true,
-      "subs": []
+      "subs": [],
+      "desc": ""
     },
     {
       "id": "mmv9gic57",
@@ -5906,9 +5924,11 @@
             "gmv9gkb6r",
             "gmv9gla9e",
             "gmv9ghx0r"
-          ]
+          ],
+          "desc": ""
         }
-      ]
+      ],
+      "desc": ""
     },
     {
       "id": "mmv9haqar",
@@ -5921,7 +5941,54 @@
         "gmv9ngsu2"
       ],
       "top": false,
-      "subs": []
+      "subs": [],
+      "desc": ""
+    },
+    {
+      "id": "mmv9n27ok",
+      "name": "Pops",
+      "color": "#e3c635",
+      "roots": [
+        "gmv9fndyt",
+        "gmv9n3umc",
+        "gmv9n5xd8",
+        "gmv9ii37b",
+        "gmv9nend8",
+        "gmv9ngsu2",
+        "gmv9dny20",
+        "gmv9gcxqm",
+        "gmv9eckdj",
+        "gmvaac7ez",
+        "gmvas2i5f",
+        "gmvat1afm",
+        "gmvad8uo3"
+      ],
+      "subs": [],
+      "desc": ""
+    },
+    {
+      "id": "mmv9g96n7",
+      "name": "Rock Music",
+      "color": "#755938",
+      "roots": [
+        "gmv9i3ou7",
+        "gmv9g9tvv",
+        "gmv9cfxyl",
+        "gmv9jklwz",
+        "gmv9fo7v1",
+        "gmvaaegrv",
+        "gmvaagzxe",
+        "gmvacqf32",
+        "gmvacsxdg",
+        "gmvad5f9o",
+        "gmvasagkr",
+        "tbk024",
+        "gmv9gvn96",
+        "tbk026"
+      ],
+      "top": true,
+      "subs": [],
+      "desc": ""
     },
     {
       "id": "mmv9k8fbm",
@@ -5959,29 +6026,11 @@
           "color": "#6b270b",
           "roots": [
             "gmvabjb6n"
-          ]
+          ],
+          "desc": ""
         }
-      ]
-    },
-    {
-      "id": "mmv9l31ep",
-      "name": "Hiphop",
-      "color": "#aab4b6",
-      "roots": [
-        "gmv9cf1pw",
-        "gmv9mkc5x",
-        "gmv9ioazj",
-        "gmv9jiacc",
-        "gmv9df34q",
-        "gmvacw9ql",
-        "gmvameusb",
-        "gmvanxma7",
-        "gmvapydbu",
-        "gmvaqm0ls",
-        "gmvas6pqb"
       ],
-      "top": true,
-      "subs": []
+      "desc": ""
     },
     {
       "id": "mmv9mv3qt",
@@ -6007,7 +6056,8 @@
         "gmv9o3pas",
         "gmvap8snf"
       ],
-      "subs": []
+      "subs": [],
+      "desc": ""
     },
     {
       "id": "mmvasfjym",
@@ -6018,14 +6068,16 @@
         "tbk025",
         "gmwjamwps"
       ],
-      "subs": []
+      "subs": [],
+      "desc": ""
     },
     {
       "id": "mmwhnn10y",
       "name": "新しい大ジャンル",
       "color": "#e4572e",
       "roots": [],
-      "subs": []
+      "subs": [],
+      "desc": ""
     }
   ],
   "works": [
@@ -6153,6 +6205,106 @@
       "genres": [],
       "desc": "",
       "audio": ""
+    },
+    {
+      "id": "wmwk7toyi",
+      "title": "Floral Shoppe",
+      "artist": "Macintosh Plus",
+      "year": 2008,
+      "ym": null,
+      "yd": null,
+      "yp": null,
+      "genres": [
+        "gmv9d28y0"
+      ],
+      "desc": "ダイアナ・ロスなどのR&Bや、スムース・ジャズなどがサンプリング\n内容的にも本来のR&Bやスムース・ジャズのイメージを残したままコラージュ",
+      "audio": ""
+    }
+  ],
+  "events": [
+    {
+      "id": "emwk82744",
+      "title": "音楽新報の創刊",
+      "year": 1834,
+      "ym": null,
+      "yd": null,
+      "yp": null,
+      "genres": [
+        "gmv9gkb6r"
+      ],
+      "desc": ""
+    },
+    {
+      "id": "emwk8o8z3",
+      "title": "「HYPERFLIP OVERTURE」リリース",
+      "year": 2023,
+      "ym": 3,
+      "yd": 31,
+      "yp": null,
+      "genres": [
+        "gmv9dkn4x"
+      ],
+      "desc": "https://lostfrog.bandcamp.com/album/hyperflip-overture"
+    },
+    {
+      "id": "emwk8r007",
+      "title": "「FASTFUSION」リリース",
+      "year": 2023,
+      "ym": 9,
+      "yd": 9,
+      "yp": null,
+      "genres": [
+        "gmv9dkn4x"
+      ],
+      "desc": "https://lostfrog.bandcamp.com/album/fastfusion"
+    },
+    {
+      "id": "emwk8u073",
+      "title": "「CAR CRASH & SIREN」開催",
+      "year": 2024,
+      "ym": 5,
+      "yd": 4,
+      "yp": null,
+      "genres": [
+        "gmv9dkn4x"
+      ],
+      "desc": "https://x.com/lostfrognet/status/1753738608052437326?a=DRqqBMF46upKq_DbbnQ&s=20"
+    },
+    {
+      "id": "emwk9yyxe",
+      "title": "東方Projectの出現",
+      "year": 2002,
+      "ym": null,
+      "yd": null,
+      "yp": null,
+      "genres": [
+        "gmv9e0yz7"
+      ],
+      "desc": ""
+    },
+    {
+      "id": "emwka3yob",
+      "title": "オペラ誕生",
+      "year": 1597,
+      "ym": null,
+      "yd": null,
+      "yp": null,
+      "genres": [
+        "gmv9dbjdu"
+      ],
+      "desc": ""
+    },
+    {
+      "id": "emwka5ro3",
+      "title": "ピアノの誕生",
+      "year": 1700,
+      "ym": null,
+      "yd": null,
+      "yp": "x",
+      "genres": [
+        "gmv9dbjdu"
+      ],
+      "desc": ""
     }
   ]
 }

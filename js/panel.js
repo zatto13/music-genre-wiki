@@ -1,7 +1,7 @@
 /* ---------- detail / edit panel ---------- */
 function relList(g, d) {
   const other = d.me === 'a' ? 'b' : 'a';
-  return db.edges.map((e,i) => ({e,i})).filter(x => x.e.t === d.t && x.e[d.me] === g.id && gen(x.e[other]));
+  return db.edges.map((e,i) => ({e,i})).filter(x => x.e.t === d.t && x.e[d.me] === g.id && getEntity(x.e[other]));
 }
 function subsHtml(m, mem) {
   const cards = m.subs.map(sb => {
@@ -17,7 +17,7 @@ function subsHtml(m, mem) {
 function enhanceSelects() {
   document.querySelectorAll('#panel select').forEach(sel => {
     if (sel.dataset.enhanced) return;
-    if (!sel.dataset.add && !sel.dataset.addroot && !sel.dataset.addwg && !sel.dataset.addsubroot) return;
+    if (!sel.dataset.add && !sel.dataset.addroot && !sel.dataset.addwg && !sel.dataset.addeg && !sel.dataset.addsubroot) return;
     sel.dataset.enhanced = '1';
     
     const wrap = document.createElement('div');
@@ -132,7 +132,7 @@ function drawMajorPanel(m) {
   REL.forEach(d => {
     const other = d.me === 'a' ? 'b' : 'a', rows = relList(m, d), used = new Set(rows.map(r => r.e[other]));
     h += `<div class="rel ${d.t}"><h4><b></b>${d.label}</h4><div class="chips">` +
-      rows.map(r => `<span class="chip"><span data-go="${r.e[other]}">${esc(getEntity(r.e[other]).name)}</span><button data-rm="${r.i}" title="関係を外す" aria-label="関係を外す">×</button></span>`).join('') +
+      rows.map(r => `<span class="chip"><span data-go="${r.e[other]}">${esc(getEntity(r.e[other]).name || getEntity(r.e[other]).title)}</span><button data-rm="${r.i}" title="関係を外す" aria-label="関係を外す">×</button></span>`).join('') +
       `</div><select data-add="${d.k}"><option value="">追加する要素を選ぶ</option>` +
       `<optgroup label="ジャンル">` +
       [...db.genres].sort(byBorn).filter(o => o.id !== m.id && !used.has(o.id)).map(o => `<option value="${o.id}">${esc(o.name)}(${yr(o)})</option>`).join('') + 
@@ -180,10 +180,27 @@ function drawWorkPanel(wk) {
   enhanceSelects();
 }
 
+function drawEventPanel(ev) {
+  const gl = (ev.genres || []).map(gen).filter(Boolean);
+  let h = `<label>出来事名<input id="f-etitle" value="${esc(ev.title)}"></label>
+  ${dateFieldsHtml(ev, '発生', ['f-eyear', 'f-em', 'f-ed', 'f-ep'])}
+  <label>説明<textarea id="f-edesc">${esc(ev.desc || '')}</textarea></label>
+  <div class="rel"><h4>関連ジャンル</h4><div class="chips">` +
+    gl.map(g => `<span class="chip"><span data-go="${g.id}">${esc(g.name)}</span><button data-rmeg="${ev.id}:${g.id}" title="関連から外す" aria-label="関連から外す">×</button></span>`).join('') +
+    `</div><select data-addeg="e"><option value="">関連づけるジャンルを選ぶ</option>` +
+    [...db.genres].sort(byBorn).filter(g => !ev.genres.includes(g.id)).map(g => `<option value="${g.id}">${esc(g.name)}(${yr(g)})</option>`).join('') +
+    `</select></div>`;
+  h += `<button class="del" id="delE">この出来事を削除</button>`;
+  $('#panel').innerHTML = h;
+  enhanceSelects();
+}
+
 function drawPanel() {
   const m = db.majors.find(x => x.id === selM);
   const wk = db.works.find(x => x.id === selW);
+  const ev = (db.events || []).find(x => x.id === selE);
   if (wk) return drawWorkPanel(wk);
+  if (ev) return drawEventPanel(ev);
   if (m) return drawMajorPanel(m);
   const g = gen(sel);
   if (!g) {
@@ -193,12 +210,17 @@ function drawPanel() {
       h += db.majors.map(m => `<div class="chip major-item" draggable="true" data-mid="${m.id}" style="cursor:grab;padding:6px 12px;justify-content:flex-start;"><span data-major="${m.id}" style="flex:1;"><i class="dot" style="background:${m.color}"></i>${esc(m.name)}</span><span style="color:var(--sub);font-size:16px;cursor:grab;">≡</span></div>`).join('');
       h += '</div></div>';
     }
+    if (db.events && db.events.length) {
+      h += '<div class="rel"><h4>出来事一覧</h4><div class="chips">';
+      h += db.events.map(e => `<span class="chip"><span data-event="${e.id}">${esc(e.title || '(無題)')}</span></span>`).join('');
+      h += '</div></div>';
+    }
     if (db.works.length) {
       h += '<div class="rel"><h4>作品一覧</h4><div class="chips">';
       h += db.works.map(w => `<span class="chip"><span data-work="${w.id}">${esc(w.title || '(無題)')}</span></span>`).join('');
       h += '</div></div>';
     }
-    if (!db.majors.length && !db.works.length) h += '<p class="hint">大ジャンルや作品がありません。</p>';
+    if (!db.majors.length && !db.works.length && !(db.events && db.events.length)) h += '<p class="hint">大ジャンルや作品・出来事がありません。</p>';
     $('#panel').innerHTML = h;
 
     const list = $('#major-list');
@@ -265,7 +287,7 @@ function drawPanel() {
   REL.forEach(d => {
     const other = d.me === 'a' ? 'b' : 'a', rows = relList(g, d), used = new Set(rows.map(r => r.e[other]));
     h += `<div class="rel ${d.t}"><h4><b></b>${d.label}</h4><div class="chips">` +
-      rows.map(r => `<span class="chip"><span data-go="${r.e[other]}">${esc(gen(r.e[other]).name)}</span><button data-rm="${r.i}" title="関係を外す" aria-label="関係を外す">×</button></span>`).join('') +
+      rows.map(r => `<span class="chip"><span data-go="${r.e[other]}">${esc(getEntity(r.e[other]).name || getEntity(r.e[other]).title)}</span><button data-rm="${r.i}" title="関係を外す" aria-label="関係を外す">×</button></span>`).join('') +
       `</div><select data-add="${d.k}"><option value="">追加するジャンルを選ぶ</option>` +
       [...db.genres].sort(byBorn).filter(o => o.id !== g.id && !used.has(o.id))
         .map(o => `<option value="${o.id}">${esc(o.name)}(${yr(o)})</option>`).join('') + `</select></div>`;
@@ -282,6 +304,11 @@ function drawPanel() {
     `</div><select data-addwg="g"><option value="">既存の作品をこのジャンルに加える</option>` +
     db.works.filter(w => !w.genres.includes(g.id)).map(w => `<option value="${w.id}">${esc(w.title || '(無題)')}</option>`).join('') +
     `</select><button id="addWG" style="margin-top:6px">このジャンルの作品を新規追加</button></div>`;
+  h += `<div class="rel"><h4>関連する出来事</h4><div class="chips">` +
+    (db.events || []).filter(e => e.genres.includes(g.id)).map(e => `<span class="chip"><span data-event="${e.id}">${esc(e.title || '(無題)')}</span><button data-rmeg="${e.id}:${g.id}" title="このジャンルから外す" aria-label="このジャンルから外す">×</button></span>`).join('') +
+    `</div><select data-addeg="g"><option value="">既存の出来事をこのジャンルに関連づける</option>` +
+    (db.events || []).filter(e => !e.genres.includes(g.id)).map(e => `<option value="${e.id}">${esc(e.title || '(無題)')}(${yr(e)})</option>`).join('') +
+    `</select><button id="addEG" style="margin-top:6px">このジャンルの出来事を新規追加</button></div>`;
   h += `<p class="hint">関係は片側だけ登録すれば、反対側にも自動で表示されます。</p><button class="del" id="del">このジャンルを削除</button>`;
   $('#panel').innerHTML = h;
   enhanceSelects();

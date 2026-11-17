@@ -10,15 +10,21 @@
 <link rel="stylesheet" href="css/timeline.css">
 <link rel="stylesheet" href="css/forms.css">
 <link rel="stylesheet" href="css/overlays.css">
+<link rel="stylesheet" href="css/wiki.css">
 </head>
 <body>
 <header>
   <h1>音楽ジャンルWiki</h1>
+  <div class="mode-switch" role="group" aria-label="表示モード">
+    <button id="modeTl" class="active">年表</button>
+    <button id="modeWiki">Wiki</button>
+  </div>
   <select class="primary" id="addMenu" style="padding:5px 12px; font-weight:bold; cursor:pointer; background:var(--ink); color:var(--bg); border:1px solid var(--ink); border-radius:6px; outline:none;">
     <option value="" disabled selected hidden>＋ 追加する...</option>
     <option value="genre" style="background:var(--panel); color:var(--ink);">ジャンルを追加</option>
     <option value="major" style="background:var(--panel); color:var(--ink);">大ジャンルを追加</option>
     <option value="work" style="background:var(--panel); color:var(--ink);">作品を追加</option>
+    <option value="event" style="background:var(--panel); color:var(--ink);">出来事を追加</option>
   </select>
   <button id="rel" aria-pressed="false" title="選んだ大ジャンルを、一時的に年表へ反映させない">大ジャンル一時解除</button>
   <button id="exp">JSONに書き出す</button>
@@ -27,6 +33,7 @@
   <span class="legend"><span><i></i>上位 → 下位</span><span><i class="d"></i>源流 → 影響先</span><span><i class="m"></i>大ジャンルの起点</span></span>
   <label class="opt"><input type="checkbox" id="newTop">新しいジャンルを上に</label>
   <label class="opt"><input type="checkbox" id="showW">作品を表示</label>
+  <label class="opt"><input type="checkbox" id="showE">出来事を表示</label>
   <label class="opt"><input type="checkbox" id="focusMode">選択周辺のみ表示</label>
   <label class="opt"><input type="checkbox" id="showHier">構造線(上位/下位)</label>
   <label class="opt"><input type="checkbox" id="showInfl">歴史線(源流/影響)</label>
@@ -42,6 +49,7 @@
 <div id="relbar" hidden></div>
 <main>
   <div id="tl"></div>
+  <div id="wiki" hidden></div>
   <aside id="panel"></aside>
 </main>
 <script src="js/data.js"></script>
@@ -55,6 +63,7 @@
 <script src="js/controls.js"></script>
 <script src="js/tooltip.js"></script>
 <script src="js/contextmenu.js"></script>
+<script src="js/wiki.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>
