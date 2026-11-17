@@ -1,0 +1,20 @@
+svg text{font-family:inherit}
+header label.opt{display:flex;gap:6px;align-items:center;margin:0;color:var(--ink);font-size:13px}
+header label.opt input{display:inline-block;width:auto;margin:0}
+.legend i.m{border-top:3px solid var(--sub)}
+.flag{cursor:pointer}.flag.sel rect{stroke:var(--sel);stroke-width:2}
+.dot{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:5px}
+.chip.inh{opacity:.75}
+.node{cursor:pointer}
+.node rect{fill:var(--node);fill-opacity:.7;stroke:var(--line);stroke-width:1.2}
+.node.sel rect{stroke:var(--sel);stroke-width:2.2}
+.node text.n{font-size:13px;fill:var(--ink)}
+.node text.y{font-size:10px;fill:var(--sub)}
+.dim{opacity:.15}
+.e.dim{display:none}
+.e{fill:none;stroke-width:1.5}
+.e.h{stroke:var(--hier)}.e.i{stroke:var(--infl);stroke-dasharray:6 4}
+.e.on{stroke-width:2.6}
+#relbar{display:flex;flex-wrap:wrap;gap:6px 8px;align-items:center;padding:8px 16px;background:var(--panel);border-bottom:1px solid var(--line)}
+#relbar[hidden]{display:none}
+.work{cursor:pointer}.work rect{fill:var(--node);fill-opacity:.7;stroke:var(--line);stroke-width:1.2}.work.sel rect{stroke:var(--sel);stroke-width:2.2}.work text{font-size:11.5px;fill:var(--ink)}

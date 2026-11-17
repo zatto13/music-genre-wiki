@@ -1,0 +1,9 @@
+.dgrid{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:8px}
+label select{display:block;width:100%;margin-top:3px;padding:6px 8px;background:var(--bg);border:1px solid var(--line);border-radius:6px;color:var(--ink);font-size:14px}
+.vopt select{display:inline-block;width:auto;margin:0;padding:3px 6px;font-size:12px}
+.vopt{display:flex;align-items:center;gap:6px;margin:0;font-size:12px;color:var(--sub)}
+.vopt input{display:inline-block;width:90px;margin:0;padding:0;border:0;background:none}
+.vopt b{min-width:3ch;font-weight:500;color:var(--ink)}
+.rchip{display:inline-flex;align-items:center;border-radius:99px;padding:2px 12px}
+.rchip.off{opacity:.55;text-decoration:line-through}
+#rel[aria-pressed=true]{background:var(--ink);color:var(--bg);border-color:var(--ink)}

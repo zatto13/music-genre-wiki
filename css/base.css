@@ -1,0 +1,12 @@
+:root{--bg:#eef1f4;--panel:#fff;--ink:#1b2430;--sub:#6a7685;--line:#d3d9e0;--grid:#e1e6ec;--node:#fff;--hier:#2f63c7;--infl:#d9772b;--sel:#1b2430;color-scheme:light}
+@media (prefers-color-scheme:dark){:root{--bg:#141a22;--panel:#1c242e;--ink:#e6ebf1;--sub:#8e9aa9;--line:#34404e;--grid:#222c37;--node:#232d39;--hier:#6f9bf0;--infl:#f0a05f;--sel:#e6ebf1;color-scheme:dark}}
+*{box-sizing:border-box}
+html,body{height:100%;margin:0}
+body{font:14px/1.5 "Hiragino Sans","Yu Gothic UI","Noto Sans JP",system-ui,sans-serif;background:var(--bg);color:var(--ink);display:flex;flex-direction:column}
+header{display:flex;flex-wrap:wrap;gap:10px 16px;align-items:center;padding:10px 16px;background:var(--panel);border-bottom:1px solid var(--line)}
+h1{font-size:16px;margin:0 8px 0 0}
+button,select,input,textarea{font:inherit;color:inherit}
+button{background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:5px 12px;cursor:pointer}
+button:hover{border-color:var(--sub)}
+button.primary{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:2px solid var(--hier);outline-offset:1px}
