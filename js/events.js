@@ -118,6 +118,27 @@ document.addEventListener('click', ev => {
       selE = null; save(); render();
     }
   }
+
+  const rmalias = t.closest('[data-rmalias]');
+  if (rmalias) {
+    const g = gen(sel);
+    if (g && Array.isArray(g.aliases)) {
+      g.aliases.splice(+rmalias.dataset.rmalias, 1);
+      save(); render();
+    }
+    return;
+  }
+  if (t.id === 'f-alias-add') {
+    const g = gen(sel), inp = $('#f-alias-input');
+    if (g && inp && inp.value.trim()) {
+      const parts = inp.value.split(/[,、]/).map(s => s.trim()).filter(Boolean);
+      g.aliases = [...new Set([...(g.aliases || []), ...parts])];
+      inp.value = '';
+      save(); render();
+      $('#f-alias-input')?.focus();
+    }
+    return;
+  }
 });
 
 document.addEventListener('change', ev => {
@@ -183,4 +204,11 @@ document.addEventListener('input', ev => {
   else return;
   save();
   if (viewOpt.mode === 'wiki') drawWiki(); else drawTimeline();
+});
+
+document.addEventListener('keydown', ev => {
+  if (ev.target && ev.target.id === 'f-alias-input' && ev.key === 'Enter' && !ev.isComposing) {
+    ev.preventDefault();
+    $('#f-alias-add')?.click();
+  }
 });

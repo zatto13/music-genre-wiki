@@ -292,6 +292,12 @@ function drawPanel() {
       [...db.genres].sort(byBorn).filter(o => o.id !== g.id && !used.has(o.id))
         .map(o => `<option value="${o.id}">${esc(o.name)}(${yr(o)})</option>`).join('') + `</select></div>`;
   });
+  
+  const aliases = g.aliases || [];
+  h += `<div class="rel"><h4>別名・表記揺れ</h4><div class="chips">` +
+    aliases.map((a, idx) => `<span class="chip"><span>${esc(a)}</span><button data-rmalias="${idx}" title="別名を削除" aria-label="別名を削除">×</button></span>`).join('') +
+    `</div><div style="display:flex;gap:6px"><input id="f-alias-input" placeholder="例: IDM, 略称（カンマ区切り可）" style="flex:1;min-width:0;padding:5px 8px;background:var(--bg);border:1px solid var(--line);border-radius:6px;font-size:13px"><button id="f-alias-add" type="button">追加</button></div><p class="hint">Wikiの検索や [別名] リンクでもこのジャンルにヒットします。</p></div>`;
+
   const mem = majorMap()[g.id] || [];
   h += `<div class="rel"><h4>大ジャンル</h4><div class="chips">` +
     mem.map(m => m.roots.includes(g.id)

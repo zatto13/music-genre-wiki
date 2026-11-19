@@ -39,7 +39,10 @@ function parseInline(raw) {
     const label = (aliasRaw || targetRaw).trim();
     const low = name.toLowerCase();
 
-    const targetG = db.genres.find(g => g.name.toLowerCase() === low);
+    const targetG = db.genres.find(g =>
+      g.name.toLowerCase() === low ||
+      (g.aliases || []).some(a => a.toLowerCase() === low)
+    );
     if (targetG) return `<a class="wlink" data-go="${targetG.id}">${label}</a>`;
 
     const targetM = db.majors.find(m => m.name.toLowerCase() === low);
@@ -305,6 +308,7 @@ function drawWiki() {
           <div class="wiki-infobox-head" style="background:${headBg};color:${headFg}">${esc(g.name)}</div>
           <table>
             <tr><th>誕生時期</th><td>${dlabel(g)}</td></tr>
+            <tr><th>別名</th><td>${(g.aliases && g.aliases.length) ? g.aliases.map(a => esc(a)).join('、') : '<span class="hint">—</span>'}</td></tr>
             <tr><th>大ジャンル</th><td>${mList.length ? mList.map(m => `<a class="wlink" data-major="${m.id}">${esc(m.name)}</a>`).join('、') : '<span class="hint">未所属</span>'}</td></tr>
             <tr><th>上位系統</th><td>${chipLinks(upG)}</td></tr>
             <tr><th>下位派生</th><td>${chipLinks(downG)}</td></tr>
@@ -422,7 +426,12 @@ function drawWiki() {
 
   // 4. 未選択時 または 検索時：全ジャンルのポータル目次を表示
   const q = wikiQuery.trim().toLowerCase();
-  const filteredG = [...db.genres].sort(byBorn).filter(x => !q || x.name.toLowerCase().includes(q) || (x.desc || '').toLowerCase().includes(q));
+  const filteredG = [...db.genres].sort(byBorn).filter(x =>
+    !q ||
+    x.name.toLowerCase().includes(q) ||
+    (x.desc || '').toLowerCase().includes(q) ||
+    (x.aliases || []).some(a => a.toLowerCase().includes(q))
+  );
   const filteredE = (db.events || []).filter(x => q && (x.title.toLowerCase().includes(q) || (x.desc || '').toLowerCase().includes(q)));
   const filteredW = db.works.filter(x => q && (x.title.toLowerCase().includes(q) || (x.artist || '').toLowerCase().includes(q)));
 

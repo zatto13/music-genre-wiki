@@ -2,12 +2,38 @@ function normalize() {
   if (!Array.isArray(db.majors)) db.majors = [];
   if (!Array.isArray(db.works)) db.works = [];
   if (!Array.isArray(db.events)) db.events = [];
-  db.works.forEach(w => { w.title = String(w.title ?? ''); w.artist = String(w.artist ?? ''); w.audio = String(w.audio ?? ''); const y = parseInt(w.year, 10); w.year = isNaN(y) ? null : y; if (!Array.isArray(w.genres)) w.genres = []; });
-  db.events.forEach(ev => { ev.title = String(ev.title ?? ''); ev.desc = String(ev.desc ?? ''); const y = parseInt(ev.year, 10); ev.year = isNaN(y) ? null : y; if (!Array.isArray(ev.genres)) ev.genres = []; });
-  db.genres.forEach(g => { const n = parseInt(g.born, 10); g.born = isNaN(n) ? null : n; const w = parseFloat(g.weight); g.weight = isNaN(w) ? null : w; g.name = String(g.name ?? ''); });
+  db.works.forEach(w => {
+    w.title = String(w.title ?? '');
+    w.artist = String(w.artist ?? '');
+    w.audio = String(w.audio ?? '');
+    const y = parseInt(w.year, 10);
+    w.year = isNaN(y) ? null : y;
+    if (!Array.isArray(w.genres)) w.genres = [];
+  });
+  db.events.forEach(ev => {
+    ev.title = String(ev.title ?? '');
+    ev.desc = String(ev.desc ?? '');
+    const y = parseInt(ev.year, 10);
+    ev.year = isNaN(y) ? null : y;
+    if (!Array.isArray(ev.genres)) ev.genres = [];
+  });
+  db.genres.forEach(g => {
+    const n = parseInt(g.born, 10);
+    g.born = isNaN(n) ? null : n;
+    const w = parseFloat(g.weight);
+    g.weight = isNaN(w) ? null : w;
+    g.name = String(g.name ?? '');
+    if (!Array.isArray(g.aliases)) g.aliases = [];
+    g.aliases = [...new Set(g.aliases.map(a => String(a ?? '').trim()).filter(Boolean))];
+  });
   const normD = (o, m, d, p) => {
-    const v = (k, lo, hi) => { const n = parseInt(o[k], 10); o[k] = isNaN(n) || n < lo || n > hi ? null : n; };
-    v(m, 1, 12); v(d, 1, 31); if (!['d','m','y','q','x','x1','x2','x3','x4','x5'].includes(o[p])) o[p] = null;
+    const v = (k, lo, hi) => {
+      const n = parseInt(o[k], 10);
+      o[k] = isNaN(n) || n < lo || n > hi ? null : n;
+    };
+    v(m, 1, 12);
+    v(d, 1, 31);
+    if (!['d','m','y','q','x','x1','x2','x3','x4','x5'].includes(o[p])) o[p] = null;
   };
   db.genres.forEach(g => normD(g, 'bm', 'bd', 'bp'));
   db.works.forEach(w => normD(w, 'ym', 'yd', 'yp'));
