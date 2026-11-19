@@ -128,6 +128,34 @@ document.addEventListener('click', ev => {
     }
     return;
   }
+  const promotealias = t.closest('[data-promotealias]');
+  if (promotealias) {
+    const g = gen(sel);
+    const idx = +promotealias.dataset.promotealias;
+    if (g && Array.isArray(g.aliases) && g.aliases[idx] !== undefined) {
+      const oldName = g.name;
+      const newName = g.aliases[idx];
+      g.name = newName;
+      g.aliases[idx] = oldName;
+      g.aliases = [...new Set(g.aliases.filter(a => a && a !== newName))];
+
+      const escReg = s => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+      const re = new RegExp(`\\[${escReg(oldName)}(\\|[^\\]]*)?\\]`, 'gi');
+      const syncText = txt => txt ? txt.replace(re, (_, aliasPart) => `[${newName}${aliasPart || ''}]`) : txt;
+
+      db.genres.forEach(x => { if (x.desc) x.desc = syncText(x.desc); });
+      db.majors.forEach(m => {
+        if (m.desc) m.desc = syncText(m.desc);
+        (m.subs || []).forEach(sb => { if (sb.desc) sb.desc = syncText(sb.desc); });
+      });
+      (db.events || []).forEach(e => { if (e.desc) e.desc = syncText(e.desc); });
+      db.works.forEach(w => { if (w.desc) w.desc = syncText(w.desc); });
+
+      save(); render();
+    }
+    return;
+  }
+
   if (t.id === 'f-alias-add') {
     const g = gen(sel), inp = $('#f-alias-input');
     if (g && inp && inp.value.trim()) {
