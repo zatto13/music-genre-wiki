@@ -35,21 +35,21 @@
   <button id="exp">JSONに書き出す</button>
   <button id="imp">JSONを読み込む</button>
   <input type="file" id="file" accept=".json,application/json" hidden>
-  <span class="legend"><span><i></i>上位 → 下位</span><span><i class="d"></i>源流 → 影響先</span><span><i class="m"></i>大ジャンルの起点</span></span>
-  <label class="opt"><input type="checkbox" id="newTop">新しいジャンルを上に</label>
-  <label class="opt"><input type="checkbox" id="showW">作品を表示</label>
-  <label class="opt"><input type="checkbox" id="showE">出来事を表示</label>
-  <label class="opt"><input type="checkbox" id="focusMode">選択周辺のみ表示</label>
-  <label class="opt"><input type="checkbox" id="showHier">構造線(上位/下位)</label>
-  <label class="opt"><input type="checkbox" id="showInfl">歴史線(源流/影響)</label>
-  <label class="opt" title="間接的な関係を整理してスッキリさせます"><input type="checkbox" id="prune">線の整理</label>
-  <label class="vopt" title="重要度がこの値より小さいジャンルを年表から消します(選択中のジャンルは表示)">重要度の下限 <input type="range" id="minW" min="0" max="100" value="0"><b id="minWv">0</b></label>
-  <label class="vopt" title="重要度0のジャンルの大きさ。重要度が高いほど100%に近づきます">最小サイズ <input type="range" id="minS" min="30" max="100" value="55"><b id="minSv">55%</b></label>
-  <label class="vopt" title="大ジャンルの帯の並び順">帯の順序 <select id="majorSort"><option value="auto">自動(古い順)</option><option value="manual">手動(リスト順)</option></select></label>
-  <label class="vopt" title="帯をどう積むか">帯の配置 <select id="bandOrder"><option value="center">中央から交互</option><option value="topDown">上から順</option></select></label>
-  <label class="vopt" title="すべての日付をここまで粗く扱います(項目ごとの精度より細かくはなりません)">表示精度 <select id="precCap"><option value="d">すべて表示</option><option value="m">月まで</option><option value="y">年まで</option><option value="q">年代の時期まで</option><option value="x">年代まで</option></select></label>
-  <label class="vopt" title="新しい時代ほど間隔を広げます">年表の目盛り <select id="axisMode"><option value="log">対数(現代ほど広く)</option><option value="sqrt">平方根(ゆるやか)</option><option value="linear">線形</option></select></label>
-  <span class="zoom">横の縮尺 <input type="range" id="zoom" min="2" max="24" value="8"></span>
+  <span class="legend tl-only"><span><i></i>上位 → 下位</span><span><i class="d"></i>源流 → 影響先</span><span><i class="m"></i>大ジャンルの起点</span></span>
+  <label class="opt tl-only"><input type="checkbox" id="newTop">新しいジャンルを上に</label>
+  <label class="opt tl-only"><input type="checkbox" id="showW">作品を表示</label>
+  <label class="opt tl-only"><input type="checkbox" id="showE">出来事を表示</label>
+  <label class="opt tl-only"><input type="checkbox" id="focusMode">選択周辺のみ表示</label>
+  <label class="opt tl-only"><input type="checkbox" id="showHier">構造線(上位/下位)</label>
+  <label class="opt tl-only"><input type="checkbox" id="showInfl">歴史線(源流/影響)</label>
+  <label class="opt tl-only" title="間接的な関係を整理してスッキリさせます"><input type="checkbox" id="prune">線の整理</label>
+  <label class="vopt tl-only" title="重要度がこの値より小さいジャンルを年表から消します(選択中のジャンルは表示)">重要度の下限 <input type="range" id="minW" min="0" max="100" value="0"><b id="minWv">0</b></label>
+  <label class="vopt tl-only" title="重要度0のジャンルの大きさ。重要度が高いほど100%に近づきます">最小サイズ <input type="range" id="minS" min="30" max="100" value="55"><b id="minSv">55%</b></label>
+  <label class="vopt tl-only" title="大ジャンルの帯の並び順">帯の順序 <select id="majorSort"><option value="auto">自動(古い順)</option><option value="manual">手動(リスト順)</option></select></label>
+  <label class="vopt tl-only" title="帯をどう積むか">帯の配置 <select id="bandOrder"><option value="center">中央から交互</option><option value="topDown">上から順</option></select></label>
+  <label class="vopt tl-only" title="すべての日付をここまで粗く扱います(項目ごとの精度より細かくはなりません)">表示精度 <select id="precCap"><option value="d">すべて表示</option><option value="m">月まで</option><option value="y">年まで</option><option value="q">年代の時期まで</option><option value="x">年代まで</option></select></label>
+  <label class="vopt tl-only" title="新しい時代ほど間隔を広げます">年表の目盛り <select id="axisMode"><option value="log">対数(現代ほど広く)</option><option value="sqrt">平方根(ゆるやか)</option><option value="linear">線形</option></select></label>
+  <span class="zoom tl-only">横の縮尺 <input type="range" id="zoom" min="2" max="24" value="8"></span>
 </header>
 <div id="relbar" hidden></div>
 <main>

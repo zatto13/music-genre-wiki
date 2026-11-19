@@ -9,18 +9,36 @@
       "bm": null,
       "bd": null,
       "bp": null,
-      "aliases": []
+      "aliases": [
+        {
+          "text": "Classical Japanese Music",
+          "lang": "en"
+        }
+      ],
+      "names": {
+        "ja": "",
+        "en": ""
+      }
     },
     {
       "id": "gmv9cc68b",
       "name": "雅楽",
       "born": 800,
-      "desc": "文語調を以て、ウィキペディアの項目に記すが如き雅楽の解説をここに綴る。\n\n---\n\n# 雅楽\n\n**雅楽**（ががく）とは、古代日本において貴族社会のなかに成立した、[声楽]・[舞楽]・[器楽]の総称である。日本古来の歌舞である「[国風歌舞]（くにぶりのうたまい）」をはじめ、大陸や朝鮮半島等から伝来した外来の楽舞、そしてそれらが日本化される過程で生まれた新種目によって構成される。世界に現存する最古のオーケストラとも称され、一千二百年以上の歴史を有する我が国の伝統的古典音楽である。\n\n## 概説と歴史\n\n奈良時代から平安時代にかけて、雅楽は宮廷のみならず、寺院や神社における法会や神事においても盛んに演奏された。平安時代に入ると、遣唐使の廃止などを背景に日本独自の様式への整流が進み、仁明天皇自らが作曲を行うなど創作活動の頂点を迎えた。平安、京都、奈良、大阪の専門の演奏家（楽家）の手によって一千年以上にわたり途絶えることなく継承され、今日においては宮内庁式部職楽部や民間の演奏団体へとその技芸が受け継がれている。\n\n外国においては王朝の消滅等に伴いこうした伝統的宮廷音楽の多くが断絶を余儀なくされたなか、日本においては為政者が交代しつつも天皇制が存続し続けたことにより、儀式音楽として奇跡的な保存を見た。\n\n## 種目および編成\n\n雅楽はその構成によっていくつかの種目に大別される。\n\n* **[管絃]（かんげん）**\n* 舞を伴わない器楽の合奏形態であり、日本独自の室内楽としての性格を持つ。\n* 主な使用楽器として、龍笛・篳篥・笙の管楽器、楽箏・楽琵琶の弦楽器、および鉦鼓・太鼓・鞨鼓などの多様な打楽器が用いられ、「三管両絃三鼓」の編成を基本とする。\n\n\n* **[舞楽]（ぶがく）**\n* 舞を伴う楽舞であり、中国やインド、林邑（南ベトナム）などから伝来した「[唐楽]（左方）」と、朝鮮半島や中国北東方面から伝来した「[高麗楽]（右方）」に大別される。\n\n\n* **[国風歌舞]（くにぶりのうたまい）**\n* 神道系および皇室系の神事において奏される、日本固有の古来からの歌舞である。\n\n\n* **[謡物]（うたいもの）**\n* 平安貴族の間に流行した歌唱楽曲群であり、催馬楽や朗詠などがこれに該当する。",
+      "desc": "# 雅楽\n\n**雅楽**（ががく）とは、古代日本において貴族社会のなかに成立した、[声楽]・[舞楽]・[器楽]の総称である。日本古来の歌舞である「[国風歌舞]（くにぶりのうたまい）」をはじめ、大陸や朝鮮半島等から伝来した外来の楽舞、そしてそれらが日本化される過程で生まれた新種目によって構成される。1200年以上の歴史を有する我が国の伝統的古典音楽であり、特に[管絃]は世界に現存する最古のオーケストラとも称される。\n\n## 概説と歴史\n\n奈良時代から平安時代にかけて、雅楽は宮廷のみならず、寺院や神社における法会や神事においても盛んに演奏された。平安時代に入ると、遣唐使の廃止などを背景に日本独自の様式への整流が進み、仁明天皇自らが作曲を行うなど創作活動の頂点を迎えた。平安、京都、奈良、大阪の専門の演奏家（楽家）の手によって一千年以上にわたり途絶えることなく継承され、今日においては宮内庁式部職楽部や民間の演奏団体へとその技芸が受け継がれている。\n\n外国においては王朝の消滅等に伴いこうした伝統的宮廷音楽の多くが断絶を余儀なくされたなか、日本においては為政者が交代しつつも天皇制が存続し続けたことにより、儀式音楽として奇跡的な保存を見た。\n\n## 種目および編成\n\n雅楽はその構成によっていくつかの種目に大別される。\n\n* **[管絃]（かんげん）**\n* 舞を伴わない器楽の合奏形態であり、日本独自の室内楽としての性格を持つ。\n* 主な使用楽器として、龍笛・篳篥・笙の管楽器、楽箏・楽琵琶の弦楽器、および鉦鼓・太鼓・鞨鼓などの多様な打楽器が用いられ、「三管両絃三鼓」の編成を基本とする。\n\n\n* **[舞楽]（ぶがく）**\n* 舞を伴う楽舞であり、中国やインド、林邑（南ベトナム）などから伝来した「[唐楽]（左方）」と、朝鮮半島や中国北東方面から伝来した「[高麗楽]（右方）」に大別される。\n\n\n* **[国風歌舞]（くにぶりのうたまい）**\n* 神道系および皇室系の神事において奏される、日本固有の古来からの歌舞である。\n\n\n* **[謡物]（うたいもの）**\n* 平安貴族の間に流行した歌唱楽曲群であり、催馬楽や朗詠などがこれに該当する。",
       "weight": null,
       "bm": null,
       "bd": null,
       "bp": "x2",
-      "aliases": []
+      "aliases": [
+        {
+          "text": "Gagaku",
+          "lang": "en"
+        }
+      ],
+      "names": {
+        "ja": "",
+        "en": ""
+      }
     },
     {
       "id": "gmv9hk6z4",
@@ -31,7 +49,11 @@
       "bm": null,
       "bd": null,
       "bp": "x",
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": ""
+      }
     },
     {
       "id": "gmv9lc5o0",
@@ -42,7 +64,16 @@
       "bm": null,
       "bd": null,
       "bp": "x",
-      "aliases": []
+      "aliases": [
+        {
+          "text": "Kangen",
+          "lang": "en"
+        }
+      ],
+      "names": {
+        "ja": "",
+        "en": ""
+      }
     },
     {
       "id": "gmv9ldizk",
@@ -53,7 +84,16 @@
       "bm": null,
       "bd": null,
       "bp": "x",
-      "aliases": []
+      "aliases": [
+        {
+          "text": "Dengaku",
+          "lang": "en"
+        }
+      ],
+      "names": {
+        "ja": "",
+        "en": ""
+      }
     },
     {
       "id": "gmv9lf5ap",
@@ -64,7 +104,16 @@
       "bm": null,
       "bd": null,
       "bp": "x",
-      "aliases": []
+      "aliases": [
+        {
+          "text": "Sarugaku",
+          "lang": "en"
+        }
+      ],
+      "names": {
+        "ja": "",
+        "en": ""
+      }
     },
     {
       "id": "gmv9lg4kf",
@@ -75,7 +124,16 @@
       "bm": null,
       "bd": null,
       "bp": null,
-      "aliases": []
+      "aliases": [
+        {
+          "text": "Nogaku",
+          "lang": "en"
+        }
+      ],
+      "names": {
+        "ja": "",
+        "en": ""
+      }
     },
     {
       "id": "gmv9lidb4",
@@ -86,7 +144,11 @@
       "bm": null,
       "bd": null,
       "bp": null,
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": ""
+      }
     },
     {
       "id": "tbk007",
@@ -98,9 +160,19 @@
       "bd": null,
       "bp": null,
       "aliases": [
-        "クラシック音楽",
-        "Classic Music"
-      ]
+        {
+          "text": "クラシック音楽",
+          "lang": "ja"
+        },
+        {
+          "text": "Classic Music",
+          "lang": "en"
+        }
+      ],
+      "names": {
+        "ja": "",
+        "en": ""
+      }
     },
     {
       "id": "gmv9dbjdu",
@@ -111,7 +183,11 @@
       "bm": null,
       "bd": null,
       "bp": null,
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": ""
+      }
     },
     {
       "id": "gmv9lmtip",
@@ -122,7 +198,16 @@
       "bm": null,
       "bd": null,
       "bp": null,
-      "aliases": []
+      "aliases": [
+        {
+          "text": "Kabuki",
+          "lang": "en"
+        }
+      ],
+      "names": {
+        "ja": "",
+        "en": ""
+      }
     },
     {
       "id": "gmv9dd3ci",
@@ -133,7 +218,11 @@
       "bm": null,
       "bd": null,
       "bp": null,
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": ""
+      }
     },
     {
       "id": "gmv9gcxqm",
@@ -145,8 +234,15 @@
       "bd": null,
       "bp": "x",
       "aliases": [
-        "ブルース"
-      ]
+        {
+          "text": "ブルース",
+          "lang": "ja"
+        }
+      ],
+      "names": {
+        "ja": "",
+        "en": "Blues"
+      }
     },
     {
       "id": "gmv9jxgfv",
@@ -158,8 +254,15 @@
       "bd": null,
       "bp": "x2",
       "aliases": [
-        "ラグタイム"
-      ]
+        {
+          "text": "ラグタイム",
+          "lang": "ja"
+        }
+      ],
+      "names": {
+        "ja": "",
+        "en": "Ragtime"
+      }
     },
     {
       "id": "gmv9jh6c3",
@@ -170,7 +273,11 @@
       "bm": null,
       "bd": null,
       "bp": "x2",
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "Big Band"
+      }
     },
     {
       "id": "gmv9k6cpv",
@@ -181,7 +288,11 @@
       "bm": null,
       "bd": null,
       "bp": "x2",
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "New Orleans Jazz"
+      }
     },
     {
       "id": "tbk021",
@@ -192,7 +303,20 @@
       "bm": null,
       "bd": null,
       "bp": null,
-      "aliases": []
+      "aliases": [
+        {
+          "text": "ノイズ",
+          "lang": "ja"
+        },
+        {
+          "text": "雑楽",
+          "lang": "kan"
+        }
+      ],
+      "names": {
+        "ja": "",
+        "en": "Noise"
+      }
     },
     {
       "id": "gmv9id0fj",
@@ -203,7 +327,11 @@
       "bm": null,
       "bd": null,
       "bp": null,
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "Dixieland Jazz"
+      }
     },
     {
       "id": "gmv9k7nv6",
@@ -214,7 +342,11 @@
       "bm": null,
       "bd": null,
       "bp": "x",
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "Chicago Jazz"
+      }
     },
     {
       "id": "gmv9kelcz",
@@ -225,7 +357,11 @@
       "bm": null,
       "bd": null,
       "bp": "x",
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "Symphonic Jazz"
+      }
     },
     {
       "id": "gmv9ifkxi",
@@ -236,7 +372,11 @@
       "bm": null,
       "bd": null,
       "bp": "x",
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "Swing"
+      }
     },
     {
       "id": "gmv9n3umc",
@@ -247,7 +387,11 @@
       "bm": null,
       "bd": null,
       "bp": null,
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": ""
+      }
     },
     {
       "id": "gmvabt85b",
@@ -258,7 +402,11 @@
       "bm": null,
       "bd": null,
       "bp": "x",
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "Gypsy Jazz"
+      }
     },
     {
       "id": "gmv9kj2nu",
@@ -269,7 +417,11 @@
       "bm": null,
       "bd": null,
       "bp": "x4",
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "Jump Blues"
+      }
     },
     {
       "id": "gmv9kkkqy",
@@ -280,7 +432,11 @@
       "bm": null,
       "bd": null,
       "bp": "x",
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "Progressive Jazz"
+      }
     },
     {
       "id": "gmv9khjca",
@@ -291,7 +447,11 @@
       "bm": null,
       "bd": null,
       "bp": "x3",
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "Bebop"
+      }
     },
     {
       "id": "gmv9ghx0r",
@@ -302,7 +462,11 @@
       "bm": null,
       "bd": null,
       "bp": null,
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": ""
+      }
     },
     {
       "id": "gmv9kl3ll",
@@ -313,7 +477,11 @@
       "bm": null,
       "bd": null,
       "bp": "x4",
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "Cool Jazz"
+      }
     },
     {
       "id": "gmvabjb6n",
@@ -324,7 +492,11 @@
       "bm": null,
       "bd": null,
       "bp": "x4",
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "Modern Jazz"
+      }
     },
     {
       "id": "gmv9g9tvv",
@@ -335,7 +507,11 @@
       "bm": null,
       "bd": null,
       "bp": "x4",
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "Rock and Roll"
+      }
     },
     {
       "id": "gmv9gyxxu",
@@ -346,7 +522,20 @@
       "bm": null,
       "bd": null,
       "bp": null,
-      "aliases": []
+      "aliases": [
+        {
+          "text": "Music Concrete",
+          "lang": "en"
+        },
+        {
+          "text": "ミュージック・コンクレート",
+          "lang": "ja"
+        }
+      ],
+      "names": {
+        "ja": "",
+        "en": ""
+      }
     },
     {
       "id": "gmv9eckdj",
@@ -357,7 +546,11 @@
       "bm": null,
       "bd": null,
       "bp": null,
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "R&B"
+      }
     },
     {
       "id": "gmv9komm9",
@@ -368,7 +561,11 @@
       "bm": null,
       "bd": null,
       "bp": "x",
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "Soul Jazz"
+      }
     },
     {
       "id": "gmv9km95e",
@@ -379,7 +576,11 @@
       "bm": null,
       "bd": null,
       "bp": "x",
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "West Coast Jazz"
+      }
     },
     {
       "id": "tbk026",
@@ -390,7 +591,20 @@
       "bm": null,
       "bd": null,
       "bp": null,
-      "aliases": []
+      "aliases": [
+        {
+          "text": "揺転",
+          "lang": "en"
+        },
+        {
+          "text": "ロック",
+          "lang": "ja"
+        }
+      ],
+      "names": {
+        "ja": "",
+        "en": "Rock"
+      }
     },
     {
       "id": "gmv9kn8sx",
@@ -401,7 +615,11 @@
       "bm": null,
       "bd": null,
       "bp": "x3",
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "Hard Bop"
+      }
     },
     {
       "id": "gmv9kruui",
@@ -412,7 +630,11 @@
       "bm": null,
       "bd": null,
       "bp": "x3",
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "Modal Jazz"
+      }
     },
     {
       "id": "gmv9ii37b",
@@ -423,7 +645,16 @@
       "bm": null,
       "bd": null,
       "bp": "x4",
-      "aliases": []
+      "aliases": [
+        {
+          "text": "ソウル",
+          "lang": "ja"
+        }
+      ],
+      "names": {
+        "ja": "",
+        "en": "Soul"
+      }
     },
     {
       "id": "gmv9kske2",
@@ -434,7 +665,11 @@
       "bm": null,
       "bd": null,
       "bp": null,
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "Free Jazz"
+      }
     },
     {
       "id": "gmvacqf32",
@@ -445,7 +680,11 @@
       "bm": null,
       "bd": null,
       "bp": "x2",
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "Blues Rock"
+      }
     },
     {
       "id": "gmv9nend8",
@@ -456,7 +695,11 @@
       "bm": null,
       "bd": null,
       "bp": null,
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "Funk"
+      }
     },
     {
       "id": "gmvaaegrv",
@@ -467,7 +710,11 @@
       "bm": null,
       "bd": null,
       "bp": "x3",
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "Hard Rock"
+      }
     },
     {
       "id": "gmvasagkr",
@@ -478,7 +725,11 @@
       "bm": null,
       "bd": null,
       "bp": "x4",
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "Psychedelic Rock"
+      }
     },
     {
       "id": "tbk027",
@@ -489,7 +740,11 @@
       "bm": null,
       "bd": null,
       "bp": null,
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "Salsa"
+      }
     },
     {
       "id": "gmv9jklwz",
@@ -500,7 +755,11 @@
       "bm": null,
       "bd": null,
       "bp": "x4",
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "Heavy Metal"
+      }
     },
     {
       "id": "gmv9gvn96",
@@ -511,7 +770,16 @@
       "bm": null,
       "bd": null,
       "bp": "x4",
-      "aliases": []
+      "aliases": [
+        {
+          "text": "クラウトロック",
+          "lang": "ja"
+        }
+      ],
+      "names": {
+        "ja": "",
+        "en": "Krautrock"
+      }
     },
     {
       "id": "gmv9fo7v1",
@@ -522,7 +790,11 @@
       "bm": null,
       "bd": null,
       "bp": null,
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "Fusion"
+      }
     },
     {
       "id": "gmv9cfxyl",
@@ -533,7 +805,11 @@
       "bm": null,
       "bd": null,
       "bp": "x5",
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "Progressive Rock"
+      }
     },
     {
       "id": "gmv9bwled",
@@ -544,7 +820,16 @@
       "bm": null,
       "bd": null,
       "bp": "x",
-      "aliases": []
+      "aliases": [
+        {
+          "text": "基盤音楽",
+          "lang": "kan"
+        }
+      ],
+      "names": {
+        "ja": "",
+        "en": "Chiptune"
+      }
     },
     {
       "id": "tbk023",
@@ -555,7 +840,11 @@
       "bm": null,
       "bd": null,
       "bp": null,
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "Power Pop"
+      }
     },
     {
       "id": "gmv9kz0fk",
@@ -566,7 +855,11 @@
       "bm": null,
       "bd": null,
       "bp": "x",
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "Smooth Jazz"
+      }
     },
     {
       "id": "tbk036",
@@ -577,7 +870,11 @@
       "bm": null,
       "bd": null,
       "bp": null,
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": ""
+      }
     },
     {
       "id": "gmvaagzxe",
@@ -588,18 +885,43 @@
       "bm": null,
       "bd": null,
       "bp": "x2",
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "Glam Rock"
+      }
     },
     {
       "id": "gmv9cf1pw",
-      "name": "Hip Hop",
+      "name": "HipHop",
       "born": 1973,
       "desc": "1970年代のニューヨークで誕生した音楽ジャンルで、現行のHIPHOPシーンには多くの人気ラッパーが存在する。",
       "weight": null,
       "bm": null,
       "bd": null,
       "bp": "x",
-      "aliases": []
+      "aliases": [
+        {
+          "text": "Hip-hop",
+          "lang": "en"
+        },
+        {
+          "text": "hip hop",
+          "lang": "en"
+        },
+        {
+          "text": "律舞",
+          "lang": "kan"
+        },
+        {
+          "text": "ヒップホップ",
+          "lang": "ja"
+        }
+      ],
+      "names": {
+        "ja": "",
+        "en": "Hip Hop"
+      }
     },
     {
       "id": "gmv9cbias",
@@ -610,7 +932,20 @@
       "bm": null,
       "bd": null,
       "bp": null,
-      "aliases": []
+      "aliases": [
+        {
+          "text": "ディスコ",
+          "lang": "ja"
+        },
+        {
+          "text": "舞会",
+          "lang": "kan"
+        }
+      ],
+      "names": {
+        "ja": "",
+        "en": "Disco"
+      }
     },
     {
       "id": "gmvacsxdg",
@@ -621,7 +956,11 @@
       "bm": null,
       "bd": null,
       "bp": "x3",
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "Punk Rock"
+      }
     },
     {
       "id": "gmv9i3ou7",
@@ -632,7 +971,11 @@
       "bm": null,
       "bd": null,
       "bp": "x4",
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "Alternative Rock"
+      }
     },
     {
       "id": "gmv9dny20",
@@ -643,7 +986,11 @@
       "bm": null,
       "bd": null,
       "bp": "x",
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "Synth Pop"
+      }
     },
     {
       "id": "gmvarxqoj",
@@ -654,7 +1001,11 @@
       "bm": null,
       "bd": null,
       "bp": null,
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": ""
+      }
     },
     {
       "id": "gmv9dx4qn",
@@ -665,7 +1016,11 @@
       "bm": null,
       "bd": null,
       "bp": null,
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "Ambient"
+      }
     },
     {
       "id": "gmv9ego1k",
@@ -676,7 +1031,11 @@
       "bm": null,
       "bd": null,
       "bp": null,
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "Citypop"
+      }
     },
     {
       "id": "gmv9ebxj3",
@@ -687,7 +1046,11 @@
       "bm": null,
       "bd": null,
       "bp": null,
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "Contemporary R&B"
+      }
     },
     {
       "id": "gmv9kwdt4",
@@ -698,7 +1061,11 @@
       "bm": null,
       "bd": null,
       "bp": "x",
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "Acid Jazz"
+      }
     },
     {
       "id": "gmv9ku8u2",
@@ -709,7 +1076,11 @@
       "bm": null,
       "bd": null,
       "bp": "x",
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "M-Base"
+      }
     },
     {
       "id": "tbk038",
@@ -720,7 +1091,11 @@
       "bm": null,
       "bd": null,
       "bp": null,
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": ""
+      }
     },
     {
       "id": "gmv9d8rah",
@@ -731,7 +1106,11 @@
       "bm": null,
       "bd": null,
       "bp": null,
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "EBM"
+      }
     },
     {
       "id": "tbk011",
@@ -742,7 +1121,11 @@
       "bm": null,
       "bd": null,
       "bp": null,
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "Electro"
+      }
     },
     {
       "id": "gmv9cazvg",
@@ -753,7 +1136,16 @@
       "bm": null,
       "bd": null,
       "bp": null,
-      "aliases": []
+      "aliases": [
+        {
+          "text": "初箱打",
+          "lang": "kan"
+        }
+      ],
+      "names": {
+        "ja": "",
+        "en": "Chicago House"
+      }
     },
     {
       "id": "tbk010",
@@ -764,7 +1156,20 @@
       "bm": null,
       "bd": null,
       "bp": null,
-      "aliases": []
+      "aliases": [
+        {
+          "text": "電舞曲",
+          "lang": "kan"
+        },
+        {
+          "text": "Electric Dance Music",
+          "lang": "en"
+        }
+      ],
+      "names": {
+        "ja": "",
+        "en": "EDM"
+      }
     },
     {
       "id": "tbk017",
@@ -775,7 +1180,24 @@
       "bm": null,
       "bd": null,
       "bp": null,
-      "aliases": []
+      "aliases": [
+        {
+          "text": "箱打",
+          "lang": "kan"
+        },
+        {
+          "text": "House Music",
+          "lang": "en"
+        },
+        {
+          "text": "ハウス",
+          "lang": "ja"
+        }
+      ],
+      "names": {
+        "ja": "",
+        "en": "House"
+      }
     },
     {
       "id": "tbk003",
@@ -786,7 +1208,11 @@
       "bm": null,
       "bd": null,
       "bp": null,
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "Bass Music"
+      }
     },
     {
       "id": "gmv9h1rsq",
@@ -797,7 +1223,16 @@
       "bm": null,
       "bd": null,
       "bp": null,
-      "aliases": []
+      "aliases": [
+        {
+          "text": "深箱打",
+          "lang": "ja"
+        }
+      ],
+      "names": {
+        "ja": "",
+        "en": "Deep House"
+      }
     },
     {
       "id": "gmv9dou4f",
@@ -808,7 +1243,20 @@
       "bm": null,
       "bd": null,
       "bp": null,
-      "aliases": []
+      "aliases": [
+        {
+          "text": "初電格",
+          "lang": "kan"
+        },
+        {
+          "text": "デトロイト・テクノ",
+          "lang": "ja"
+        }
+      ],
+      "names": {
+        "ja": "",
+        "en": "Detroit Techno"
+      }
     },
     {
       "id": "gmv9dmg1t",
@@ -819,7 +1267,32 @@
       "bm": null,
       "bd": null,
       "bp": "x",
-      "aliases": []
+      "aliases": [
+        {
+          "text": "倉箱打",
+          "lang": "kan"
+        },
+        {
+          "text": "Garage",
+          "lang": "en"
+        },
+        {
+          "text": "ガレージ・ハウス",
+          "lang": "ja"
+        },
+        {
+          "text": "ガレージ",
+          "lang": "ja"
+        },
+        {
+          "text": "ガラージュ",
+          "lang": "ja"
+        }
+      ],
+      "names": {
+        "ja": "",
+        "en": "Garage House"
+      }
     },
     {
       "id": "tbk015",
@@ -830,7 +1303,11 @@
       "bm": null,
       "bd": null,
       "bp": null,
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "Grunge"
+      }
     },
     {
       "id": "gmvaqm0ls",
@@ -841,7 +1318,11 @@
       "bm": null,
       "bd": null,
       "bp": "x3",
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "Memphis Rap"
+      }
     },
     {
       "id": "gmv9df34q",
@@ -852,7 +1333,11 @@
       "bm": null,
       "bd": null,
       "bp": "x3",
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "Miami Bass"
+      }
     },
     {
       "id": "gmv9c2x3w",
@@ -864,8 +1349,23 @@
       "bd": null,
       "bp": null,
       "aliases": [
-        "テクノ"
-      ]
+        {
+          "text": "テクノ",
+          "lang": "ja"
+        },
+        {
+          "text": "電格",
+          "lang": "kan"
+        },
+        {
+          "text": "Techno Music",
+          "lang": "en"
+        }
+      ],
+      "names": {
+        "ja": "",
+        "en": "Techno"
+      }
     },
     {
       "id": "tbk024",
@@ -876,7 +1376,11 @@
       "bm": null,
       "bd": null,
       "bp": null,
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "Progressive Metal"
+      }
     },
     {
       "id": "gmv9d92gx",
@@ -887,7 +1391,16 @@
       "bm": null,
       "bd": null,
       "bp": null,
-      "aliases": []
+      "aliases": [
+        {
+          "text": "熔箱打",
+          "lang": "kan"
+        }
+      ],
+      "names": {
+        "ja": "",
+        "en": "Acid House"
+      }
     },
     {
       "id": "gmvadlkx6",
@@ -898,7 +1411,11 @@
       "bm": null,
       "bd": null,
       "bp": "x4",
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "Hard Dance"
+      }
     },
     {
       "id": "gmv9hfhnk",
@@ -909,7 +1426,16 @@
       "bm": null,
       "bd": null,
       "bp": "x4",
-      "aliases": []
+      "aliases": [
+        {
+          "text": "伊式箱打",
+          "lang": "kan"
+        }
+      ],
+      "names": {
+        "ja": "",
+        "en": "Italo House"
+      }
     },
     {
       "id": "gmvapydbu",
@@ -920,7 +1446,11 @@
       "bm": null,
       "bd": null,
       "bp": "x4",
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "Jazz Rap"
+      }
     },
     {
       "id": "gmv9d8vqi",
@@ -931,7 +1461,11 @@
       "bm": null,
       "bd": null,
       "bp": null,
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "New Beat"
+      }
     },
     {
       "id": "gmv9imzlc",
@@ -942,7 +1476,11 @@
       "bm": null,
       "bd": null,
       "bp": null,
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "Shoegaze"
+      }
     },
     {
       "id": "tbk035",
@@ -953,7 +1491,11 @@
       "bm": null,
       "bd": null,
       "bp": null,
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "Trance"
+      }
     },
     {
       "id": "tbk002",
@@ -964,7 +1506,11 @@
       "bm": null,
       "bd": null,
       "bp": null,
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "Baile Funk"
+      }
     },
     {
       "id": "gmv9cnfaz",
@@ -975,7 +1521,11 @@
       "bm": null,
       "bd": null,
       "bp": "x5",
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "Breakbeat Hardcore"
+      }
     },
     {
       "id": "tbk016",
@@ -986,7 +1536,16 @@
       "bm": null,
       "bd": null,
       "bp": null,
-      "aliases": []
+      "aliases": [
+        {
+          "text": "激核電格",
+          "lang": "kan"
+        }
+      ],
+      "names": {
+        "ja": "",
+        "en": "Hardcore Techno"
+      }
     },
     {
       "id": "gmv9clhff",
@@ -997,7 +1556,11 @@
       "bm": null,
       "bd": null,
       "bp": null,
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "Jungle"
+      }
     },
     {
       "id": "tbk006",
@@ -1008,7 +1571,11 @@
       "bm": null,
       "bd": null,
       "bp": null,
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "Breakbeat"
+      }
     },
     {
       "id": "gmv9cwfaq",
@@ -1019,7 +1586,11 @@
       "bm": null,
       "bd": null,
       "bp": null,
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "Electronica"
+      }
     },
     {
       "id": "gmv9cxx9n",
@@ -1030,7 +1601,20 @@
       "bm": null,
       "bd": null,
       "bp": "x",
-      "aliases": []
+      "aliases": [
+        {
+          "text": "ガバ",
+          "lang": "ja"
+        },
+        {
+          "text": "Gabba",
+          "lang": "en"
+        }
+      ],
+      "names": {
+        "ja": "",
+        "en": "Gabber"
+      }
     },
     {
       "id": "gmv9dqd09",
@@ -1041,18 +1625,31 @@
       "bm": null,
       "bd": null,
       "bp": "y",
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "Oldskool Happy Hardcore"
+      }
     },
     {
       "id": "gmv9e0yz7",
-      "name": "J-CORE",
+      "name": "日本核",
       "born": 1990,
       "desc": "DJ SHARPNELやm1dyといったアーティストが海外に流出した際に定義された逆輸入的な側面を持つ音楽ジャンルで、アニメ・ゲームサンプリングを特徴とするハードコアテクノの一種。",
       "weight": null,
       "bm": null,
       "bd": null,
       "bp": "x",
-      "aliases": []
+      "aliases": [
+        {
+          "text": "J-CORE",
+          "lang": "en"
+        }
+      ],
+      "names": {
+        "ja": "",
+        "en": ""
+      }
     },
     {
       "id": "gmv9fndyt",
@@ -1063,11 +1660,15 @@
       "bm": null,
       "bd": null,
       "bp": "x",
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "J-POP"
+      }
     },
     {
       "id": "gmv9c6hcs",
-      "name": "Nerdcore",
+      "name": "ナードコア",
       "born": 1990,
       "desc": "",
       "weight": null,
@@ -1075,8 +1676,19 @@
       "bd": null,
       "bp": "x",
       "aliases": [
-        "ナードコア"
-      ]
+        {
+          "text": "趣戯核",
+          "lang": "kan"
+        },
+        {
+          "text": "Nerdcore",
+          "lang": "en"
+        }
+      ],
+      "names": {
+        "ja": "",
+        "en": ""
+      }
     },
     {
       "id": "gmv9e2bfj",
@@ -1087,7 +1699,16 @@
       "bm": null,
       "bd": null,
       "bp": null,
-      "aliases": []
+      "aliases": [
+        {
+          "text": "英式倉打",
+          "lang": "kan"
+        }
+      ],
+      "names": {
+        "ja": "",
+        "en": "UK Garage"
+      }
     },
     {
       "id": "tbk037",
@@ -1098,7 +1719,11 @@
       "bm": null,
       "bd": null,
       "bp": null,
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": ""
+      }
     },
     {
       "id": "tbk005",
@@ -1109,7 +1734,11 @@
       "bm": null,
       "bd": null,
       "bp": null,
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "Braindance"
+      }
     },
     {
       "id": "gmv9m0ki6",
@@ -1120,7 +1749,11 @@
       "bm": null,
       "bd": null,
       "bp": null,
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "Progressive House"
+      }
     },
     {
       "id": "gmv9mkc5x",
@@ -1131,7 +1764,16 @@
       "bm": null,
       "bd": null,
       "bp": null,
-      "aliases": []
+      "aliases": [
+        {
+          "text": "トラップ",
+          "lang": "ja"
+        }
+      ],
+      "names": {
+        "ja": "",
+        "en": "Trap"
+      }
     },
     {
       "id": "gmv9hzpz2",
@@ -1142,7 +1784,11 @@
       "bm": null,
       "bd": null,
       "bp": "x2",
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "Baltimore Club"
+      }
     },
     {
       "id": "gmvawh3gx",
@@ -1153,7 +1799,11 @@
       "bm": null,
       "bd": null,
       "bp": null,
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "Ghetto House"
+      }
     },
     {
       "id": "gmv9jnizw",
@@ -1164,7 +1814,11 @@
       "bm": null,
       "bd": null,
       "bp": "x2",
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "Goa Trance"
+      }
     },
     {
       "id": "gmv9i5xb3",
@@ -1175,7 +1829,11 @@
       "bm": null,
       "bd": null,
       "bp": "x2",
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "Hard House"
+      }
     },
     {
       "id": "gmvadltfv",
@@ -1186,7 +1844,11 @@
       "bm": null,
       "bd": null,
       "bp": "x2",
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "Hard Trance"
+      }
     },
     {
       "id": "tbk018",
@@ -1197,7 +1859,11 @@
       "bm": null,
       "bd": null,
       "bp": null,
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "IDM"
+      }
     },
     {
       "id": "gmv9kx2oh",
@@ -1208,7 +1874,11 @@
       "bm": null,
       "bd": null,
       "bp": "x2",
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "Neo Soul"
+      }
     },
     {
       "id": "gmv9m05mm",
@@ -1219,7 +1889,11 @@
       "bm": null,
       "bd": null,
       "bp": "x2",
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "Progressive Trance"
+      }
     },
     {
       "id": "gmv9jxmys",
@@ -1230,7 +1904,11 @@
       "bm": null,
       "bd": null,
       "bp": "x2",
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "Speedcore"
+      }
     },
     {
       "id": "tbk033",
@@ -1241,7 +1919,11 @@
       "bm": null,
       "bd": null,
       "bp": "x2",
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "Stoner Rock"
+      }
     },
     {
       "id": "gmv9iasvk",
@@ -1252,18 +1934,31 @@
       "bm": null,
       "bd": null,
       "bp": null,
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": ""
+      }
     },
     {
       "id": "tbk001",
-      "name": "Atmospheric Drum & Bass",
+      "name": "雰打及低",
       "born": 1994,
       "desc": "",
       "weight": null,
       "bm": null,
       "bd": null,
       "bp": null,
-      "aliases": []
+      "aliases": [
+        {
+          "text": "Atmospheric Drum & Bass",
+          "lang": "en"
+        }
+      ],
+      "names": {
+        "ja": "",
+        "en": ""
+      }
     },
     {
       "id": "gmv9cjprw",
@@ -1274,7 +1969,16 @@
       "bm": null,
       "bd": null,
       "bp": null,
-      "aliases": []
+      "aliases": [
+        {
+          "text": "打及低",
+          "lang": "kan"
+        }
+      ],
+      "names": {
+        "ja": "",
+        "en": "Drum & Bass"
+      }
     },
     {
       "id": "gmv9i9don",
@@ -1285,18 +1989,31 @@
       "bm": null,
       "bd": null,
       "bp": null,
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "Glitch"
+      }
     },
     {
       "id": "gmv9d3r55",
-      "name": "Breakcore",
+      "name": "破壊核",
       "born": 1995,
       "desc": "非常に高速なテンポで、サンプリングを多用し、断片的で複雑、ノイジーなBreakbeatsを特徴とする音楽ジャンル。",
       "weight": null,
       "bm": null,
       "bd": null,
       "bp": "x3",
-      "aliases": []
+      "aliases": [
+        {
+          "text": "Breakcore",
+          "lang": "en"
+        }
+      ],
+      "names": {
+        "ja": "",
+        "en": ""
+      }
     },
     {
       "id": "gmvav1jn0",
@@ -1307,7 +2024,11 @@
       "bm": null,
       "bd": null,
       "bp": "x3",
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "Hardstep"
+      }
     },
     {
       "id": "gmv9m30ue",
@@ -1318,7 +2039,11 @@
       "bm": null,
       "bd": null,
       "bp": "x1",
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "Psychedelic Trance"
+      }
     },
     {
       "id": "gmv9hrm35",
@@ -1329,7 +2054,11 @@
       "bm": null,
       "bd": null,
       "bp": "x3",
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "Tech House"
+      }
     },
     {
       "id": "gmvaapm0p",
@@ -1340,7 +2069,11 @@
       "bm": null,
       "bd": null,
       "bp": "x",
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "Juke"
+      }
     },
     {
       "id": "tbk028",
@@ -1351,7 +2084,11 @@
       "bm": null,
       "bd": null,
       "bp": null,
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "Schranz"
+      }
     },
     {
       "id": "gmv9n9lf9",
@@ -1362,7 +2099,11 @@
       "bm": null,
       "bd": null,
       "bp": null,
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "Uplifting Trance"
+      }
     },
     {
       "id": "tbk013",
@@ -1373,7 +2114,11 @@
       "bm": null,
       "bd": null,
       "bp": null,
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "Footwork"
+      }
     },
     {
       "id": "gmvadkdle",
@@ -1384,7 +2129,11 @@
       "bm": null,
       "bd": null,
       "bp": "x4",
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "Hardstyle"
+      }
     },
     {
       "id": "gmv9hwfm0",
@@ -1395,7 +2144,11 @@
       "bm": null,
       "bd": null,
       "bp": "x4",
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "Jersey Club"
+      }
     },
     {
       "id": "gmvarizol",
@@ -1406,7 +2159,11 @@
       "bm": null,
       "bd": null,
       "bp": "x4",
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "Microhouse"
+      }
     },
     {
       "id": "gmvat842x",
@@ -1417,7 +2174,11 @@
       "bm": null,
       "bd": null,
       "bp": "x4",
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "Neurofunk"
+      }
     },
     {
       "id": "gmv9fpgv8",
@@ -1428,18 +2189,35 @@
       "bm": null,
       "bd": null,
       "bp": null,
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": ""
+      }
     },
     {
       "id": "gmv9csp8a",
-      "name": "2-step",
+      "name": "2-step Garage",
       "born": 1998,
       "desc": "",
       "weight": null,
       "bm": null,
       "bd": null,
       "bp": null,
-      "aliases": []
+      "aliases": [
+        {
+          "text": "二歩倉打",
+          "lang": "kan"
+        },
+        {
+          "text": "2ステップ・ガレージ",
+          "lang": "en"
+        }
+      ],
+      "names": {
+        "ja": "",
+        "en": "2-step Garage"
+      }
     },
     {
       "id": "tbk012",
@@ -1450,7 +2228,11 @@
       "bm": null,
       "bd": null,
       "bp": null,
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "Extratone"
+      }
     },
     {
       "id": "gmvaro2kc",
@@ -1461,7 +2243,11 @@
       "bm": null,
       "bd": null,
       "bp": "x4",
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "Flashcore"
+      }
     },
     {
       "id": "tbk004",
@@ -1472,7 +2258,11 @@
       "bm": null,
       "bd": null,
       "bp": null,
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "Bitpop"
+      }
     },
     {
       "id": "gmv9fjwq6",
@@ -1483,7 +2273,11 @@
       "bm": null,
       "bd": null,
       "bp": null,
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "Funkot"
+      }
     },
     {
       "id": "gmv9hiit5",
@@ -1494,7 +2288,11 @@
       "bm": null,
       "bd": null,
       "bp": null,
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "Liquid Drum & Bass"
+      }
     },
     {
       "id": "gmv9cuwte",
@@ -1505,7 +2303,16 @@
       "bm": null,
       "bd": null,
       "bp": null,
-      "aliases": []
+      "aliases": [
+        {
+          "text": "強効歩打",
+          "lang": "kan"
+        }
+      ],
+      "names": {
+        "ja": "",
+        "en": "Brostep"
+      }
     },
     {
       "id": "gmv9cr4je",
@@ -1516,18 +2323,31 @@
       "bm": null,
       "bd": null,
       "bp": null,
-      "aliases": []
+      "aliases": [
+        {
+          "text": "響効歩打",
+          "lang": "kan"
+        }
+      ],
+      "names": {
+        "ja": "",
+        "en": "Dubstep"
+      }
     },
     {
       "id": "gmv9cvi63",
       "name": "Electro House",
       "born": 2000,
-      "desc": "# Electro House\n\n**Electro House**（エレクトロ・ハウス）は、ハウス音楽の主要なサブジャンルの一つであり、[EDM]シーンを代表するスタイルとして広く知られている。2000年代初頭にベニー・ベナッシの「サティスファクション」などをきっかけに人気に火がつき、その後ヨーロッパを飛び出して全世界を席巻した。\n\n## 主な特徴とサウンドデザイン\n\n### **音響的特徴**\n* 温かみのあるアナログのベースラインや、パンチのあるパーカッションが用いられる。\n\n\n* クリアで高音域のシンセサイザー・リードや、クリップされたボーカル・サンプルが楽曲を特徴づける。\n\n\n### **歴史的展開**\n* [Trance]とお互いに影響を与え合いながら発展し、2000年代後半以降はクラブのダンスフロアを盛り上げるエンターテインメント的な性格を強めていった。\n\n\n* この流れが2010年代のEDM大ブームへとつながり、数多くの派生ジャンルを生み出す原動力となった。\n\n\n\n\n\n## 主な派生ジャンル\n\n* **[Complextro]**: 緻密に重ねられたサウンドデザインやテンポの早いカットアップ・セクション、アグレッシブなスタブを特徴とする。\n* **[Dutch House]**: 高音域の奇抜なシンセメロディーや、フィジェット・ハウスなどからの強い影響を特色とする。\n* **[Fidget House]**: ブレイクビート・ハードコア風のシンセ・スタブ、ベースラインのピッチベンド、カットアップされたボーカル・サンプルなどを多用する。\n* **[Melbourne Bounce]**: 型破りなベースラインによる「弾むような」グルーヴと、ダッチ・ハウスの影響を受けたシンセ等による軽快なパーティー向けの雰囲気を醸し出す。",
+      "desc": "# Electro House\n\n**Electro House**（エレクトロ・ハウス）は、ハウス音楽の主要なサブジャンルの一つであり、[EDM]シーンを代表するスタイルとして広く知られている。2000年代初頭にベニー・ベナッシの「サティスファクション」などをきっかけに人気に火がつき、その後ヨーロッパを飛び出して全世界を席巻した。\n\n## 主な特徴とサウンドデザイン\n\n### **音響的特徴**\n* 温かみのあるアナログのベースラインや、パンチのあるパーカッションが用いられる。\n* クリアで高音域のシンセサイザー・リードや、クリップされたボーカル・サンプルが楽曲を特徴づける。\n### **歴史的展開**\n* [Trance]とお互いに影響を与え合いながら発展し、2000年代後半以降はクラブのダンスフロアを盛り上げるエンターテインメント的な性格を強めていった。\n* この流れが2010年代のEDM大ブームへとつながり、数多くの派生ジャンルを生み出す原動力となった。\n## 主な派生ジャンル\n* **[Complextro]**: 緻密に重ねられたサウンドデザインやテンポの早いカットアップ・セクション、アグレッシブなスタブを特徴とする。\n* **[Dutch House]**: 高音域の奇抜なシンセメロディーや、フィジェット・ハウスなどからの強い影響を特色とする。\n* **[Fidget House]**: ブレイクビート・ハードコア風のシンセ・スタブ、ベースラインのピッチベンド、カットアップされたボーカル・サンプルなどを多用する。\n* **[Melbourne Bounce]**: 型破りなベースラインによる「弾むような」グルーヴと、ダッチ・ハウスの影響を受けたシンセ等による軽快なパーティー向けの雰囲気を醸し出す。",
       "weight": null,
       "bm": null,
       "bd": null,
       "bp": null,
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "Electro House"
+      }
     },
     {
       "id": "gmv9ej0lz",
@@ -1538,18 +2358,31 @@
       "bm": null,
       "bd": null,
       "bp": null,
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "French House"
+      }
     },
     {
       "id": "gmv9jyc8b",
-      "name": "Nightcore",
+      "name": "夜囲核",
       "born": 2001,
       "desc": "",
       "weight": 0,
       "bm": null,
       "bd": null,
       "bp": null,
-      "aliases": []
+      "aliases": [
+        {
+          "text": "Nightcore",
+          "lang": "en"
+        }
+      ],
+      "names": {
+        "ja": "",
+        "en": ""
+      }
     },
     {
       "id": "gmvavbluj",
@@ -1560,7 +2393,16 @@
       "bm": null,
       "bd": null,
       "bp": "x2",
-      "aliases": []
+      "aliases": [
+        {
+          "text": "低基線",
+          "lang": "kan"
+        }
+      ],
+      "names": {
+        "ja": "",
+        "en": "Bassline"
+      }
     },
     {
       "id": "gmv9bucf9",
@@ -1571,7 +2413,11 @@
       "bm": null,
       "bd": null,
       "bp": null,
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": ""
+      }
     },
     {
       "id": "gmv9h7xip",
@@ -1582,7 +2428,11 @@
       "bm": null,
       "bd": null,
       "bp": "x",
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "Chipbreak"
+      }
     },
     {
       "id": "tbk009",
@@ -1593,7 +2443,11 @@
       "bm": null,
       "bd": null,
       "bp": null,
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "Djent"
+      }
     },
     {
       "id": "gmv9nze4q",
@@ -1604,7 +2458,11 @@
       "bm": null,
       "bd": null,
       "bp": "x3",
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "Frutiger Aero"
+      }
     },
     {
       "id": "tbk029",
@@ -1615,7 +2473,11 @@
       "bm": null,
       "bd": null,
       "bp": null,
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "Shangaan Electro"
+      }
     },
     {
       "id": "tbk034",
@@ -1626,11 +2488,15 @@
       "bm": null,
       "bd": null,
       "bp": null,
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "Synthwave"
+      }
     },
     {
       "id": "gmv9dtjl4",
-      "name": "UK Hardcore",
+      "name": "英式激核",
       "born": 2005,
       "desc": "**UK Hardcore**（ユーケー・ハードコア）は、[Hardcore Techno]の主要なサブジャンルの一つであり、[Happy Hardcore]を源流として発展した。他のハードコアテクノの諸ジャンルと比較して、メロディックさやエモさ、哀愁が強く強調されており、親しみやすくクリーンなサウンドを特徴とする。\n\n## 主な特徴\n\n### **テンポとリズム**\n* テンポは概ね170〜175BPMの範囲で統一されており、4つ打ちのビートを基調とする。\n* 2拍目と4拍目を強調するスネアドラムが多用される。\n\n### **サウンドデザイン**\n* 重厚で際立ったベースラインや、高揚感あふれるシンセ・リードが楽曲を牽引する。\n* 2000年代後半以降の楽曲では、当時の世界的なエレクトロの流行を背景に、音圧を極限まで高める圧縮手法や、力強く歪んだキック、オフビートで繰り返されるリバースベースなどが取り入れられた。\n\n\n\n## 歴史的背景と展開\n\n1990年代初頭の[Breakbeat Hardcore]や[Happy Hardcore]にルーツを持ち、2005年前後にかけて現在の「UK Hardcore」と呼ばれる重厚で迫力のあるスタイルへと変貌を遂げた。この時期にはCDJの普及に伴うDJ人口の増加もあり、現場での使いやすさを考慮したBPMの統一が進んだ。\n\nまた、近年の系譜や派生スタイルとして、以下のような多様なサブジャンルとのクロスオーバーを見せている。\n\n* **[Futurecore]**: [Future Bass]の陶酔的なシンセサウンドやボーカルチョップ、ハーフビートの要素をUK Hardcoreのスピード感やベースラインと融合させたスタイル。\n* **[Power Stomp]**: 際立った踏み込むようなキックや、ハードスタイルから取り入れられたリバースベース、不協和音的なノイジーなリフを特徴とするエネルギッシュなスタイル。",
       "weight": null,
@@ -1638,20 +2504,43 @@
       "bd": null,
       "bp": null,
       "aliases": [
-        "Freestyle Hardcore",
-        "Freeform Hardcore"
-      ]
+        {
+          "text": "Freestyle Hardcore",
+          "lang": "en"
+        },
+        {
+          "text": "Freeform Hardcore",
+          "lang": "en"
+        },
+        {
+          "text": "UK Hardcore",
+          "lang": "en"
+        }
+      ],
+      "names": {
+        "ja": "",
+        "en": ""
+      }
     },
     {
       "id": "gmv9ighli",
-      "name": "Lolicore",
+      "name": "嬢核",
       "born": 2006,
       "desc": "",
       "weight": 80,
       "bm": null,
       "bd": null,
       "bp": null,
-      "aliases": []
+      "aliases": [
+        {
+          "text": "Lolicore",
+          "lang": "en"
+        }
+      ],
+      "names": {
+        "ja": "",
+        "en": ""
+      }
     },
     {
       "id": "tbk039",
@@ -1662,7 +2551,11 @@
       "bm": null,
       "bd": null,
       "bp": null,
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": ""
+      }
     },
     {
       "id": "gmv9fr898",
@@ -1673,7 +2566,11 @@
       "bm": null,
       "bd": null,
       "bp": null,
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "Chillwave"
+      }
     },
     {
       "id": "gmvanxma7",
@@ -1684,18 +2581,31 @@
       "bm": null,
       "bd": null,
       "bp": "x",
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "Dungeon Rap"
+      }
     },
     {
       "id": "gmv9o3pas",
-      "name": "Jaycore",
+      "name": "和激核",
       "born": 2010,
       "desc": "",
       "weight": 80,
       "bm": null,
       "bd": null,
       "bp": "x",
-      "aliases": []
+      "aliases": [
+        {
+          "text": "Jaycore",
+          "lang": "en"
+        }
+      ],
+      "names": {
+        "ja": "",
+        "en": ""
+      }
     },
     {
       "id": "tbk032",
@@ -1706,7 +2616,11 @@
       "bm": null,
       "bd": null,
       "bp": null,
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "Singeli"
+      }
     },
     {
       "id": "gmv9d28y0",
@@ -1717,7 +2631,16 @@
       "bm": null,
       "bd": null,
       "bp": null,
-      "aliases": []
+      "aliases": [
+        {
+          "text": "蒸気波",
+          "lang": "kan"
+        }
+      ],
+      "names": {
+        "ja": "",
+        "en": "Vaporwave"
+      }
     },
     {
       "id": "gmvadhkb6",
@@ -1728,7 +2651,11 @@
       "bm": null,
       "bd": null,
       "bp": null,
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "Utopian Virtual"
+      }
     },
     {
       "id": "gmv9nbr04",
@@ -1739,7 +2666,11 @@
       "bm": null,
       "bd": null,
       "bp": "x2",
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "Big Room House"
+      }
     },
     {
       "id": "tbk014",
@@ -1750,7 +2681,11 @@
       "bm": null,
       "bd": null,
       "bp": null,
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "GORGE"
+      }
     },
     {
       "id": "gmvaozy90",
@@ -1761,7 +2696,11 @@
       "bm": null,
       "bd": null,
       "bp": null,
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "Mallsoft"
+      }
     },
     {
       "id": "gmvameusb",
@@ -1772,7 +2711,11 @@
       "bm": null,
       "bd": null,
       "bp": "x2",
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "Phonk"
+      }
     },
     {
       "id": "gmv9hnpg8",
@@ -1783,7 +2726,16 @@
       "bm": null,
       "bd": null,
       "bp": null,
-      "aliases": []
+      "aliases": [
+        {
+          "text": "底征歩打",
+          "lang": "kan"
+        }
+      ],
+      "names": {
+        "ja": "",
+        "en": "Riddim"
+      }
     },
     {
       "id": "tbk031",
@@ -1794,7 +2746,11 @@
       "bm": null,
       "bd": null,
       "bp": null,
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "Signalwave"
+      }
     },
     {
       "id": "gmv9dhp61",
@@ -1805,7 +2761,16 @@
       "bm": null,
       "bd": null,
       "bp": null,
-      "aliases": []
+      "aliases": [
+        {
+          "text": "未来低基",
+          "lang": "kan"
+        }
+      ],
+      "names": {
+        "ja": "",
+        "en": "Future Bass"
+      }
     },
     {
       "id": "gmv9ef0mn",
@@ -1816,18 +2781,26 @@
       "bm": null,
       "bd": null,
       "bp": null,
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "Future Funk"
+      }
     },
     {
       "id": "gmv9jiacc",
-      "name": "Lo-fi Hip Hop",
+      "name": "Lo-fi HipHop",
       "born": 2013,
       "desc": "",
       "weight": null,
       "bm": null,
       "bd": null,
       "bp": null,
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "Lo-fi Hip Hop"
+      }
     },
     {
       "id": "gmv9fln2l",
@@ -1838,7 +2811,16 @@
       "bm": null,
       "bd": null,
       "bp": null,
-      "aliases": []
+      "aliases": [
+        {
+          "text": "可愛未来低基",
+          "lang": "kan"
+        }
+      ],
+      "names": {
+        "ja": "",
+        "en": "Kawaii Future Bass"
+      }
     },
     {
       "id": "gmv9gt56y",
@@ -1849,7 +2831,16 @@
       "bm": null,
       "bd": null,
       "bp": "x3",
-      "aliases": []
+      "aliases": [
+        {
+          "text": "未来核",
+          "lang": "kan"
+        }
+      ],
+      "names": {
+        "ja": "",
+        "en": "Futurecore"
+      }
     },
     {
       "id": "gmvap8snf",
@@ -1860,7 +2851,16 @@
       "bm": null,
       "bd": null,
       "bp": null,
-      "aliases": []
+      "aliases": [
+        {
+          "text": "色彩低基",
+          "lang": "kan"
+        }
+      ],
+      "names": {
+        "ja": "",
+        "en": "Colour Bass"
+      }
     },
     {
       "id": "gmvamb12j",
@@ -1871,7 +2871,11 @@
       "bm": null,
       "bd": null,
       "bp": "x4",
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "Digicore"
+      }
     },
     {
       "id": "gmvao5pbb",
@@ -1882,7 +2886,11 @@
       "bm": null,
       "bd": null,
       "bp": "x4",
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "Drift Phonk"
+      }
     },
     {
       "id": "gmvantw2f",
@@ -1893,7 +2901,11 @@
       "bm": null,
       "bd": null,
       "bp": null,
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "Rare Phonk"
+      }
     },
     {
       "id": "tbk030",
@@ -1904,7 +2916,11 @@
       "bm": null,
       "bd": null,
       "bp": null,
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "Sigilkore"
+      }
     },
     {
       "id": "tbk008",
@@ -1915,7 +2931,11 @@
       "bm": null,
       "bd": null,
       "bp": null,
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "Depressive Breakcore"
+      }
     },
     {
       "id": "gmvaav2sh",
@@ -1926,7 +2946,11 @@
       "bm": 3,
       "bd": 15,
       "bp": "x",
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "Footcore"
+      }
     },
     {
       "id": "gmv9furss",
@@ -1937,7 +2961,11 @@
       "bm": null,
       "bd": null,
       "bp": null,
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "Hyperpop"
+      }
     },
     {
       "id": "gmv9dkn4x",
@@ -1948,7 +2976,20 @@
       "bm": null,
       "bd": null,
       "bp": null,
-      "aliases": []
+      "aliases": [
+        {
+          "text": "超調譜汲",
+          "lang": "kan"
+        },
+        {
+          "text": "dariacore",
+          "lang": "en"
+        }
+      ],
+      "names": {
+        "ja": "",
+        "en": "Hyperflip"
+      }
     },
     {
       "id": "tbk020",
@@ -1959,7 +3000,11 @@
       "bm": null,
       "bd": null,
       "bp": null,
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "Laptop Twee"
+      }
     },
     {
       "id": "tbk022",
@@ -1970,7 +3015,11 @@
       "bm": null,
       "bd": null,
       "bp": null,
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "Orbcore"
+      }
     },
     {
       "id": "tbk025",
@@ -1981,7 +3030,11 @@
       "bm": null,
       "bd": null,
       "bp": null,
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "Pure MIDI"
+      }
     },
     {
       "id": "gmv9he435",
@@ -1992,7 +3045,11 @@
       "bm": null,
       "bd": null,
       "bp": null,
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "#jesusclub"
+      }
     },
     {
       "id": "gmv9iss6t",
@@ -2003,7 +3060,11 @@
       "bm": null,
       "bd": null,
       "bp": null,
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "Botanica"
+      }
     },
     {
       "id": "gmv9bup7y",
@@ -2014,7 +3075,11 @@
       "bm": null,
       "bd": null,
       "bp": null,
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": ""
+      }
     },
     {
       "id": "gmv9by3y3",
@@ -2025,7 +3090,11 @@
       "bm": null,
       "bd": null,
       "bp": null,
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "VRC6"
+      }
     },
     {
       "id": "gmv9c9c50",
@@ -2036,7 +3105,16 @@
       "bm": null,
       "bd": null,
       "bp": "x5",
-      "aliases": []
+      "aliases": [
+        {
+          "text": "激核",
+          "lang": "kan"
+        }
+      ],
+      "names": {
+        "ja": "",
+        "en": "Core"
+      }
     },
     {
       "id": "gmv9cppz0",
@@ -2047,7 +3125,11 @@
       "bm": null,
       "bd": null,
       "bp": "x",
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "Ealry Jazz"
+      }
     },
     {
       "id": "gmv9ct5c2",
@@ -2058,7 +3140,16 @@
       "bm": null,
       "bd": null,
       "bp": null,
-      "aliases": []
+      "aliases": [
+        {
+          "text": "古典響効歩打",
+          "lang": "kan"
+        }
+      ],
+      "names": {
+        "ja": "",
+        "en": "Classic Dubstep"
+      }
     },
     {
       "id": "gmv9cu84b",
@@ -2069,18 +3160,31 @@
       "bm": null,
       "bd": null,
       "bp": null,
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "Dub House"
+      }
     },
     {
       "id": "gmv9dhdrm",
-      "name": "実験音楽",
+      "name": "Experimental Music",
       "born": 1911,
       "desc": "",
       "weight": null,
       "bm": null,
       "bd": null,
       "bp": null,
-      "aliases": []
+      "aliases": [
+        {
+          "text": "実験音楽",
+          "lang": "ja"
+        }
+      ],
+      "names": {
+        "ja": "",
+        "en": "Experimental Music"
+      }
     },
     {
       "id": "gmv9dn0wp",
@@ -2091,7 +3195,16 @@
       "bm": null,
       "bd": null,
       "bp": null,
-      "aliases": []
+      "aliases": [
+        {
+          "text": "伊式舞会",
+          "lang": "kan"
+        }
+      ],
+      "names": {
+        "ja": "",
+        "en": "Italo Disco"
+      }
     },
     {
       "id": "gmv9gkb6r",
@@ -2102,7 +3215,11 @@
       "bm": null,
       "bd": null,
       "bp": null,
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": ""
+      }
     },
     {
       "id": "gmv9gla9e",
@@ -2113,7 +3230,11 @@
       "bm": null,
       "bd": null,
       "bp": null,
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": ""
+      }
     },
     {
       "id": "gmv9gnorf",
@@ -2124,7 +3245,11 @@
       "bm": null,
       "bd": null,
       "bp": null,
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "Minimal Music"
+      }
     },
     {
       "id": "gmv9h4so1",
@@ -2135,7 +3260,11 @@
       "bm": null,
       "bd": null,
       "bp": null,
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "New age"
+      }
     },
     {
       "id": "gmv9hp3mg",
@@ -2146,7 +3275,11 @@
       "bm": null,
       "bd": null,
       "bp": null,
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "Euro Dance"
+      }
     },
     {
       "id": "gmv9hv8l4",
@@ -2157,18 +3290,26 @@
       "bm": null,
       "bd": null,
       "bp": null,
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "Bossanova"
+      }
     },
     {
       "id": "gmv9i7hnx",
       "name": "Hyperglitch",
       "born": 2002,
-      "desc": "# Hyperglitch\n\n**Hyperglitch**（ハイパーグリッチ）とは、[Glitch]、[IDM]、[実験音楽]等の流れを汲みつつも、それらとは一線を画す[電子音楽]の一ジャンルである。ここでの「ハイパー」は、単なる速度や音量の肥大を指すにあらず、「ハイパーテキスト」的な相互連関や深化を意味するものとされる。\n\n## 音楽的特徴\n\n従来のグリッチが偶然性や空間の余白を重んじるミニマリズム的傾向を帯びていたのに対し、Hyperglitchは完全なる制御と過剰さを求めるマキシマリズム的志向を根幹とする。\n\n* **情報密度と知覚への過負荷**\n* 冗長性を極限まで排し、緻密に構築された音響のグリッチを密に配置する。\n* 圧倒的な情報量によって聴取者の知覚に負荷を与える音響設計が顕著である。\n\n* **立体的かつ物理的な音像**\n* 従来の平面的なデジタル音とは異なり、金属のねじれや液体の沸騰、ゴムの弾性等を想起させる物理的テクスチャを備える。\n* 刻々と形状を変じつつ空間を飛び交うような立体的な音像が特徴である。\n\n\n\n\n\n## 歴史と展開\n\n2000年代初頭のAutechre『Gantz Graf』（2002年）等を萌芽とし、2010年代にはVaetxh『Libet Tones』（2012年）や、提唱者とも目されるWoulg（『Dragged』、2016年等）の活動を通じて様式の輪郭が形作られた。当初は高度な技術と膨大な制作コストゆえに敷居が高かったものの、2019年頃に「glitch dot cool」が設立され、制作手法やサンプルの共有・還元が進んだこと、さらに2020年よりWoulg主導のコンピレーション・シリーズ『Hyperglitch』が展開されたこと等により、シーンの形成と浸透が図られた。",
+      "desc": "# Hyperglitch\n\n**Hyperglitch**（ハイパーグリッチ）とは、[Glitch]、[IDM]、[Experimental Music]等の流れを汲みつつも、それらとは一線を画す[電子音楽]の一ジャンルである。ここでの「ハイパー」は、単なる速度や音量の肥大を指すにあらず、「ハイパーテキスト」的な相互連関や深化を意味するものとされる。\n\n## 音楽的特徴\n\n従来のグリッチが偶然性や空間の余白を重んじるミニマリズム的傾向を帯びていたのに対し、Hyperglitchは完全なる制御と過剰さを求めるマキシマリズム的志向を根幹とする。\n\n* **情報密度と知覚への過負荷**\n* 冗長性を極限まで排し、緻密に構築された音響のグリッチを密に配置する。\n* 圧倒的な情報量によって聴取者の知覚に負荷を与える音響設計が顕著である。\n\n* **立体的かつ物理的な音像**\n* 従来の平面的なデジタル音とは異なり、金属のねじれや液体の沸騰、ゴムの弾性等を想起させる物理的テクスチャを備える。\n* 刻々と形状を変じつつ空間を飛び交うような立体的な音像が特徴である。\n\n\n\n\n\n## 歴史と展開\n\n2000年代初頭のAutechre『Gantz Graf』（2002年）等を萌芽とし、2010年代にはVaetxh『Libet Tones』（2012年）や、提唱者とも目されるWoulg（『Dragged』、2016年等）の活動を通じて様式の輪郭が形作られた。当初は高度な技術と膨大な制作コストゆえに敷居が高かったものの、2019年頃に「glitch dot cool」が設立され、制作手法やサンプルの共有・還元が進んだこと、さらに2020年よりWoulg主導のコンピレーション・シリーズ『Hyperglitch』が展開されたこと等により、シーンの形成と浸透が図られた。",
       "weight": null,
       "bm": null,
       "bd": null,
       "bp": null,
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "Hyperglitch"
+      }
     },
     {
       "id": "gmv9iep3a",
@@ -2179,7 +3320,11 @@
       "bm": null,
       "bd": null,
       "bp": null,
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "Hi-Tech Fullon"
+      }
     },
     {
       "id": "gmv9ihfl2",
@@ -2190,7 +3335,11 @@
       "bm": null,
       "bd": null,
       "bp": null,
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "Hi-tech"
+      }
     },
     {
       "id": "gmv9iifha",
@@ -2201,7 +3350,11 @@
       "bm": null,
       "bd": null,
       "bp": null,
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "Minimal Techno"
+      }
     },
     {
       "id": "gmv9iketz",
@@ -2212,7 +3365,11 @@
       "bm": null,
       "bd": null,
       "bp": null,
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "Samba"
+      }
     },
     {
       "id": "gmv9ioazj",
@@ -2223,7 +3380,11 @@
       "bm": null,
       "bd": null,
       "bp": null,
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "Jazzy Hiphop"
+      }
     },
     {
       "id": "gmv9jgpks",
@@ -2234,7 +3395,11 @@
       "bm": null,
       "bd": null,
       "bp": null,
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "Funkot Jadul"
+      }
     },
     {
       "id": "gmv9jk8kb",
@@ -2245,7 +3410,11 @@
       "bm": null,
       "bd": null,
       "bp": "x2",
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "Glitch pop"
+      }
     },
     {
       "id": "gmv9jqi2s",
@@ -2256,7 +3425,11 @@
       "bm": null,
       "bd": null,
       "bp": null,
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "Proto-Trance"
+      }
     },
     {
       "id": "gmv9juir0",
@@ -2267,7 +3440,11 @@
       "bm": null,
       "bd": null,
       "bp": null,
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "Full On"
+      }
     },
     {
       "id": "gmv9jykez",
@@ -2278,7 +3455,16 @@
       "bm": null,
       "bd": null,
       "bp": null,
-      "aliases": []
+      "aliases": [
+        {
+          "text": "未来譜汲",
+          "lang": "kan"
+        }
+      ],
+      "names": {
+        "ja": "",
+        "en": "futureflip"
+      }
     },
     {
       "id": "gmv9jytzg",
@@ -2289,7 +3475,11 @@
       "bm": null,
       "bd": null,
       "bp": null,
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "FAVELA BASS"
+      }
     },
     {
       "id": "gmv9jz0nu",
@@ -2300,7 +3490,11 @@
       "bm": null,
       "bd": null,
       "bp": null,
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "HyperBotanica"
+      }
     },
     {
       "id": "gmv9kve29",
@@ -2311,7 +3505,11 @@
       "bm": null,
       "bd": null,
       "bp": null,
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "Large Ensemble"
+      }
     },
     {
       "id": "gmv9kxtxt",
@@ -2322,7 +3520,11 @@
       "bm": null,
       "bd": null,
       "bp": null,
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "Comtemporary Jazz"
+      }
     },
     {
       "id": "gmv9l6mzc",
@@ -2333,7 +3535,11 @@
       "bm": null,
       "bd": null,
       "bp": null,
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "Latin Music"
+      }
     },
     {
       "id": "gmv9lkxu7",
@@ -2344,7 +3550,16 @@
       "bm": null,
       "bd": null,
       "bp": null,
-      "aliases": []
+      "aliases": [
+        {
+          "text": "Nou",
+          "lang": "en"
+        }
+      ],
+      "names": {
+        "ja": "",
+        "en": ""
+      }
     },
     {
       "id": "gmv9m7ibq",
@@ -2355,18 +3570,31 @@
       "bm": null,
       "bd": null,
       "bp": null,
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "Progressive Electronics"
+      }
     },
     {
       "id": "gmv9mr3d2",
-      "name": "UK Dubstep",
+      "name": "英式響効歩打",
       "born": 2005,
       "desc": "",
       "weight": null,
       "bm": null,
       "bd": null,
       "bp": null,
-      "aliases": []
+      "aliases": [
+        {
+          "text": "UK Dubstep",
+          "lang": "en"
+        }
+      ],
+      "names": {
+        "ja": "",
+        "en": ""
+      }
     },
     {
       "id": "gmv9n5xd8",
@@ -2377,7 +3605,11 @@
       "bm": null,
       "bd": null,
       "bp": null,
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": ""
+      }
     },
     {
       "id": "gmv9ngsu2",
@@ -2388,7 +3620,11 @@
       "bm": null,
       "bd": null,
       "bp": null,
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": ""
+      }
     },
     {
       "id": "gmva80ayy",
@@ -2399,7 +3635,11 @@
       "bm": null,
       "bd": null,
       "bp": null,
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "Glitch Hop"
+      }
     },
     {
       "id": "gmva9rtqd",
@@ -2410,7 +3650,11 @@
       "bd": 21,
       "weight": 0,
       "bp": null,
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "Nintendo DS"
+      }
     },
     {
       "id": "gmvaac7ez",
@@ -2421,7 +3665,11 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "Electro Pop"
+      }
     },
     {
       "id": "gmvaajsov",
@@ -2432,7 +3680,11 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "Celtic Music"
+      }
     },
     {
       "id": "gmvaalyki",
@@ -2443,11 +3695,15 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "Electro Swing"
+      }
     },
     {
       "id": "gmvaaxgnt",
-      "name": "カンタータ",
+      "name": "Cantata",
       "born": 1589,
       "desc": "# カンタータ\n\n**カンタータ**（伊: cantata）とは、[バロック音楽]の時代を中心に発展した、器楽伴奏を伴う[声楽]作品の一形式である。教会においては説教の前後等に奏され、宗教的あるいは世俗的な文脈において多様な表現を展開した。\n\n## 構成要素および編成\n\nカンタータは声楽と器楽の複合によって成り立ち、その音楽的要素は多岐にわたる。\n\n* **声楽および歌唱形態**\n* **アリア**：オペラ的旋律を伴う独唱であり、複数の詩節に分かれた歌詞を通じて信徒の宗教的感情等を歌い上げる。\n\n\n* **レチタティーヴォ**：抑揚を付した朗唱であり、主として通奏低音のみを伴奏とし、合唱隊とアリア等を繋ぐ役割を担う。\n\n\n* **合唱隊**：ソプラノ、アルト、テノール、バスの四声部等を基本とし、作品によっては二群に分けて交互に歌唱する場合もある。教会において女性の歌唱が禁じられていた時代には、女性パートをボーイ・ソプラノやカストラート等が担った。\n\n\n\n\n* **器楽および伴奏形態**\n* **通奏低音（バッソ・コンティーヌオ）**：低音部の和音を演奏し続け、即興的に伴奏声部を展開する要素であり、鍵盤楽器を軸としつつリュートやチェロ、ファゴット等が加わることもある。\n\n\n* **コンチェルタンテ**：複数の楽器奏者が独奏的（ソリスト）に振る舞う手法であり、イタリア様式カンタータ等から導入され、アリアの対旋律等を奏する。\n\n\n* **オーケストラ**：楽曲の様式や表現内容、楽団の規模等に応じて編成が変化する。\n\n\n\n\n\n## 種類とバッハにおける展開\n\nカンタータには、教会礼拝等と結びつく「[宗教カンタータ]」と、それ以外の「[世俗カンタータ]」が存在する。\n\nなかでもヨハン・ゼバスティアン・バッハは、二百曲を超える宗教カンタータと三十曲ほどの世俗カンタータを手掛けた（現存するもののほかにも散逸した作品が少なくなく、実際にはその倍ほどに及ぶともされる）。バッハはイタリア様式カンタータにおけるコンチェルタンテ技法やオペラ的独唱、フランス様式カンタータ由来の舞踊リズム等を吸収し、さらにルター・コラールの音節的旋律や厳格な対位法を織り交ぜることで、一貫した芸術的構造へと昇華させた。",
       "weight": null,
@@ -2455,8 +3711,15 @@
       "bd": null,
       "bp": null,
       "aliases": [
-        "Cantata"
-      ]
+        {
+          "text": "カンタータ",
+          "lang": "ja"
+        }
+      ],
+      "names": {
+        "ja": "",
+        "en": "Cantata"
+      }
     },
     {
       "id": "gmvab1dfl",
@@ -2467,7 +3730,11 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "Downtempo"
+      }
     },
     {
       "id": "gmvacb6xq",
@@ -2478,7 +3745,11 @@
       "bm": null,
       "bd": null,
       "bp": null,
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "Hypnagogic Pop"
+      }
     },
     {
       "id": "gmvacw9ql",
@@ -2489,7 +3760,11 @@
       "bm": null,
       "bd": null,
       "bp": null,
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "Jerk"
+      }
     },
     {
       "id": "gmvad0gbn",
@@ -2500,7 +3775,11 @@
       "bm": null,
       "bd": null,
       "bp": "x3",
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "Hi-NRG/EuroBeat"
+      }
     },
     {
       "id": "gmvad30pv",
@@ -2511,7 +3790,11 @@
       "bm": null,
       "bd": null,
       "bp": "x3",
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "Euro Disco"
+      }
     },
     {
       "id": "gmvad5f9o",
@@ -2522,7 +3805,11 @@
       "bm": null,
       "bd": null,
       "bp": "x1",
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "Neo-Acoustic"
+      }
     },
     {
       "id": "gmvad8uo3",
@@ -2533,7 +3820,11 @@
       "bm": null,
       "bd": null,
       "bp": null,
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "K-pop"
+      }
     },
     {
       "id": "gmvardxee",
@@ -2544,7 +3835,11 @@
       "bm": null,
       "bd": null,
       "bp": "x4",
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "Drill'n'Bass"
+      }
     },
     {
       "id": "gmvas2i5f",
@@ -2555,7 +3850,11 @@
       "bm": null,
       "bd": null,
       "bp": "x3",
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "Future pop"
+      }
     },
     {
       "id": "gmvas6pqb",
@@ -2566,7 +3865,11 @@
       "bm": null,
       "bd": null,
       "bp": "x4",
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "Hardcore hiphop"
+      }
     },
     {
       "id": "gmvasnswc",
@@ -2577,7 +3880,11 @@
       "bm": null,
       "bd": null,
       "bp": null,
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "Electro Funk"
+      }
     },
     {
       "id": "gmvat1afm",
@@ -2588,18 +3895,16 @@
       "bm": null,
       "bd": null,
       "bp": "x",
-      "aliases": []
-    },
-    {
-      "id": "gmvat5ke9",
-      "name": "Colour Bass",
-      "born": 2010,
-      "desc": "",
-      "weight": null,
-      "bm": null,
-      "bd": null,
-      "bp": "x3",
-      "aliases": []
+      "aliases": [
+        {
+          "text": "レゲトン",
+          "lang": "ja"
+        }
+      ],
+      "names": {
+        "ja": "",
+        "en": "Reggaeton"
+      }
     },
     {
       "id": "gmwj8dzt7",
@@ -2610,7 +3915,16 @@
       "bm": null,
       "bd": null,
       "bp": "x1",
-      "aliases": []
+      "aliases": [
+        {
+          "text": "旋律響効歩打",
+          "lang": "kan"
+        }
+      ],
+      "names": {
+        "ja": "",
+        "en": "Melodic Dubstep"
+      }
     },
     {
       "id": "gmwjamwps",
@@ -2621,7 +3935,11 @@
       "bm": 3,
       "bd": null,
       "bp": null,
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "DTM"
+      }
     },
     {
       "id": "gmwjbvpqe",
@@ -2632,7 +3950,11 @@
       "bm": null,
       "bd": null,
       "bp": null,
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "Plunderphonics"
+      }
     },
     {
       "id": "gmwkc67fj",
@@ -2643,18 +3965,26 @@
       "bm": null,
       "bd": null,
       "bp": null,
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "Power Stomp"
+      }
     },
     {
       "id": "gmwkmt8g2",
       "name": "Bit Music",
       "born": null,
-      "desc": "",
+      "desc": "ここではメインの要素が矩形波など低bitで扱う音楽の総称として扱う。",
       "weight": null,
       "bm": null,
       "bd": null,
       "bp": null,
-      "aliases": []
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "Bit Music"
+      }
     },
     {
       "id": "gmwn2gbp7",
@@ -2665,21 +3995,35 @@
       "aliases": [],
       "bm": null,
       "bd": null,
-      "bp": null
+      "bp": null,
+      "names": {
+        "ja": "",
+        "en": ""
+      }
     },
     {
       "id": "gmwn3v3fb",
       "name": "オペラ",
       "born": 1597,
-      "desc": "# オペラ\n\n**オペラ**（伊: opera、歌劇）とは、音楽と詩、演劇等とが一体となり舞台上にて展開する総合芸術の一形態である。16世紀末から17世紀初頭にかけてのイタリアに端を発し、[バロック音楽]の隆盛とともに欧州各地へと広まり、時代や風土に応じて多様な様式を形作った。\n\n## 起源と初期の展開\n\nオペラは、古代ギリシャ悲劇の理想化を契機として、イタリア・フィレンツェの芸術家集団「カメラータ」等を中心に成立したとされる。当初はメディチ家等の宮廷における祝宴や催しとして上流階級に楽しまれ、1597年の創生説や1600年の『エウリディーチェ』、1607年の『オルフェオ』等を経て発展を遂げた。\n\n1637年にヴェネツィアにて商業的・公共的なサン・カッシアーノ劇場が開設されたことを転機とし、切符さえ購えば市民も観覧し得る大衆化の道が開かれた。また、カストラートの人気や喜劇・軽い演目等の登場も、劇場へと人びとを誘う一因となった。\n\n## 各国への波及と後世への影響\n\nオペラは欧州各地の宮廷や都市へと伝播し、それぞれの文化と結びつきながら変容を遂げた。\n\n* **フランス**：ルイ十四世の宮廷文化やバレエとの結びつきのもと、リュリやラモー等を輩出しつつ独自の[フランス・オペラ]を築いた。\n* **イギリスおよびドイツ**：イギリスにおいてはパーセルが『ディドとエネアス』等を残し、またドイツ出身のヘンデルがロンドンにて『リナルド』等を成功させ国際的名声を博した。さらに十八世紀末から十九世紀にかけては、ウェーバー（『魔弾の射手』等）によるドイツ語台本オペラの確立や、ベートーヴェン（『フィデリオ』）、[イタリア・オペラ]のロッシーニ、ドニゼッティ、ベルリーニ、ヴェルディ、プッチーニ等へと連なる系譜を生んだ。\n\n* **派生と大衆娯楽への展開**：十九世紀半ば以降、オペラをより庶民的・喜劇的に親しめるものとした「[オペレッタ]」がパリやウィーンを中心に流行し、英米の[サヴォイ・オペラ]や[アメリカン・オペレッタ]を経て、のちの[ミュージカル]へと繋がる流れも形作られた。また、日本においても近代化のなかで明治・大正期の「[浅草オペラ]」や[少女歌劇]・[レヴュー]等の文脈と交差し、多様な舞台芸能の展開に関わった。",
+      "desc": "# オペラ\n\n**オペラ**（伊: opera、歌劇）とは、音楽と詩、演劇等とが一体となり舞台上にて展開する総合芸術の一形態である。16世紀末から17世紀初頭にかけてのイタリアに端を発し、[バロック音楽]の隆盛とともに欧州各地へと広まり、時代や風土に応じて多様な様式を形作った。\n\n## 起源と初期の展開\n\nオペラは、[古代ギリシャ悲劇]の理想化を契機として、イタリア・フィレンツェの芸術家集団「カメラータ」等を中心に成立したとされる。当初はメディチ家等の宮廷における祝宴や催しとして上流階級に楽しまれ、1597年の創生説や1600年の『[エウリディーチェ](/work/L'Euridice)』、1607年の『オルフェオ』等を経て発展を遂げた。\n\n1637年にヴェネツィアにて商業的・公共的なサン・カッシアーノ劇場が開設されたことを転機とし、切符さえ購えば市民も観覧し得る大衆化の道が開かれた。また、カストラートの人気や喜劇・軽い演目等の登場も、劇場へと人びとを誘う一因となった。\n\n## 各国への波及と後世への影響\n\nオペラは欧州各地の宮廷や都市へと伝播し、それぞれの文化と結びつきながら変容を遂げた。\n\n* **フランス**：ルイ十四世の宮廷文化やバレエとの結びつきのもと、リュリやラモー等を輩出しつつ独自の[フランス・オペラ]を築いた。\n* **イギリスおよびドイツ**：イギリスにおいてはパーセルが『ディドとエネアス』等を残し、またドイツ出身のヘンデルがロンドンにて『リナルド』等を成功させ国際的名声を博した。さらに十八世紀末から十九世紀にかけては、ウェーバー（『魔弾の射手』等）によるドイツ語台本オペラの確立や、ベートーヴェン（『フィデリオ』）、[イタリア・オペラ]のロッシーニ、ドニゼッティ、ベルリーニ、ヴェルディ、プッチーニ等へと連なる系譜を生んだ。\n\n* **派生と大衆娯楽への展開**：十九世紀半ば以降、オペラをより庶民的・喜劇的に親しめるものとした「[オペレッタ]」がパリやウィーンを中心に流行し、英米の[サヴォイ・オペラ]や[アメリカン・オペレッタ]を経て、のちの[ミュージカル]へと繋がる流れも形作られた。また、日本においても近代化のなかで明治・大正期の「[浅草オペラ]」や[少女歌劇]・[レヴュー]等の文脈と交差し、多様な舞台芸能の展開に関わった。",
       "aliases": [
-        "Opera",
-        "歌劇"
+        {
+          "text": "Opera",
+          "lang": "en"
+        },
+        {
+          "text": "歌劇",
+          "lang": "kan"
+        }
       ],
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": null
+      "bp": null,
+      "names": {
+        "ja": "",
+        "en": ""
+      }
     },
     {
       "id": "gmwn6j0yu",
@@ -2690,7 +4034,11 @@
       "aliases": [],
       "bm": null,
       "bd": null,
-      "bp": null
+      "bp": null,
+      "names": {
+        "ja": "",
+        "en": "Trancecore"
+      }
     },
     {
       "id": "gmwn6w9ri",
@@ -2701,7 +4049,11 @@
       "aliases": [],
       "bm": null,
       "bd": null,
-      "bp": null
+      "bp": null,
+      "names": {
+        "ja": "",
+        "en": "Bleep"
+      }
     },
     {
       "id": "gmwn7l1f0",
@@ -2712,16 +4064,76 @@
       "aliases": [],
       "bm": null,
       "bd": null,
-      "bp": null
+      "bp": null,
+      "names": {
+        "ja": "",
+        "en": "Hardcore Rave"
+      }
     },
     {
       "id": "gmwnagpdw",
       "name": "Makina",
       "born": 2000,
-      "desc": "# 概要\n**マキナ**(**Mákina**)とは、スペイン発祥の[テクノ]・ミュージックのサブジャンルである。[UKハードコア]と同様に、[バウンシー・テクノ]や[ハード・トランス]の要素を取り入れており、[ユーロダンス]からの影響も存在する。また、テンポの範囲がBPM150から180となっている。\n\nDJのミックススタイルとして産声を上げたこのジャンルは、多様なジャンルと融合を重ね、現在の様なハードコアを主体としたレイブミュージックに成長した。音色や構成は[Oldskool Happy Hardcore]と近いものがあるが、[German Trance]から影響を受けた物が多く、哀愁を感じさせる旋律のトラックが大部分を占めている。\n\n代表的なDJ/アーティストは、Pastis&Buenri、Xavi BCN、DJ Ruboy、DJ Konik、Xavi Metralla、Frank Diaz、Jordi Roure、Gerard Requena、DJ Pildo、Ricardo F、DJ K-rlos、Skudero、Oscar Elemento など。 代表的なレーベルは、BIT MUSIC、Up Tempo、ADN Sound、NOX Records、Al-khemie Records など（Up Tempo、ADN Sound は既にレーベル活動を中止している）。日本では主に M-Project や DJ DEPATH がマキナの普及に努めている。\n\n# 歴史\n## 1990年代初頭: 興り\nスペインの[ダンス・ミュージック]は、1988年に[Acid House]の隆盛と共に発展した。マキナはその潮流から生まれ、1990年代初頭のスペインバレンシアが発祥となる。また、[バカラオ]([bakalao])と呼ばれる、バレンシアのナイトクラブで親しまれていた他ジャンルも由来の一つとされる\n\n## 1990年代中期: ブレイクスルーと成功\nジャンルが世に広まったのは、1991年にスペインのプロデューサー、チモ・バヨのシングル「Así me gusta a mí」がリリースされたことに起因する。この楽曲はヨーロッパ全土で聞かれ、それに伴いマキナ自体の認知にも貢献した。さらに、1995年から1997年にはさらにスペイン内での認知度を広げたスペイン圏内のシングルチャートでは多数の楽曲が1位を取ることとなり、特にスペインのマキナ・グループであるEX-3は、前述の1位を取った楽曲の内「Extres」と「Ex-P-Cial」の2曲を発表している。アメリカで最も認知されたマキナとされている楽曲はNewtonの「Streamline」であり、2006年のペプシコーラのテレビCMにも起用された。\n\n1990年代から現在に至るまで、ノース・イースト・イングランド やスコットランドのレイブシーンにおいて、マキナは定番ジャンルとして扱われている。著名な音楽スポット、特にナイトクラブThe New Monkeyの閉店に伴い、現在は縮小傾向かつスカウス・ハウスにその人気を譲ったものの、ニューカッスル・ユナイテッドFCやサンダーランドAFCが遠征試合を行う際にバス内で流すなど、文化的な遺産として強く根付いている。",
+      "desc": "# 概要\n**マキナ**(**Mákina**)とは、スペイン発祥の[テクノ]・ミュージックのサブジャンルである。[英式激核]と同様に、[バウンシー・テクノ]や[Hard Trance]の要素を取り入れており、[ユーロダンス]からの影響も存在する。また、テンポの範囲がBPM150から180となっている。\n\nDJのミックススタイルとして産声を上げたこのジャンルは、多様なジャンルと融合を重ね、現在の様なハードコアを主体としたレイブミュージックに成長した。音色や構成は[Oldskool Happy Hardcore]と近いものがあるが、[German Trance]から影響を受けた物が多く、哀愁を感じさせる旋律のトラックが大部分を占めている。\n\n代表的なDJ/アーティストは、Pastis&Buenri、Xavi BCN、DJ Ruboy、DJ Konik、Xavi Metralla、Frank Diaz、Jordi Roure、Gerard Requena、DJ Pildo、Ricardo F、DJ K-rlos、Skudero、Oscar Elemento など。 代表的なレーベルは、BIT MUSIC、Up Tempo、ADN Sound、NOX Records、Al-khemie Records など（Up Tempo、ADN Sound は既にレーベル活動を中止している）。日本では主に M-Project や DJ DEPATH がマキナの普及に努めている。\n\n# 歴史\n## 1990年代初頭: 興り\nスペインの[ダンス・ミュージック]は、1988年に[Acid House]の隆盛と共に発展した。マキナはその潮流から生まれ、1990年代初頭のスペインバレンシアが発祥となる。また、[バカラオ]([bakalao])と呼ばれる、バレンシアのナイトクラブで親しまれていた他ジャンルも由来の一つとされる\n\n## 1990年代中期: ブレイクスルーと成功\nジャンルが世に広まったのは、1991年にスペインのプロデューサー、チモ・バヨのシングル「Así me gusta a mí」がリリースされたことに起因する。この楽曲はヨーロッパ全土で聞かれ、それに伴いマキナ自体の認知にも貢献した。さらに、1995年から1997年にはさらにスペイン内での認知度を広げたスペイン圏内のシングルチャートでは多数の楽曲が1位を取ることとなり、特にスペインのマキナ・グループであるEX-3は、前述の1位を取った楽曲の内「Extres」と「Ex-P-Cial」の2曲を発表している。アメリカで最も認知されたマキナとされている楽曲はNewtonの「Streamline」であり、2006年のペプシコーラのテレビCMにも起用された。\n\n1990年代から現在に至るまで、ノース・イースト・イングランド やスコットランドのレイブシーンにおいて、マキナは定番ジャンルとして扱われている。著名な音楽スポット、特にナイトクラブThe New Monkeyの閉店に伴い、現在は縮小傾向かつスカウス・ハウスにその人気を譲ったものの、ニューカッスル・ユナイテッドFCやサンダーランドAFCが遠征試合を行う際にバス内で流すなど、文化的な遺産として強く根付いている。",
       "aliases": [
-        "Mákina"
-      ]
+        {
+          "text": "Mákina",
+          "lang": "en"
+        }
+      ],
+      "weight": null,
+      "bm": null,
+      "bd": null,
+      "bp": null,
+      "names": {
+        "ja": "",
+        "en": "Makina"
+      }
+    },
+    {
+      "id": "gmwncs61x",
+      "name": "Ealry Rave",
+      "born": 1990,
+      "desc": "",
+      "weight": null,
+      "aliases": [],
+      "bm": null,
+      "bd": null,
+      "bp": null,
+      "names": {
+        "ja": "",
+        "en": "Ealry Rave"
+      }
+    },
+    {
+      "id": "gmwnlmdms",
+      "name": "EDM Trap",
+      "born": null,
+      "desc": "",
+      "weight": null,
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "EDM Trap"
+      },
+      "bm": null,
+      "bd": null,
+      "bp": null
+    },
+    {
+      "id": "gmwnmfwp77ii",
+      "name": "Bouncy techno",
+      "born": 1990,
+      "desc": "",
+      "aliases": [],
+      "names": {
+        "ja": "",
+        "en": "Bouncy techno"
+      },
+      "weight": null,
+      "bm": null,
+      "bd": null,
+      "bp": "x"
     }
   ],
   "edges": [
@@ -3224,11 +4636,6 @@
       "t": "i",
       "a": "gmv9ii37b",
       "b": "gmv9ego1k"
-    },
-    {
-      "t": "h",
-      "a": "gmv9cr4je",
-      "b": "gmvap8snf"
     },
     {
       "t": "i",
@@ -5462,11 +6869,6 @@
     },
     {
       "t": "h",
-      "a": "gmv9bup7y",
-      "b": "gmv9bucf9"
-    },
-    {
-      "t": "h",
       "a": "gmv9bwled",
       "b": "gmv9by3y3"
     },
@@ -5931,11 +7333,6 @@
       "b": "gmv9jk8kb"
     },
     {
-      "t": "h",
-      "a": "gmv9dhp61",
-      "b": "gmvat5ke9"
-    },
-    {
       "t": "i",
       "a": "gmv9c2x3w",
       "b": "tbk016"
@@ -6169,6 +7566,66 @@
       "t": "i",
       "a": "gmv9hp3mg",
       "b": "gmwnagpdw"
+    },
+    {
+      "t": "h",
+      "a": "gmv9cxx9n",
+      "b": "gmwncs61x"
+    },
+    {
+      "t": "h",
+      "a": "gmv9dhp61",
+      "b": "gmvap8snf"
+    },
+    {
+      "t": "h",
+      "a": "gmwjbvpqe",
+      "b": "gmv9bucf9"
+    },
+    {
+      "t": "h",
+      "a": "gmwjbvpqe",
+      "b": "gmv9d28y0"
+    },
+    {
+      "t": "h",
+      "a": "tbk010",
+      "b": "gmwnlmdms"
+    },
+    {
+      "t": "i",
+      "a": "gmv9mkc5x",
+      "b": "gmwnlmdms"
+    },
+    {
+      "t": "i",
+      "a": "gmwnmfwp77ii",
+      "b": "gmwnagpdw"
+    },
+    {
+      "t": "i",
+      "a": "gmwnmfwp77ii",
+      "b": "gmwkc67fj"
+    },
+    {
+      "t": "i",
+      "a": "gmv9cxx9n",
+      "b": "gmwnmfwp77ii"
+    },
+    {
+      "t": "h",
+      "a": "tbk016",
+      "b": "gmwnmfwp77ii"
+    },
+    {
+      "t": "i",
+      "a": "gmv9d92gx",
+      "b": "gmwnmfwp77ii"
+    },
+    {
+      "t": "i",
+      "a": "gmv9dqd09",
+      "b": "gmwnmfwp77ii"
     }
   ],
   "majors": [
@@ -6191,7 +7648,7 @@
       ],
       "top": true,
       "subs": [],
-      "desc": ""
+      "desc": "# Hiphop\n\n**Hiphop**（ヒップホップ）は、1970年代のニューヨーク・ブロンクス地区にて誕生した音楽ジャンルおよび文化体系である。当初はブロック・パーティーにおけるDJやMC、ブレイクダンス、グラフィティといった実践と結びつきながら発展し、やがてレコード制作や多様なサブジャンルの分岐を経て、現代の音楽シーンにおける一大潮流へと成長した。\n\n## 主な特徴と表現手法\n### リズムとトラックメイキング\n* ソウルやファンク、ディスコなどの楽曲におけるドラムのブレイク部分を延長・再構築する「ブレイクビーツ」や、サンプリング、リズムマシンなどを基盤とする。\n* 時代や地域に応じて、太いドラムループを主体とするブーンバップ、TR-808の音色や高速なハイハット・重低音を特徴とする[Trap]など、多様なビートスタイルが形成された。\n### 声の表現と文化の広がり\n* MCによるラップや語りを中核としつつ、ジャズやソウル、ロック、エレクトロニック・ミュージックなど他ジャンルとの交差や、インターネット上の配信・共有文化とも結びつきながら変容を続けてきた。\n\n\n\n\n\n## 歴史的背景と展開\n\n1970年代のニューヨーク・ブロンクスにおける若者たちのコミュニティやブロック・パーティーを起点とし、オールドスクールからゴールデンエイジ、ニュースクールへと展開した。やがて東海岸のみならず西海岸や南部（サウス）からも独自のスタイルやサブジャンルが台頭し、さらには[Jazzy Hiphop]や[Lo-fi Hiphop]、[Phonk]など多角的な派生を生み出しつつ、現在に至るまで広範な影響力を有している。"
     },
     {
       "id": "mmv9fx8g4",
@@ -6227,7 +7684,7 @@
           ]
         }
       ],
-      "desc": "# Hardcore Techno\n\n**Hardcore Techno**（ハードコア・テクノ）は、1990年代初頭から発展した、速いテンポとエネルギッシュなビートを特徴とする[EDM]の一形態を総称する広範な音楽ジャンルである。多くは高速な4つ打ちのリズムを基調とし、極めて多様なサブジャンルや派生スタイルを内包している。\n\n## 主な特徴と大別\n\n* **リズムとサウンド**\n* 高いBPMと激しい推進力が特徴であり、そのサウンドの傾向によって大きく二つの系統に分類されることが多い。\n* **[Gabber]（ガバ）系**: バスドラムを過剰に歪ませ、キックの低音域そのものがベースラインの役割を担う重厚で攻撃的なサウンドを特徴とする。\n* **[Core]系**: バスドラムの過度な歪みを抑え、ベースパートが独立した楽器として存在するものや、曲調の明るさやノリの良さを追求した[Happy Hardcore]・[UK Hardcore]などの系統を含む。\n\n\n\n\n\n## 歴史的背景と展開\n\nヨーロッパ各地のクラブやレイヴシーンにおいて、テクノやアシッド・ハウスなどの高速化・先鋭化の過程で同時多発的に誕生した。以降、[Gabber]や[Breakbeat Hardcore]を源流としながら、超高速のキック連打を主体とする[Speedcore]や、日本独自の文脈と結びついた[J-core]・[ナードコア]など、多方面へと枝分かれし、現在に至るまでアンダーグラウンドおよびクラブミュージックの重要な一角を形成し続けている。"
+      "desc": "# Hardcore Techno\n\n**Hardcore Techno**（ハードコア・テクノ）は、1990年代初頭から発展した、速いテンポとエネルギッシュなビートを特徴とする[EDM]の一形態を総称する広範な音楽ジャンルである。多くは高速な4つ打ちのリズムを基調とし、極めて多様なサブジャンルや派生スタイルを内包している。\n\n## 主な特徴と大別\n\n### **リズムとサウンド**\n高いBPMと激しい推進力が特徴であり、そのサウンドの傾向によって大きく二つの系統に分類されることが多い。\n* **[Gabber]（ガバ）系**: バスドラムを過剰に歪ませ、キックの低音域そのものがベースラインの役割を担う重厚で攻撃的なサウンドを特徴とする。\n* **[Core]系**: バスドラムの過度な歪みを抑え、ベースパートが独立した楽器として存在するものや、曲調の明るさやノリの良さを追求した[Happy Hardcore]・[英式激核]などの系統を含む。\n\n## 歴史的背景と展開\n\nヨーロッパ各地のクラブやレイヴシーンにおいて、テクノやアシッド・ハウスなどの高速化・先鋭化の過程で同時多発的に誕生した。以降、[Gabber]や[Breakbeat Hardcore]を源流としながら、超高速のキック連打を主体とする[Speedcore]や、日本独自の文脈と結びついた[日本核]・[ナードコア]など、多方面へと枝分かれし、現在に至るまでアンダーグラウンドおよびクラブミュージックの重要な一角を形成し続けている。"
     },
     {
       "id": "mmv9g3pcv",
@@ -6654,6 +8111,20 @@
       ],
       "desc": "ダイアナ・ロスなどのR&Bや、スムース・ジャズなどがサンプリング\n内容的にも本来のR&Bやスムース・ジャズのイメージを残したままコラージュ",
       "audio": ""
+    },
+    {
+      "id": "wmwnl9ie6",
+      "title": "L'Euridice",
+      "artist": "ヤコポ・ペーリ",
+      "year": 1600,
+      "ym": 10,
+      "yd": 6,
+      "yp": null,
+      "genres": [
+        "gmwn3v3fb"
+      ],
+      "desc": "",
+      "audio": ""
     }
   ],
   "events": [
@@ -6750,6 +8221,80 @@
       "yp": null,
       "genres": [
         "gmv9dqd09"
+      ],
+      "desc": ""
+    },
+    {
+      "id": "emwncwgwl",
+      "title": "EDM大ブーム",
+      "year": 2010,
+      "ym": null,
+      "yd": null,
+      "yp": "x",
+      "genres": [
+        "gmv9cvi63",
+        "tbk010"
+      ],
+      "desc": ""
+    },
+    {
+      "id": "emwnjsquq",
+      "title": "ディスコの復讐",
+      "year": 1980,
+      "ym": null,
+      "yd": null,
+      "yp": "x",
+      "genres": [
+        "tbk017",
+        "gmv9dmg1t"
+      ],
+      "desc": ""
+    },
+    {
+      "id": "emwnjvott",
+      "title": "Disco Demolition Night",
+      "year": 1979,
+      "ym": 7,
+      "yd": 12,
+      "yp": null,
+      "genres": [
+        "gmv9cbias"
+      ],
+      "desc": ""
+    },
+    {
+      "id": "emwnkfle8",
+      "title": "nerdtronics開催",
+      "year": 2019,
+      "ym": 12,
+      "yd": 8,
+      "yp": null,
+      "genres": [
+        "gmv9bucf9"
+      ],
+      "desc": "[フライヤー](https://sabaco.jp/wp-content/uploads/2019/11/nerdtronics.png)\nhttps://sabaco.jp/e/7187/nerdtronics/"
+    },
+    {
+      "id": "emwnkhki2",
+      "title": "nerdtronics2開催",
+      "year": 2022,
+      "ym": 12,
+      "yd": 11,
+      "yp": null,
+      "genres": [
+        "gmv9bucf9"
+      ],
+      "desc": ""
+    },
+    {
+      "id": "emwnki935",
+      "title": "nerdtronics3開催",
+      "year": 2025,
+      "ym": 4,
+      "yd": 19,
+      "yp": null,
+      "genres": [
+        "gmv9bucf9"
       ],
       "desc": ""
     }

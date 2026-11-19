@@ -306,3 +306,7 @@
   background: var(--ink);
   color: var(--bg);
 }
+
+body.wiki-mode .tl-only {
+  display: none !important;
+}

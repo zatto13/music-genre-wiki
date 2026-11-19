@@ -140,16 +140,32 @@ document.addEventListener('click', ev => {
     return;
   }
 
-  if (mj) { selM = mj.dataset.major; sel = selW = selE = null; render(); return; }
-  if (wk) { selW = wk.dataset.work; sel = selM = selE = null; render(); return; }
-  if (evEl) { selE = evEl.dataset.event; sel = selM = selW = null; render(); return; }
-
+  if (mj) {
+    selM = mj.dataset.major;
+    sel = selW = selE = null;
+    render();
+    return;
+  }
+  if (wk) {
+    selW = wk.dataset.work;
+    sel = selM = selE = null;
+    render();
+    return;
+  }
+  if (evEl) {
+    selE = evEl.dataset.event;
+    sel = selM = selW = null;
+    render();
+    return;
+  }
   if (go) {
     const gid = go.dataset.go;
     if (db.majors.some(x => x.id === gid)) {
       selM = gid; sel = selW = selE = null;
     } else if ((db.events || []).some(x => x.id === gid)) {
       selE = gid; sel = selM = selW = null;
+    } else if ((db.works || []).some(x => x.id === gid)) {
+      selW = gid; sel = selM = selE = null;
     } else {
       sel = gid; selM = selW = selE = null;
     }
@@ -196,6 +212,32 @@ document.addEventListener('click', ev => {
       db.events = db.events.filter(x => x.id !== selE);
       db.edges = db.edges.filter(e => e.a !== selE && e.b !== selE);
       selE = null; save(); render();
+    }
+    return;
+  }
+
+  const newRelBtn = t.closest('[data-newrel-add]');
+  if (newRelBtn) {
+    const k = newRelBtn.dataset.newrelAdd;
+    const d = REL.find(r => r.k === k);
+    const g = gen(sel);
+    const inp = document.querySelector(`[data-newrel-name="${k}"]`);
+    const title = inp ? inp.value.trim() : '';
+    if (g && d && title) {
+      const newId = 'g' + Date.now().toString(36) + Math.random().toString(36).slice(2, 5);
+      const newGenre = {
+        id: newId,
+        name: title,
+        born: g.born != null ? g.born : null,
+        desc: '',
+        aliases: [],
+        names: typeof isLatinText === 'function' && isLatinText(title) ? { ja: '', en: title } : { ja: title, en: '' }
+      };
+      db.genres.push(newGenre);
+      db.edges.push(d.me === 'b' ? { t: d.t, a: newId, b: g.id } : { t: d.t, a: g.id, b: newId });
+      if (typeof normalize === 'function') normalize();
+      save();
+      render();
     }
     return;
   }
@@ -282,8 +324,13 @@ document.addEventListener('input', ev => {
 });
 
 document.addEventListener('keydown', ev => {
-  if (ev.target && ev.target.id === 'f-alias-input' && ev.key === 'Enter' && !ev.isComposing) {
+  if (!ev.target || ev.isComposing || ev.key !== 'Enter') return;
+  if (ev.target.id === 'f-alias-input') {
     ev.preventDefault();
     $('#f-alias-add')?.click();
+  } else if (ev.target.dataset && ev.target.dataset.newrelName) {
+    ev.preventDefault();
+    const k = ev.target.dataset.newrelName;
+    document.querySelector(`[data-newrel-add="${k}"]`)?.click();
   }
 });

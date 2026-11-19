@@ -198,12 +198,31 @@ function drawEventPanel(ev) {
 }
 
 function drawPanel() {
-  const m = db.majors.find(x => x.id === selM);
-  const wk = db.works.find(x => x.id === selW);
-  const ev = (db.events || []).find(x => x.id === selE);
-  if (wk) return drawWorkPanel(wk);
-  if (ev) return drawEventPanel(ev);
-  if (m) return drawMajorPanel(m);
+  if (selW) {
+    const wk = db.works.find(x => x.id === selW);
+    if (wk) return drawWorkPanel(wk);
+    selW = null;
+  }
+  if (selE) {
+    const ev = (db.events || []).find(x => x.id === selE);
+    if (ev) return drawEventPanel(ev);
+    selE = null;
+  }
+  if (sel) {
+    const g = gen(sel);
+    if (g) {
+      selM = null;
+      // ここから下は既存の「ジャンル g の編集パネル描画」へそのまま進む
+    } else {
+      sel = null;
+    }
+  }
+  if (selM) {
+    const m = db.majors.find(x => x.id === selM);
+    if (m) return drawMajorPanel(m);
+    selM = null;
+  }
+  // 以下、未選択時のリスト表示...
   const g = gen(sel);
   if (!g) {
     let h = '<p class="hint">年表上の要素、または下のリストから選んで編集できます。</p>';
@@ -318,6 +337,28 @@ function drawPanel() {
       <input id="f-alias-input" placeholder="別名を入力（カンマ区切り可）" style="flex:1;min-width:0;padding:5px 8px;background:var(--bg);border:1px solid var(--line);border-radius:6px;font-size:13px">
       <button id="f-alias-add" type="button">追加</button>
     </div><p class="hint">先頭に現在のメイン名称を表示しています。↑ で別名をメイン名に昇格できます。</p></div>`;
+
+  REL.forEach(d => {
+    const other = d.me === 'a' ? 'b' : 'a', rows = relList(g, d), used = new Set(rows.map(r => r.e[other]));
+    h += `<div class="rel ${d.t}"><h4><b></b>${d.label}</h4><div class="chips">` +
+      rows.map(r => `<span class="chip"><span data-go="${r.e[other]}">${esc(getEntity(r.e[other]).name || getEntity(r.e[other]).title)}</span><button data-rm="${r.i}" title="関係を外す" aria-label="関係を外す">×</button></span>`).join('') +
+      `</div><select data-add="${d.k}"><option value="">追加する要素を選ぶ</option>` +
+      `<optgroup label="ジャンル">` +
+      [...db.genres].sort(byBorn).filter(o => o.id !== g.id && !used.has(o.id)).map(o => `<option value="${o.id}">${esc(o.name)}(${yr(o)})</option>`).join('') +
+      `</optgroup><optgroup label="大ジャンル">` +
+      db.majors.filter(o => o.id !== g.id && !used.has(o.id)).map(o => `<option value="${o.id}">${esc(o.name)}</option>`).join('') +
+      `</optgroup></select>`;
+
+    // ジャンル選択中（gが存在）かつ、下位派生(h)・影響先(i)・源流(s)で新規作成フォームを表示
+    if (g && (d.t === 'h' || d.t === 'i' || d.t === 's')) {
+      h += `<div style="display:flex;gap:6px;margin-top:6px;align-items:center">
+        <input data-newrel-name="${d.k}" placeholder="新しい${d.label}ジャンル名..." style="flex:1;min-width:0;padding:5px 8px;background:var(--bg);border:1px solid var(--line);border-radius:6px;font-size:13px">
+        <button type="button" data-newrel-add="${d.k}">作成して追加</button>
+      </div>`;
+    }
+
+    h += `</div>`;
+  });
 
   const mem = majorMap()[g.id] || [];
   h += `<div class="rel"><h4>大ジャンル</h4><div class="chips">` +

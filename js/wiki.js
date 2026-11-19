@@ -20,6 +20,21 @@ function parseInline(raw) {
   s = s.replace(/!\[([^\]]*)\]\((https?:\/\/[^\s)]+\vert{}[^\s)]+)\)/g,
     (_, alt, url) => `<img class="wiki-img" src="${url}" alt="${alt}" loading="lazy">`);
 
+  // [表示名](/work/作品名) 形式の内部作品リンク（単体 [表示名] より先に変換）
+  s = s.replace(/\[([^\]]+)\]\((\/work\/[^)]+)\)/g, (_, label, workPath) => {
+    const cleanLabel = label.trim();
+    const rawQuery = workPath.replace(/^\/work\//i, '').trim();
+    const wQuery = rawQuery.toLowerCase();
+    const targetW = db.works.find(w =>
+      String(w.id || '').toLowerCase() === wQuery ||
+      String(w.title || '').toLowerCase() === wQuery
+    );
+    if (targetW) {
+      return `<a class="wlink" data-work="${targetW.id}" title="作品: ${esc(targetW.title || '(無題)')}">${cleanLabel}</a>`;
+    }
+    return `<a class="wlink missing" data-missing="${esc(rawQuery)}" title="未登録の作品: ${esc(rawQuery)}">${cleanLabel}</a>`;
+  });
+
   s = s.replace(/\[([^\]]+)\]\((https?:\/\/[^\s)]+)\)/g,
     (_, label, url) => `<a class="wlink ext" href="${url}" target="_blank" rel="noopener noreferrer">${label} ↗</a>`);
 
@@ -328,6 +343,7 @@ function drawWiki() {
   const m = db.majors.find(x => x.id === selM);
   if (m && !wikiQuery) {
     const mem = [...membersOf(m)].map(gen).filter(Boolean).sort(byBorn);
+    const memIds = new Set(mem.map(g => g.id));
     const upM = relList(m, REL[0]).map(r => getEntity(r.e.a)).filter(Boolean);
     const downM = relList(m, REL[1]).map(r => getEntity(r.e.b)).filter(Boolean);
     const srcM = relList(m, REL[2]).map(r => getEntity(r.e.a)).filter(Boolean);
@@ -335,6 +351,10 @@ function drawWiki() {
     const chipLinks = arr => arr.length
       ? arr.map(x => `<a class="wlink" data-go="${x.id}">${esc(entityLabel(x))}</a>`).join('、')
       : '<span class="hint">—</span>';
+
+    const majEvents = (db.events || [])
+      .filter(ev => (ev.genres || []).some(gid => memIds.has(gid)))
+      .sort((a, b) => (tOf(a) ?? 1e9) - (tOf(b) ?? 1e9) || String(a.title || '').localeCompare(String(b.title || '')));
 
     box.innerHTML = `<div class="wiki-wrap">${navHtml}
       <article class="wiki-article">
@@ -359,6 +379,19 @@ function drawWiki() {
             </div>
           </div>` : ''}
 
+          ${majEvents.length ? `<div class="wiki-section"><h3>⚡ 関連する出来事 (${majEvents.length})</h3>
+            <div class="wiki-cards">
+              ${majEvents.map(ev => {
+                const linkedGs = (ev.genres || []).filter(gid => memIds.has(gid)).map(gen).filter(Boolean);
+                return `<div class="wiki-card" data-event="${ev.id}">
+                  <h4><span>${esc(ev.title || '(無題)')}</span><span class="hint">${dlabel(ev)}</span></h4>
+                  ${ev.desc ? `<p>${esc(ev.desc)}</p>` : ''}
+                  ${linkedGs.length ? `<div style="margin-top:8px;font-size:11.5px;color:var(--sub)" onclick="event.stopPropagation()">関連: ${linkedGs.map(g => `<a class="wlink" data-go="${g.id}">${esc(wGLabel(g).name)}</a>`).join('、')}</div>` : ''}
+                </div>`;
+              }).join('')}
+            </div>
+          </div>` : ''}
+
           <div class="wiki-section"><h3>所属ジャンル一覧（全 ${mem.length} 件・年代順）</h3>
             <div class="wiki-cards">
               ${mem.map(x => `<div class="wiki-card" data-go="${x.id}">
@@ -375,6 +408,7 @@ function drawWiki() {
             <tr><th>種別</th><td>大ジャンル</td></tr>
             <tr><th>起点</th><td>${m.roots.map(gen).filter(Boolean).map(x => `<a class="wlink" data-go="${x.id}">${esc(wGLabel(x).name)}</a>`).join('、') || '<span class="hint">なし</span>'}</td></tr>
             <tr><th>所属数</th><td>${mem.length} ジャンル</td></tr>
+            <tr><th>出来事数</th><td>${majEvents.length} 件</td></tr>
             <tr><th>上位系統</th><td>${chipLinks(upM)}</td></tr>
             <tr><th>下位派生</th><td>${chipLinks(downM)}</td></tr>
             <tr><th>音楽的源流</th><td>${chipLinks(srcM)}</td></tr>
@@ -519,5 +553,12 @@ function setMode(m) {
   if ($('#wiki')) $('#wiki').hidden = !isWiki;
   if ($('#modeTl')) $('#modeTl').classList.toggle('active', !isWiki);
   if ($('#modeWiki')) $('#modeWiki').classList.toggle('active', isWiki);
+  document.body.classList.toggle('wiki-mode', isWiki);
   render();
 }
+
+function syncModeClass() {
+  const isWiki = (typeof viewOpt !== 'undefined' && viewOpt.mode === 'wiki');
+  document.body.classList.toggle('wiki-mode', isWiki);
+}
+syncModeClass();
