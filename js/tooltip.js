@@ -15,10 +15,13 @@ document.addEventListener('mouseover', e => {
   if (node) {
     const g = gen(node.dataset.go);
     if (g) {
-      const aliasHtml = (g.aliases && g.aliases.length)
-        ? `<div style="margin-top:2px;font-size:11.5px;color:var(--hier)">別名: ${esc(g.aliases.join(' / '))}</div>`
+      const { name, aliases } = typeof resolveGenreLabel === 'function'
+        ? resolveGenreLabel(g)
+        : { name: String(g.name ?? ''), aliases: g.aliases || [] };
+      const aliasHtml = aliases.length
+        ? `<div style="margin-top:2px;font-size:11.5px;color:var(--hier)">別名: ${esc(aliases.join(' / '))}</div>`
         : '';
-      tipEl.innerHTML = `<strong>${esc(g.name)}</strong>${aliasHtml}${g.desc ? '<div style="margin-top:4px;font-size:12px;color:var(--sub)">' + esc(g.desc) + '</div>' : ''}`;
+      tipEl.innerHTML = `<strong>${esc(name)}</strong>${aliasHtml}${g.desc ? '<div style="margin-top:4px;font-size:12px;color:var(--sub)">' + esc(g.desc) + '</div>' : ''}`;
       tipEl.classList.add('show');
     }
   } else if (work) {

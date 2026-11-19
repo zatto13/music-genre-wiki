@@ -1,7 +1,46 @@
+const isLatinText = s =>
+  typeof s === 'string' &&
+  /^[A-Za-z0-9\s\-+&/.#:!?'(),]+$/.test(s.trim()) &&
+  /[A-Za-z]/.test(s);
+
+const ALIAS_LANGS = ['ja', 'en', 'kan'];
+const ALIAS_LANG_LABEL = { ja: '日', en: '英', kan: '漢' };
+
+const detectAliasLang = txt => {
+  const s = String(txt ?? '').trim();
+  if (!s) return 'en';
+  if (/[\u3040-\u309f\u30a0-\u30ff]/.test(s)) return 'ja';
+  if (/[\u4e00-\u9faf]/.test(s) && !/[A-Za-z]/.test(s)) return 'kan';
+  return 'en';
+};
+
+function normalizeAliases(raw) {
+  if (!Array.isArray(raw)) return [];
+  const seen = new Set();
+  const out = [];
+  for (const item of raw) {
+    let text = '';
+    let lang = '';
+    if (item && typeof item === 'object') {
+      text = String(item.text ?? '').trim();
+      lang = ALIAS_LANGS.includes(item.lang) ? item.lang : '';
+    } else {
+      text = String(item ?? '').trim();
+    }
+    if (!text) continue;
+    const key = text.toLowerCase();
+    if (seen.has(key)) continue;
+    seen.add(key);
+    out.push({ text, lang: lang || detectAliasLang(text) });
+  }
+  return out;
+}
+
 function normalize() {
   if (!Array.isArray(db.majors)) db.majors = [];
   if (!Array.isArray(db.works)) db.works = [];
   if (!Array.isArray(db.events)) db.events = [];
+
   db.works.forEach(w => {
     w.title = String(w.title ?? '');
     w.artist = String(w.artist ?? '');
@@ -10,6 +49,7 @@ function normalize() {
     w.year = isNaN(y) ? null : y;
     if (!Array.isArray(w.genres)) w.genres = [];
   });
+
   db.events.forEach(ev => {
     ev.title = String(ev.title ?? '');
     ev.desc = String(ev.desc ?? '');
@@ -17,15 +57,33 @@ function normalize() {
     ev.year = isNaN(y) ? null : y;
     if (!Array.isArray(ev.genres)) ev.genres = [];
   });
+
   db.genres.forEach(g => {
     const n = parseInt(g.born, 10);
     g.born = isNaN(n) ? null : n;
     const w = parseFloat(g.weight);
     g.weight = isNaN(w) ? null : w;
     g.name = String(g.name ?? '');
-    if (!Array.isArray(g.aliases)) g.aliases = [];
-    g.aliases = [...new Set(g.aliases.map(a => String(a ?? '').trim()).filter(Boolean))];
+
+    g.aliases = normalizeAliases(g.aliases);
+
+    // 言語ごとのスロット (ja / en) の正規化
+    const rawNames = (g.names && typeof g.names === 'object') ? g.names : {};
+    const ja = String(rawNames.ja ?? '').trim();
+    let en = String(rawNames.en ?? '').trim();
+
+    // enスロットが未設定で、元のg.nameが英語表記ならenスロットに補完する
+    if (!en && isLatinText(g.name)) {
+      en = g.name.trim();
+    }
+
+    g.names = {
+      ...rawNames,
+      ja,
+      en
+    };
   });
+
   const normD = (o, m, d, p) => {
     const v = (k, lo, hi) => {
       const n = parseInt(o[k], 10);
@@ -38,6 +96,7 @@ function normalize() {
   db.genres.forEach(g => normD(g, 'bm', 'bd', 'bp'));
   db.works.forEach(w => normD(w, 'ym', 'yd', 'yp'));
   db.events.forEach(ev => normD(ev, 'ym', 'yd', 'yp'));
+
   db.majors.forEach(m => {
     if (!/^#[0-9a-f]{6}$/i.test(m.color)) m.color = '#888888';
     m.desc = String(m.desc ?? '');
@@ -50,6 +109,54 @@ function normalize() {
       sb.desc = String(sb.desc ?? '');
     });
   });
+}
+
+// 現在の言語モードに応じた「主表示名」と「別名リスト」を返す
+// ルール: 指定言語スロット -> 英語(en)スロット -> 既存 g.name の順でフォールバック
+function resolveGenreLabel(g, langMode = (typeof viewOpt !== 'undefined' && viewOpt.lang) || 'en') {
+  if (!g) return { name: '', aliases: [] };
+
+  const baseName = String(g.name ?? '').trim();
+  const names = (g.names && typeof g.names === 'object') ? g.names : {};
+  const ja = String(names.ja ?? '').trim();
+  const en = String(names.en ?? '').trim();
+  const aliasObjs = normalizeAliases(g.aliases);
+
+  const enAlias = aliasObjs.find(a => a.lang === 'en')?.text || '';
+  const jaAlias = aliasObjs.find(a => a.lang === 'ja')?.text || '';
+  const kanAlias = aliasObjs.find(a => a.lang === 'kan')?.text || '';
+
+  let primary = '';
+  if (langMode === 'ja') {
+    primary = ja || jaAlias || en || enAlias || baseName;
+  } else if (langMode === 'en') {
+    primary = en || enAlias || (isLatinText(baseName) ? baseName : '') || baseName || ja || jaAlias;
+  } else if (langMode === 'kan') {
+    primary = String(names.kan ?? '').trim() || kanAlias || en || enAlias || baseName || ja;
+  } else {
+    primary = String(names[langMode] ?? '').trim() || en || baseName || ja;
+  }
+  if (!primary) primary = '(無名)';
+
+  // 別名候補を { text, lang } 形式で集約（主表示と同一のものは除外）
+  const pool = [];
+  const pushAlias = (text, lang) => {
+    const t = String(text ?? '').trim();
+    if (!t || t.toLowerCase() === primary.toLowerCase()) return;
+    if (pool.some(x => x.text.toLowerCase() === t.toLowerCase())) return;
+    pool.push({ text: t, lang: lang || detectAliasLang(t) });
+  };
+
+  // 1. 既存の別名オブジェクトを優先保持
+  aliasObjs.forEach(a => pushAlias(a.text, a.lang));
+
+  // 2. スロットや元の name も漏れなく別名候補へ入れる
+  if (en) pushAlias(en, 'en');
+  if (ja) pushAlias(ja, 'ja');
+  if (names.kan) pushAlias(names.kan, 'kan');
+  if (baseName) pushAlias(baseName, detectAliasLang(baseName));
+
+  return { name: primary, aliases: pool };
 }
 
 function getConnected(startIds) {

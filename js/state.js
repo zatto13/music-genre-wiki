@@ -35,7 +35,8 @@ let viewOpt = {
     prune: true,
     majorSort: 'auto',
     bandOrder: 'center',
-    zoom: 8
+    zoom: 8,
+    lang: 'en', // 'auto' | 'ja' | 'en'
 };
 
 try { Object.assign(viewOpt, JSON.parse(localStorage.getItem('genre-wiki.view')) || {}); } catch(e) {}

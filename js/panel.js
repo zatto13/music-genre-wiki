@@ -111,7 +111,8 @@ function enhanceSelects() {
 
 function drawMajorPanel(m) {
   const mem = [...membersOf(m)].map(gen).sort(byBorn), roots = m.roots.map(gen).filter(Boolean);
-  const mIdx = db.majors.findIndex(x => x.id === m.id);
+  const mIdx = db.majors.findIndex(x => x.id === m.id); 
+  
   let h = (viewOpt.release && viewOpt.released.includes(m.id) ? '<p class="hint" style="color:#c0392b">一時解除中です。年表には反映されていません。</p>' : '') + 
   `<div style="display:flex;gap:6px;align-items:center;margin-bottom:10px;">
      <span style="font-size:13px;color:var(--sub)">リスト順序:</span>
@@ -121,6 +122,7 @@ function drawMajorPanel(m) {
    </div>
   <label>大ジャンル名<input id="f-mname" value="${esc(m.name)}"></label>
   <label>色<input id="f-mcolor" type="color" value="${m.color}" style="height:34px;padding:2px"></label>
+  <label>説明<textarea id="f-mdesc" placeholder="大ジャンルの概要や位置づけ...">${esc(m.desc || '')}</textarea></label>
   <p class="hint" style="margin-top:-4px">年表では、現れた順に 中央 → 上 → 下 → さらに上 … の帯に並びます。複数の大ジャンルに属するジャンルは、最も新しい大ジャンルの帯に置かれます。</p>
   <div class="rel"><h4>起点のジャンル</h4><div class="chips">` +
     roots.map(g => `<span class="chip"><span data-go="${g.id}">${esc(g.name)}</span><button data-rmroot="${m.id}:${g.id}" title="起点から外す" aria-label="起点から外す">×</button></span>`).join('') +
@@ -280,23 +282,42 @@ function drawPanel() {
     return;
   }
   let h = `<label>名前<input id="f-name" value="${esc(g.name)}"></label>
-  ${dateFieldsHtml(g, '誕生', ['f-born', 'f-bm', 'f-bd', 'f-bp'])}
-  <label>重要度(0〜100。小さいほど年表で小さく、下限未満は非表示)<input id="f-weight" type="number" min="0" max="100" value="${g.weight ?? 100}"></label>
-  ${(g.weight ?? 100) < viewOpt.minWeight ? '<p class="hint" style="margin-top:-4px">現在の下限では非表示ですが、選択中なので表示しています。</p>' : ''}
-  <label>説明<textarea id="f-desc">${esc(g.desc || '')}</textarea></label>`;
-  REL.forEach(d => {
-    const other = d.me === 'a' ? 'b' : 'a', rows = relList(g, d), used = new Set(rows.map(r => r.e[other]));
-    h += `<div class="rel ${d.t}"><h4><b></b>${d.label}</h4><div class="chips">` +
-      rows.map(r => `<span class="chip"><span data-go="${r.e[other]}">${esc(getEntity(r.e[other]).name || getEntity(r.e[other]).title)}</span><button data-rm="${r.i}" title="関係を外す" aria-label="関係を外す">×</button></span>`).join('') +
-      `</div><select data-add="${d.k}"><option value="">追加するジャンルを選ぶ</option>` +
-      [...db.genres].sort(byBorn).filter(o => o.id !== g.id && !used.has(o.id))
-        .map(o => `<option value="${o.id}">${esc(o.name)}(${yr(o)})</option>`).join('') + `</select></div>`;
-  });
 
-  const aliases = g.aliases || [];
+  ${dateFieldsHtml(g, '誕生', ['f-born', 'f-bm', 'f-bd', 'f-bp'])}
+  
+  <label>重要度(0〜100。小さいほど年表で小さく、下限未満は非表示)<input id="f-weight" type="number" min="0" max="100" value="${g.weight ?? 100}"></label>
+  
+  ${(g.weight ?? 100) < viewOpt.minWeight ? '<p class="hint" style="margin-top:-4px">現在の下限では非表示ですが、選択中なので表示しています。</p>' : ''}
+  
+  <label>説明<textarea id="f-desc">${esc(g.desc || '')}</textarea></label>`;
+
+  const aliases = normalizeAliases(g.aliases);
+  const curLang = detectAliasLang(g.name);
+  const curTag = (typeof ALIAS_LANG_LABEL === 'object' && ALIAS_LANG_LABEL[curLang]) ? ALIAS_LANG_LABEL[curLang] : curLang;
   h += `<div class="rel"><h4>別名・表記揺れ</h4><div class="chips">` +
-    aliases.map((a, idx) => `<span class="chip"><span>${esc(a)}</span><button data-promotealias="${idx}" title="この別名をメインの名前にする" aria-label="メインにする" style="color:var(--hier);font-weight:bold">↑</button><button data-rmalias="${idx}" title="別名を削除" aria-label="別名を削除">×</button></span>`).join('') +
-    `</div><div style="display:flex;gap:6px"><input id="f-alias-input" placeholder="例: IDM, 略称（カンマ区切り可）" style="flex:1;min-width:0;padding:5px 8px;background:var(--bg);border:1px solid var(--line);border-radius:6px;font-size:13px"><button id="f-alias-add" type="button">追加</button></div><p class="hint">↑ を押すと別名をメイン名に昇格し、元の名前を別名へ移します。</p></div>`;
+    (g.name ? `<span class="chip" style="border-color:var(--hier);background:rgba(128,128,128,0.08);padding-right:10px" title="現在のメイン名称"><span><strong>${esc(g.name)}</strong> <b style="font-size:10px;color:var(--hier);font-weight:700">[メイン / ${esc(curTag)}]</b></span></span>` : '') +
+    aliases.map((a, idx) => {
+      const lTag = (typeof ALIAS_LANG_LABEL === 'object' && ALIAS_LANG_LABEL[a.lang]) ? ALIAS_LANG_LABEL[a.lang] : a.lang;
+      return `<span class="chip">
+        <span>${esc(a.text)} <b style="font-size:10px;color:var(--sub);font-weight:600">[${esc(lTag)}]</b></span>
+        <select data-aliaslang="${idx}" title="言語を変更" aria-label="別名の言語" style="width:auto;margin:0;padding:1px 4px;font-size:11px;border-radius:6px">
+          <option value="ja"${a.lang === 'ja' ? ' selected' : ''}>日</option>
+          <option value="en"${a.lang === 'en' ? ' selected' : ''}>英</option>
+          <option value="kan"${a.lang === 'kan' ? ' selected' : ''}>漢</option>
+        </select>
+        <button data-promotealias="${idx}" title="この別名をメインの名前にする" aria-label="メインにする" style="color:var(--hier);font-weight:bold">↑</button>
+        <button data-rmalias="${idx}" title="別名を削除" aria-label="別名を削除">×</button>
+      </span>`;
+    }).join('') +
+    `</div><div style="display:flex;gap:6px;align-items:center">
+      <select id="f-alias-lang" style="width:auto;margin:0;padding:5px 6px;background:var(--bg);border:1px solid var(--line);border-radius:6px;font-size:13px">
+        <option value="en">英(en)</option>
+        <option value="ja">日(ja)</option>
+        <option value="kan">漢(kan)</option>
+      </select>
+      <input id="f-alias-input" placeholder="別名を入力（カンマ区切り可）" style="flex:1;min-width:0;padding:5px 8px;background:var(--bg);border:1px solid var(--line);border-radius:6px;font-size:13px">
+      <button id="f-alias-add" type="button">追加</button>
+    </div><p class="hint">先頭に現在のメイン名称を表示しています。↑ で別名をメイン名に昇格できます。</p></div>`;
 
   const mem = majorMap()[g.id] || [];
   h += `<div class="rel"><h4>大ジャンル</h4><div class="chips">` +

@@ -8,17 +8,19 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": null
+      "bp": null,
+      "aliases": []
     },
     {
       "id": "gmv9cc68b",
       "name": "雅楽",
       "born": 800,
-      "desc": "古代日本の貴族社会に成立した声楽・舞楽・器楽の総称であり、1200年以上の歴史を持つ日本の古典音楽である。主に宮廷や寺院、神社で演奏され、現在も伝承され続けている。",
+      "desc": "文語調を以て、ウィキペディアの項目に記すが如き雅楽の解説をここに綴る。\n\n---\n\n# 雅楽\n\n**雅楽**（ががく）とは、古代日本において貴族社会のなかに成立した、[声楽]・[舞楽]・[器楽]の総称である。日本古来の歌舞である「[国風歌舞]（くにぶりのうたまい）」をはじめ、大陸や朝鮮半島等から伝来した外来の楽舞、そしてそれらが日本化される過程で生まれた新種目によって構成される。世界に現存する最古のオーケストラとも称され、一千二百年以上の歴史を有する我が国の伝統的古典音楽である。\n\n## 概説と歴史\n\n奈良時代から平安時代にかけて、雅楽は宮廷のみならず、寺院や神社における法会や神事においても盛んに演奏された。平安時代に入ると、遣唐使の廃止などを背景に日本独自の様式への整流が進み、仁明天皇自らが作曲を行うなど創作活動の頂点を迎えた。平安、京都、奈良、大阪の専門の演奏家（楽家）の手によって一千年以上にわたり途絶えることなく継承され、今日においては宮内庁式部職楽部や民間の演奏団体へとその技芸が受け継がれている。\n\n外国においては王朝の消滅等に伴いこうした伝統的宮廷音楽の多くが断絶を余儀なくされたなか、日本においては為政者が交代しつつも天皇制が存続し続けたことにより、儀式音楽として奇跡的な保存を見た。\n\n## 種目および編成\n\n雅楽はその構成によっていくつかの種目に大別される。\n\n* **[管絃]（かんげん）**\n* 舞を伴わない器楽の合奏形態であり、日本独自の室内楽としての性格を持つ。\n* 主な使用楽器として、龍笛・篳篥・笙の管楽器、楽箏・楽琵琶の弦楽器、および鉦鼓・太鼓・鞨鼓などの多様な打楽器が用いられ、「三管両絃三鼓」の編成を基本とする。\n\n\n* **[舞楽]（ぶがく）**\n* 舞を伴う楽舞であり、中国やインド、林邑（南ベトナム）などから伝来した「[唐楽]（左方）」と、朝鮮半島や中国北東方面から伝来した「[高麗楽]（右方）」に大別される。\n\n\n* **[国風歌舞]（くにぶりのうたまい）**\n* 神道系および皇室系の神事において奏される、日本固有の古来からの歌舞である。\n\n\n* **[謡物]（うたいもの）**\n* 平安貴族の間に流行した歌唱楽曲群であり、催馬楽や朗詠などがこれに該当する。",
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": "x2"
+      "bp": "x2",
+      "aliases": []
     },
     {
       "id": "gmv9hk6z4",
@@ -28,17 +30,19 @@
       "weight": 50,
       "bm": null,
       "bd": null,
-      "bp": "x"
+      "bp": "x",
+      "aliases": []
     },
     {
       "id": "gmv9lc5o0",
       "name": "管絃",
       "born": 900,
-      "desc": "",
+      "desc": "**管絃**（かんげん）は、日本固有の宮廷音楽である[雅楽]において、舞をともなわない器楽合奏、およびそれを鑑賞する芸術形態を指す。複数の楽器による室内楽的な合奏形態であり、近代ヨーロッパにおける「オーケストラ」と同じ性格を持つことから、「世界最古のオーケストラ」とも称されている。\n\n## 主な特徴と編成\n\n### **楽器編成**\n* 「三管両絃三鼓」を基本構成とする。\n* **管楽器**: 竜笛、篳篥、笙\n* **弦楽器**: 箏、琵琶\n* **打楽器**: 鉦鼓、太鼓、鞨鼓（うち鞨鼓はコンサートマスターの役割を担う）\n\n\n### **歴史的背景**\n* 飛鳥時代から平安時代にかけて大陸や周辺国から流入した楽舞が、平安初期から中期にかけての楽制改革を経て日本化される中で体系化された。\n\n\n* 西洋クラシック音楽の時代よりも千年近く昔の日本にすでに存在していた点に大きな特徴がある。\n* 当初は舞をともなう舞楽の一部であったが、次第に舞を伴わない純粋な器楽演奏として独立・発展し、貴族たちの教養や御遊に欠かせないものとなっていった。",
       "weight": 50,
       "bm": null,
       "bd": null,
-      "bp": "x"
+      "bp": "x",
+      "aliases": []
     },
     {
       "id": "gmv9ldizk",
@@ -48,7 +52,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": "x"
+      "bp": "x",
+      "aliases": []
     },
     {
       "id": "gmv9lf5ap",
@@ -58,7 +63,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": "x"
+      "bp": "x",
+      "aliases": []
     },
     {
       "id": "gmv9lg4kf",
@@ -68,7 +74,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": null
+      "bp": null,
+      "aliases": []
     },
     {
       "id": "gmv9lidb4",
@@ -78,27 +85,33 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": null
+      "bp": null,
+      "aliases": []
     },
     {
       "id": "tbk007",
-      "name": "Classic Music",
+      "name": "西洋芸術音楽",
       "born": 1597,
       "desc": "",
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": null
+      "bp": null,
+      "aliases": [
+        "クラシック音楽",
+        "Classic Music"
+      ]
     },
     {
       "id": "gmv9dbjdu",
       "name": "バロック音楽",
       "born": 1597,
-      "desc": "16世紀後半から1750年頃までの約150年間を指し、オペラや器楽アンサンブル、オーケストラの誕生が特徴。和声を重視し、音楽理論の基礎が確立された時代。",
+      "desc": "# バロック音楽\n\n**バロック音楽**とは、概ね16世紀後半から1750年頃のバロック時代（なかでも17世紀から1750年頃の約150年間、[オペラ]の誕生よりヨハン・ゼバスティアン・バッハの死去に至るまで）を中心として展開した[クラシック音楽]の様式および時代区分である。欧州各地の絶対王政や宮廷社会、あるいは教会等の場において華麗かつ劇的な表現を伴い発達した。\n\n## 音楽的特徴と楽器の発展\n\n[器楽]の発展と歩調を合わせるように和声を重んじる潮流が生じ、メジャー・マイナーの別や和音の概念、さらには十二平均律等、後世の音楽理論の骨格となる基礎的ルールが確立された。また、和声構造や対位法の進行、旋律の装飾を変化させつつ主題を展開する手法や、即興演奏の重要性も際立つ。\n\n* **形態と様式の創出**\n* [オペラ]（[歌劇]）や[器楽アンサンブル]、[オーケストラ]の原型等が誕生し、鍵盤楽器を中心とする組曲・トッカータ・プレリュード・フーガ等の諸形式や、[合奏協奏曲]・[独奏協奏曲]等の様式が形作られた。\n\n* **楽器の隆盛と革新**\n* アマティやストラディヴァーリ、ガルネリ等に代表されるヴァイオリン製作や、ジルバーマンらのオルガン製作が栄え、バロックフルートやオーボエ、ファゴット、さらにはイタリアにおけるギターの普及と和音表記法の開発等が見られた。\n\n\n* 1700年頃にはバルトロメオ・クリストフォリにより、強弱表現を可能とする初期のピアノ（フォルテピアノ）が創製された。\n\n\n\n\n\n## 地域的展開と主要人物\n\nバロック音楽は各国・各都市の政治的・文化的背景を色濃く反映しつつ独自の様相を呈した。\n\n* **イタリア**：[オペラ]や[協奏曲]の揺籃の地として隆盛を誇り、コレッリ、トレッリ、ヴィヴァルディ（『四季』等）、アレッサンドロ・スカルラッティ等が活躍した。\n* **フランス**：ルイ十四世下の絶対王政とヴェルサイユ宮殿を中心とした宮廷文化のなか、[バレエ]や[オペラ]、祝祭の音楽が栄え、リュリやクープラン、和声論を著したラモー等が名を馳せた。\n* **ドイツ・イギリス**：ドイツにおいてはポリフォニックな書法や[教会音楽]を極めたバッハが頂点を築き、1750年のその死去をもって時代の一区切りとされた。また、ドイツ出身のヘンデルは国際的に活躍し、のちにイギリスへ帰化した。なお、十八世紀前半のバロック後期は美術や建築等におけるロココの気運とも重なりつつ、音楽史においてはバロック音楽の円熟期として広く知られる。",
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": null
+      "bp": null,
+      "aliases": []
     },
     {
       "id": "gmv9lmtip",
@@ -108,7 +121,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": null
+      "bp": null,
+      "aliases": []
     },
     {
       "id": "gmv9dd3ci",
@@ -118,7 +132,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": null
+      "bp": null,
+      "aliases": []
     },
     {
       "id": "gmv9gcxqm",
@@ -128,7 +143,10 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": "x"
+      "bp": "x",
+      "aliases": [
+        "ブルース"
+      ]
     },
     {
       "id": "gmv9jxgfv",
@@ -138,7 +156,10 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": "x2"
+      "bp": "x2",
+      "aliases": [
+        "ラグタイム"
+      ]
     },
     {
       "id": "gmv9jh6c3",
@@ -148,7 +169,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": "x2"
+      "bp": "x2",
+      "aliases": []
     },
     {
       "id": "gmv9k6cpv",
@@ -158,7 +180,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": "x2"
+      "bp": "x2",
+      "aliases": []
     },
     {
       "id": "tbk021",
@@ -168,7 +191,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": null
+      "bp": null,
+      "aliases": []
     },
     {
       "id": "gmv9id0fj",
@@ -178,7 +202,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": null
+      "bp": null,
+      "aliases": []
     },
     {
       "id": "gmv9k7nv6",
@@ -188,7 +213,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": "x"
+      "bp": "x",
+      "aliases": []
     },
     {
       "id": "gmv9kelcz",
@@ -198,7 +224,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": "x"
+      "bp": "x",
+      "aliases": []
     },
     {
       "id": "gmv9ifkxi",
@@ -208,7 +235,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": "x"
+      "bp": "x",
+      "aliases": []
     },
     {
       "id": "gmv9n3umc",
@@ -218,7 +246,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": null
+      "bp": null,
+      "aliases": []
     },
     {
       "id": "gmvabt85b",
@@ -228,7 +257,8 @@
       "weight": 50,
       "bm": null,
       "bd": null,
-      "bp": "x"
+      "bp": "x",
+      "aliases": []
     },
     {
       "id": "gmv9kj2nu",
@@ -238,7 +268,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": "x4"
+      "bp": "x4",
+      "aliases": []
     },
     {
       "id": "gmv9kkkqy",
@@ -248,7 +279,8 @@
       "weight": 90,
       "bm": null,
       "bd": null,
-      "bp": "x"
+      "bp": "x",
+      "aliases": []
     },
     {
       "id": "gmv9khjca",
@@ -258,7 +290,8 @@
       "weight": 90,
       "bm": null,
       "bd": null,
-      "bp": "x3"
+      "bp": "x3",
+      "aliases": []
     },
     {
       "id": "gmv9ghx0r",
@@ -268,7 +301,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": null
+      "bp": null,
+      "aliases": []
     },
     {
       "id": "gmv9kl3ll",
@@ -278,7 +312,8 @@
       "weight": 90,
       "bm": null,
       "bd": null,
-      "bp": "x4"
+      "bp": "x4",
+      "aliases": []
     },
     {
       "id": "gmvabjb6n",
@@ -288,7 +323,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": "x4"
+      "bp": "x4",
+      "aliases": []
     },
     {
       "id": "gmv9g9tvv",
@@ -298,7 +334,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": "x4"
+      "bp": "x4",
+      "aliases": []
     },
     {
       "id": "gmv9gyxxu",
@@ -308,7 +345,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": null
+      "bp": null,
+      "aliases": []
     },
     {
       "id": "gmv9eckdj",
@@ -318,7 +356,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": null
+      "bp": null,
+      "aliases": []
     },
     {
       "id": "gmv9komm9",
@@ -328,7 +367,8 @@
       "weight": 80,
       "bm": null,
       "bd": null,
-      "bp": "x"
+      "bp": "x",
+      "aliases": []
     },
     {
       "id": "gmv9km95e",
@@ -338,7 +378,8 @@
       "weight": 90,
       "bm": null,
       "bd": null,
-      "bp": "x"
+      "bp": "x",
+      "aliases": []
     },
     {
       "id": "tbk026",
@@ -348,7 +389,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": null
+      "bp": null,
+      "aliases": []
     },
     {
       "id": "gmv9kn8sx",
@@ -358,7 +400,8 @@
       "weight": 90,
       "bm": null,
       "bd": null,
-      "bp": "x3"
+      "bp": "x3",
+      "aliases": []
     },
     {
       "id": "gmv9kruui",
@@ -368,7 +411,8 @@
       "weight": 90,
       "bm": null,
       "bd": null,
-      "bp": "x3"
+      "bp": "x3",
+      "aliases": []
     },
     {
       "id": "gmv9ii37b",
@@ -378,7 +422,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": "x4"
+      "bp": "x4",
+      "aliases": []
     },
     {
       "id": "gmv9kske2",
@@ -388,7 +433,8 @@
       "weight": 90,
       "bm": null,
       "bd": null,
-      "bp": null
+      "bp": null,
+      "aliases": []
     },
     {
       "id": "gmvacqf32",
@@ -398,7 +444,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": "x2"
+      "bp": "x2",
+      "aliases": []
     },
     {
       "id": "gmv9nend8",
@@ -408,7 +455,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": null
+      "bp": null,
+      "aliases": []
     },
     {
       "id": "gmvaaegrv",
@@ -418,7 +466,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": "x3"
+      "bp": "x3",
+      "aliases": []
     },
     {
       "id": "gmvasagkr",
@@ -428,7 +477,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": "x4"
+      "bp": "x4",
+      "aliases": []
     },
     {
       "id": "tbk027",
@@ -438,7 +488,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": null
+      "bp": null,
+      "aliases": []
     },
     {
       "id": "gmv9jklwz",
@@ -448,7 +499,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": "x4"
+      "bp": "x4",
+      "aliases": []
     },
     {
       "id": "gmv9gvn96",
@@ -458,7 +510,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": "x4"
+      "bp": "x4",
+      "aliases": []
     },
     {
       "id": "gmv9fo7v1",
@@ -468,7 +521,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": null
+      "bp": null,
+      "aliases": []
     },
     {
       "id": "gmv9cfxyl",
@@ -478,17 +532,19 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": "x5"
+      "bp": "x5",
+      "aliases": []
     },
     {
       "id": "gmv9bwled",
       "name": "Chiptune",
       "born": 1970,
-      "desc": "コンピュータ音楽の黎明期において厳しい制約のある音源チップのみで作られた音楽のスタイルを志向した音楽ジャンル。",
+      "desc": "# Chiptune\n**Chiptune**（チップチューン）は、コンピュータ音楽の黎明期における、制限された音源チップやレトロなハードウェアを用いて制作された音楽スタイルを志向した音楽ジャンルである。一般にはファミコンやゲームボーイなどのレトロPC・レトロゲーム機で用いられた音色や制作環境を起点とし、現代においては「ピコピコ音」を伴うレトロフューチャーな電子音楽全般の総称としても親しまれている。\n\n## 主な特徴\n\n### **表現と手法**\n* 同時発音数や使える波形、メモリ容量などの厳しいハードウェア的制約の中で豊かな響きを表現する「制限音楽」の側面を持つ。\n\n\n* 矩形波や三角波といったピュアな波形や、トラッカーと呼ばれる縦方向のステップ入力型ソフトを用いて構築されることが多い。\n\n### **文化的背景**\n* ドット絵やピクセルアート、レトロゲームへのリスペクトを内包した「8bitカルチャー」の重要な一翼を担っており、音楽イベントとアート、ファッションなどが融合したコミュニティを形成している。",
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": "x"
+      "bp": "x",
+      "aliases": []
     },
     {
       "id": "tbk023",
@@ -498,7 +554,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": null
+      "bp": null,
+      "aliases": []
     },
     {
       "id": "gmv9kz0fk",
@@ -508,7 +565,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": "x"
+      "bp": "x",
+      "aliases": []
     },
     {
       "id": "tbk036",
@@ -518,7 +576,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": null
+      "bp": null,
+      "aliases": []
     },
     {
       "id": "gmvaagzxe",
@@ -528,7 +587,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": "x2"
+      "bp": "x2",
+      "aliases": []
     },
     {
       "id": "gmv9cf1pw",
@@ -538,7 +598,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": "x"
+      "bp": "x",
+      "aliases": []
     },
     {
       "id": "gmv9cbias",
@@ -548,7 +609,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": null
+      "bp": null,
+      "aliases": []
     },
     {
       "id": "gmvacsxdg",
@@ -558,7 +620,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": "x3"
+      "bp": "x3",
+      "aliases": []
     },
     {
       "id": "gmv9i3ou7",
@@ -568,7 +631,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": "x4"
+      "bp": "x4",
+      "aliases": []
     },
     {
       "id": "gmv9dny20",
@@ -578,7 +642,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": "x"
+      "bp": "x",
+      "aliases": []
     },
     {
       "id": "gmvarxqoj",
@@ -588,7 +653,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": null
+      "bp": null,
+      "aliases": []
     },
     {
       "id": "gmv9dx4qn",
@@ -598,7 +664,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": null
+      "bp": null,
+      "aliases": []
     },
     {
       "id": "gmv9ego1k",
@@ -608,7 +675,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": null
+      "bp": null,
+      "aliases": []
     },
     {
       "id": "gmv9ebxj3",
@@ -618,7 +686,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": null
+      "bp": null,
+      "aliases": []
     },
     {
       "id": "gmv9kwdt4",
@@ -628,7 +697,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": "x"
+      "bp": "x",
+      "aliases": []
     },
     {
       "id": "gmv9ku8u2",
@@ -638,7 +708,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": "x"
+      "bp": "x",
+      "aliases": []
     },
     {
       "id": "tbk038",
@@ -648,7 +719,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": null
+      "bp": null,
+      "aliases": []
     },
     {
       "id": "gmv9d8rah",
@@ -658,7 +730,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": null
+      "bp": null,
+      "aliases": []
     },
     {
       "id": "tbk011",
@@ -668,7 +741,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": null
+      "bp": null,
+      "aliases": []
     },
     {
       "id": "gmv9cazvg",
@@ -678,7 +752,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": null
+      "bp": null,
+      "aliases": []
     },
     {
       "id": "tbk010",
@@ -688,7 +763,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": null
+      "bp": null,
+      "aliases": []
     },
     {
       "id": "tbk017",
@@ -698,7 +774,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": null
+      "bp": null,
+      "aliases": []
     },
     {
       "id": "tbk003",
@@ -708,7 +785,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": null
+      "bp": null,
+      "aliases": []
     },
     {
       "id": "gmv9h1rsq",
@@ -718,7 +796,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": null
+      "bp": null,
+      "aliases": []
     },
     {
       "id": "gmv9dou4f",
@@ -728,7 +807,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": null
+      "bp": null,
+      "aliases": []
     },
     {
       "id": "gmv9dmg1t",
@@ -738,7 +818,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": "x"
+      "bp": "x",
+      "aliases": []
     },
     {
       "id": "tbk015",
@@ -748,7 +829,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": null
+      "bp": null,
+      "aliases": []
     },
     {
       "id": "gmvaqm0ls",
@@ -758,7 +840,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": "x3"
+      "bp": "x3",
+      "aliases": []
     },
     {
       "id": "gmv9df34q",
@@ -768,7 +851,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": "x3"
+      "bp": "x3",
+      "aliases": []
     },
     {
       "id": "gmv9c2x3w",
@@ -778,7 +862,10 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": null
+      "bp": null,
+      "aliases": [
+        "テクノ"
+      ]
     },
     {
       "id": "tbk024",
@@ -788,7 +875,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": null
+      "bp": null,
+      "aliases": []
     },
     {
       "id": "gmv9d92gx",
@@ -798,7 +886,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": null
+      "bp": null,
+      "aliases": []
     },
     {
       "id": "gmvadlkx6",
@@ -808,7 +897,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": "x4"
+      "bp": "x4",
+      "aliases": []
     },
     {
       "id": "gmv9hfhnk",
@@ -818,7 +908,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": "x4"
+      "bp": "x4",
+      "aliases": []
     },
     {
       "id": "gmvapydbu",
@@ -828,7 +919,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": "x4"
+      "bp": "x4",
+      "aliases": []
     },
     {
       "id": "gmv9d8vqi",
@@ -838,7 +930,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": null
+      "bp": null,
+      "aliases": []
     },
     {
       "id": "gmv9imzlc",
@@ -848,17 +941,19 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": null
+      "bp": null,
+      "aliases": []
     },
     {
       "id": "tbk035",
       "name": "Trance",
       "born": 1988,
-      "desc": "機械的な4つ打ちのビートと急速なマイナー・アルペジオが特徴で、緊張感を高めながらトランス状態を喚起する音楽ジャンル。130～150 BPMの速いテンポで、陶酔的で催眠的な状態を生み出す。",
+      "desc": "# Trance\n\n**Trance**（トランス）は、[EDM]に属する主要な電子音楽のサブジャンルの一つである。機械的な4つ打ちのビートを基調とし、急速なマイナー・アルペジオが重なり合って展開し続けながら緊張感を高めていく構造を特徴とする。その全体像がリスナーを「トランス状態（陶酔的で催眠的な状態）」に誘うことからその名が付けられている。\n\n## 主な特徴とサウンド\n\n* **リズムとテンポ**\n* 130〜150BPMの速いテンポを特徴とし、[TR-909]マシンによるドラムサウンドなどがしばしば関連付けられる。\n\n\n\n\n* **構成と音楽性**\n* 疾走感のあるテンポと、うねるようなシンセサイザーのフレーズの反復によって、ダンスフロアにいる人々の脳内に幻覚や催眠のような感覚を喚起する。\n\n\n\n\n\n## 歴史的背景と源流\n\n* **起源とルーツ**\n* 正確な起源は定かではないが、エレクトロニック・ボディ・ミュージック（[EBM]、特にニュー・ビート）や[Techno]、[Acid House]などを源流として発展した。\n\n\n* また、[Electro Disco]や[Progressive Electronics]などもインスピレーション源として挙げられている。\n\n\n\n\n* **周辺ジャンルとの関係**\n* [Electro House]などのジャンルとは、お互いに影響を受けながら発達してきた経緯を持つ。",
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": null
+      "bp": null,
+      "aliases": []
     },
     {
       "id": "tbk002",
@@ -868,7 +963,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": null
+      "bp": null,
+      "aliases": []
     },
     {
       "id": "gmv9cnfaz",
@@ -878,7 +974,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": "x5"
+      "bp": "x5",
+      "aliases": []
     },
     {
       "id": "tbk016",
@@ -888,7 +985,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": null
+      "bp": null,
+      "aliases": []
     },
     {
       "id": "gmv9clhff",
@@ -898,7 +996,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": null
+      "bp": null,
+      "aliases": []
     },
     {
       "id": "tbk006",
@@ -908,7 +1007,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": null
+      "bp": null,
+      "aliases": []
     },
     {
       "id": "gmv9cwfaq",
@@ -918,7 +1018,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": null
+      "bp": null,
+      "aliases": []
     },
     {
       "id": "gmv9cxx9n",
@@ -928,17 +1029,19 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": "x"
+      "bp": "x",
+      "aliases": []
     },
     {
       "id": "gmv9dqd09",
-      "name": "Happy Hardcore",
-      "born": 1990,
+      "name": "Oldskool Happy Hardcore",
+      "born": 1993,
       "desc": "",
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": "x"
+      "bp": "y",
+      "aliases": []
     },
     {
       "id": "gmv9e0yz7",
@@ -948,7 +1051,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": "x"
+      "bp": "x",
+      "aliases": []
     },
     {
       "id": "gmv9fndyt",
@@ -958,7 +1062,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": "x"
+      "bp": "x",
+      "aliases": []
     },
     {
       "id": "gmv9c6hcs",
@@ -968,7 +1073,10 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": "x"
+      "bp": "x",
+      "aliases": [
+        "ナードコア"
+      ]
     },
     {
       "id": "gmv9e2bfj",
@@ -978,7 +1086,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": null
+      "bp": null,
+      "aliases": []
     },
     {
       "id": "tbk037",
@@ -988,7 +1097,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": null
+      "bp": null,
+      "aliases": []
     },
     {
       "id": "tbk005",
@@ -998,7 +1108,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": null
+      "bp": null,
+      "aliases": []
     },
     {
       "id": "gmv9m0ki6",
@@ -1008,7 +1119,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": null
+      "bp": null,
+      "aliases": []
     },
     {
       "id": "gmv9mkc5x",
@@ -1018,7 +1130,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": null
+      "bp": null,
+      "aliases": []
     },
     {
       "id": "gmv9hzpz2",
@@ -1028,7 +1141,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": "x2"
+      "bp": "x2",
+      "aliases": []
     },
     {
       "id": "gmvawh3gx",
@@ -1038,7 +1152,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": null
+      "bp": null,
+      "aliases": []
     },
     {
       "id": "gmv9jnizw",
@@ -1048,7 +1163,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": "x2"
+      "bp": "x2",
+      "aliases": []
     },
     {
       "id": "gmv9i5xb3",
@@ -1058,7 +1174,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": "x2"
+      "bp": "x2",
+      "aliases": []
     },
     {
       "id": "gmvadltfv",
@@ -1068,7 +1185,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": "x2"
+      "bp": "x2",
+      "aliases": []
     },
     {
       "id": "tbk018",
@@ -1078,7 +1196,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": null
+      "bp": null,
+      "aliases": []
     },
     {
       "id": "gmv9kx2oh",
@@ -1088,7 +1207,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": "x2"
+      "bp": "x2",
+      "aliases": []
     },
     {
       "id": "gmv9m05mm",
@@ -1098,7 +1218,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": "x2"
+      "bp": "x2",
+      "aliases": []
     },
     {
       "id": "gmv9jxmys",
@@ -1108,7 +1229,8 @@
       "weight": 50,
       "bm": null,
       "bd": null,
-      "bp": "x2"
+      "bp": "x2",
+      "aliases": []
     },
     {
       "id": "tbk033",
@@ -1118,7 +1240,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": "x2"
+      "bp": "x2",
+      "aliases": []
     },
     {
       "id": "gmv9iasvk",
@@ -1128,7 +1251,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": null
+      "bp": null,
+      "aliases": []
     },
     {
       "id": "tbk001",
@@ -1138,7 +1262,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": null
+      "bp": null,
+      "aliases": []
     },
     {
       "id": "gmv9cjprw",
@@ -1148,7 +1273,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": null
+      "bp": null,
+      "aliases": []
     },
     {
       "id": "gmv9i9don",
@@ -1158,7 +1284,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": null
+      "bp": null,
+      "aliases": []
     },
     {
       "id": "gmv9d3r55",
@@ -1168,7 +1295,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": "x3"
+      "bp": "x3",
+      "aliases": []
     },
     {
       "id": "gmvav1jn0",
@@ -1178,7 +1306,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": "x3"
+      "bp": "x3",
+      "aliases": []
     },
     {
       "id": "gmv9m30ue",
@@ -1188,7 +1317,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": "x1"
+      "bp": "x1",
+      "aliases": []
     },
     {
       "id": "gmv9hrm35",
@@ -1198,7 +1328,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": "x3"
+      "bp": "x3",
+      "aliases": []
     },
     {
       "id": "gmvaapm0p",
@@ -1208,7 +1339,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": "x"
+      "bp": "x",
+      "aliases": []
     },
     {
       "id": "tbk028",
@@ -1218,7 +1350,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": null
+      "bp": null,
+      "aliases": []
     },
     {
       "id": "gmv9n9lf9",
@@ -1228,7 +1361,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": null
+      "bp": null,
+      "aliases": []
     },
     {
       "id": "tbk013",
@@ -1238,7 +1372,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": null
+      "bp": null,
+      "aliases": []
     },
     {
       "id": "gmvadkdle",
@@ -1248,7 +1383,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": "x4"
+      "bp": "x4",
+      "aliases": []
     },
     {
       "id": "gmv9hwfm0",
@@ -1258,7 +1394,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": "x4"
+      "bp": "x4",
+      "aliases": []
     },
     {
       "id": "gmvarizol",
@@ -1268,7 +1405,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": "x4"
+      "bp": "x4",
+      "aliases": []
     },
     {
       "id": "gmvat842x",
@@ -1278,7 +1416,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": "x4"
+      "bp": "x4",
+      "aliases": []
     },
     {
       "id": "gmv9fpgv8",
@@ -1288,7 +1427,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": null
+      "bp": null,
+      "aliases": []
     },
     {
       "id": "gmv9csp8a",
@@ -1298,7 +1438,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": null
+      "bp": null,
+      "aliases": []
     },
     {
       "id": "tbk012",
@@ -1308,7 +1449,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": null
+      "bp": null,
+      "aliases": []
     },
     {
       "id": "gmvaro2kc",
@@ -1318,7 +1460,8 @@
       "weight": 50,
       "bm": null,
       "bd": null,
-      "bp": "x4"
+      "bp": "x4",
+      "aliases": []
     },
     {
       "id": "tbk004",
@@ -1328,17 +1471,19 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": null
+      "bp": null,
+      "aliases": []
     },
     {
       "id": "gmv9fjwq6",
       "name": "Funkot",
       "born": 1999,
-      "desc": "",
+      "desc": "# Funkot\n\n**Funkot**（ファンコット）は、インドネシアのジャカルタ（コタ地区）のディスコを発祥とする、高速なダンスミュージックの呼称である。元々はハウスやトランス、ヒップホップなどの要素を取り入れた「高速ハウス」として発展し、現代では独自の進化を遂げている。\n\n## 主な特徴とサウンドデザイン\n\n* **リズムとビート**\n* 特徴的な「Funky Beat（ファンキービート）」と呼ばれるドラムパターン（裏打ちのカウベルを含む）や、エレキベースのような音色のベースライン（リズム: `|b|-b|-b|bb|`）を基調とする。\n\n\n* テンポは時代とともに高速化の一途をたどり、現在では180BPM前後、あるいはそれ以上のスピードで演奏されることが多い。\n\n\n\n\n* **制作手法**\n* ハウス、トランス、ヒップホップなどからの多彩な声ネタやフレーズのサンプリングが多用される。\n\n\n* 多くの楽曲がブートレグのリミックス（リミックススタイル）として制作されている点も大きな特徴である。",
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": null
+      "bp": null,
+      "aliases": []
     },
     {
       "id": "gmv9hiit5",
@@ -1348,7 +1493,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": null
+      "bp": null,
+      "aliases": []
     },
     {
       "id": "gmv9cuwte",
@@ -1358,7 +1504,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": null
+      "bp": null,
+      "aliases": []
     },
     {
       "id": "gmv9cr4je",
@@ -1368,17 +1515,19 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": null
+      "bp": null,
+      "aliases": []
     },
     {
       "id": "gmv9cvi63",
       "name": "Electro House",
       "born": 2000,
-      "desc": "",
+      "desc": "# Electro House\n\n**Electro House**（エレクトロ・ハウス）は、ハウス音楽の主要なサブジャンルの一つであり、[EDM]シーンを代表するスタイルとして広く知られている。2000年代初頭にベニー・ベナッシの「サティスファクション」などをきっかけに人気に火がつき、その後ヨーロッパを飛び出して全世界を席巻した。\n\n## 主な特徴とサウンドデザイン\n\n### **音響的特徴**\n* 温かみのあるアナログのベースラインや、パンチのあるパーカッションが用いられる。\n\n\n* クリアで高音域のシンセサイザー・リードや、クリップされたボーカル・サンプルが楽曲を特徴づける。\n\n\n### **歴史的展開**\n* [Trance]とお互いに影響を与え合いながら発展し、2000年代後半以降はクラブのダンスフロアを盛り上げるエンターテインメント的な性格を強めていった。\n\n\n* この流れが2010年代のEDM大ブームへとつながり、数多くの派生ジャンルを生み出す原動力となった。\n\n\n\n\n\n## 主な派生ジャンル\n\n* **[Complextro]**: 緻密に重ねられたサウンドデザインやテンポの早いカットアップ・セクション、アグレッシブなスタブを特徴とする。\n* **[Dutch House]**: 高音域の奇抜なシンセメロディーや、フィジェット・ハウスなどからの強い影響を特色とする。\n* **[Fidget House]**: ブレイクビート・ハードコア風のシンセ・スタブ、ベースラインのピッチベンド、カットアップされたボーカル・サンプルなどを多用する。\n* **[Melbourne Bounce]**: 型破りなベースラインによる「弾むような」グルーヴと、ダッチ・ハウスの影響を受けたシンセ等による軽快なパーティー向けの雰囲気を醸し出す。",
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": null
+      "bp": null,
+      "aliases": []
     },
     {
       "id": "gmv9ej0lz",
@@ -1388,7 +1537,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": null
+      "bp": null,
+      "aliases": []
     },
     {
       "id": "gmv9jyc8b",
@@ -1398,7 +1548,8 @@
       "weight": 0,
       "bm": null,
       "bd": null,
-      "bp": null
+      "bp": null,
+      "aliases": []
     },
     {
       "id": "gmvavbluj",
@@ -1408,7 +1559,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": "x2"
+      "bp": "x2",
+      "aliases": []
     },
     {
       "id": "gmv9bucf9",
@@ -1418,7 +1570,8 @@
       "weight": 50,
       "bm": null,
       "bd": null,
-      "bp": null
+      "bp": null,
+      "aliases": []
     },
     {
       "id": "gmv9h7xip",
@@ -1428,7 +1581,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": "x"
+      "bp": "x",
+      "aliases": []
     },
     {
       "id": "tbk009",
@@ -1438,7 +1592,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": null
+      "bp": null,
+      "aliases": []
     },
     {
       "id": "gmv9nze4q",
@@ -1448,7 +1603,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": "x3"
+      "bp": "x3",
+      "aliases": []
     },
     {
       "id": "tbk029",
@@ -1458,7 +1614,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": null
+      "bp": null,
+      "aliases": []
     },
     {
       "id": "tbk034",
@@ -1468,17 +1625,22 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": null
+      "bp": null,
+      "aliases": []
     },
     {
       "id": "gmv9dtjl4",
       "name": "UK Hardcore",
       "born": 2005,
-      "desc": "",
+      "desc": "**UK Hardcore**（ユーケー・ハードコア）は、[Hardcore Techno]の主要なサブジャンルの一つであり、[Happy Hardcore]を源流として発展した。他のハードコアテクノの諸ジャンルと比較して、メロディックさやエモさ、哀愁が強く強調されており、親しみやすくクリーンなサウンドを特徴とする。\n\n## 主な特徴\n\n### **テンポとリズム**\n* テンポは概ね170〜175BPMの範囲で統一されており、4つ打ちのビートを基調とする。\n* 2拍目と4拍目を強調するスネアドラムが多用される。\n\n### **サウンドデザイン**\n* 重厚で際立ったベースラインや、高揚感あふれるシンセ・リードが楽曲を牽引する。\n* 2000年代後半以降の楽曲では、当時の世界的なエレクトロの流行を背景に、音圧を極限まで高める圧縮手法や、力強く歪んだキック、オフビートで繰り返されるリバースベースなどが取り入れられた。\n\n\n\n## 歴史的背景と展開\n\n1990年代初頭の[Breakbeat Hardcore]や[Happy Hardcore]にルーツを持ち、2005年前後にかけて現在の「UK Hardcore」と呼ばれる重厚で迫力のあるスタイルへと変貌を遂げた。この時期にはCDJの普及に伴うDJ人口の増加もあり、現場での使いやすさを考慮したBPMの統一が進んだ。\n\nまた、近年の系譜や派生スタイルとして、以下のような多様なサブジャンルとのクロスオーバーを見せている。\n\n* **[Futurecore]**: [Future Bass]の陶酔的なシンセサウンドやボーカルチョップ、ハーフビートの要素をUK Hardcoreのスピード感やベースラインと融合させたスタイル。\n* **[Power Stomp]**: 際立った踏み込むようなキックや、ハードスタイルから取り入れられたリバースベース、不協和音的なノイジーなリフを特徴とするエネルギッシュなスタイル。",
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": null
+      "bp": null,
+      "aliases": [
+        "Freestyle Hardcore",
+        "Freeform Hardcore"
+      ]
     },
     {
       "id": "gmv9ighli",
@@ -1488,7 +1650,8 @@
       "weight": 80,
       "bm": null,
       "bd": null,
-      "bp": null
+      "bp": null,
+      "aliases": []
     },
     {
       "id": "tbk039",
@@ -1498,7 +1661,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": null
+      "bp": null,
+      "aliases": []
     },
     {
       "id": "gmv9fr898",
@@ -1508,7 +1672,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": null
+      "bp": null,
+      "aliases": []
     },
     {
       "id": "gmvanxma7",
@@ -1518,7 +1683,8 @@
       "weight": 50,
       "bm": null,
       "bd": null,
-      "bp": "x"
+      "bp": "x",
+      "aliases": []
     },
     {
       "id": "gmv9o3pas",
@@ -1528,7 +1694,8 @@
       "weight": 80,
       "bm": null,
       "bd": null,
-      "bp": "x"
+      "bp": "x",
+      "aliases": []
     },
     {
       "id": "tbk032",
@@ -1538,7 +1705,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": null
+      "bp": null,
+      "aliases": []
     },
     {
       "id": "gmv9d28y0",
@@ -1548,7 +1716,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": null
+      "bp": null,
+      "aliases": []
     },
     {
       "id": "gmvadhkb6",
@@ -1558,7 +1727,8 @@
       "weight": 50,
       "bm": null,
       "bd": null,
-      "bp": null
+      "bp": null,
+      "aliases": []
     },
     {
       "id": "gmv9nbr04",
@@ -1568,7 +1738,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": "x2"
+      "bp": "x2",
+      "aliases": []
     },
     {
       "id": "tbk014",
@@ -1578,7 +1749,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": null
+      "bp": null,
+      "aliases": []
     },
     {
       "id": "gmvaozy90",
@@ -1588,7 +1760,8 @@
       "weight": 50,
       "bm": null,
       "bd": null,
-      "bp": null
+      "bp": null,
+      "aliases": []
     },
     {
       "id": "gmvameusb",
@@ -1598,7 +1771,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": "x2"
+      "bp": "x2",
+      "aliases": []
     },
     {
       "id": "gmv9hnpg8",
@@ -1608,7 +1782,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": null
+      "bp": null,
+      "aliases": []
     },
     {
       "id": "tbk031",
@@ -1618,7 +1793,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": null
+      "bp": null,
+      "aliases": []
     },
     {
       "id": "gmv9dhp61",
@@ -1628,7 +1804,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": null
+      "bp": null,
+      "aliases": []
     },
     {
       "id": "gmv9ef0mn",
@@ -1638,7 +1815,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": null
+      "bp": null,
+      "aliases": []
     },
     {
       "id": "gmv9jiacc",
@@ -1648,7 +1826,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": null
+      "bp": null,
+      "aliases": []
     },
     {
       "id": "gmv9fln2l",
@@ -1658,7 +1837,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": null
+      "bp": null,
+      "aliases": []
     },
     {
       "id": "gmv9gt56y",
@@ -1668,7 +1848,8 @@
       "weight": 50,
       "bm": null,
       "bd": null,
-      "bp": "x3"
+      "bp": "x3",
+      "aliases": []
     },
     {
       "id": "gmvap8snf",
@@ -1678,7 +1859,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": null
+      "bp": null,
+      "aliases": []
     },
     {
       "id": "gmvamb12j",
@@ -1688,7 +1870,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": "x4"
+      "bp": "x4",
+      "aliases": []
     },
     {
       "id": "gmvao5pbb",
@@ -1698,7 +1881,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": "x4"
+      "bp": "x4",
+      "aliases": []
     },
     {
       "id": "gmvantw2f",
@@ -1708,7 +1892,8 @@
       "weight": 50,
       "bm": null,
       "bd": null,
-      "bp": null
+      "bp": null,
+      "aliases": []
     },
     {
       "id": "tbk030",
@@ -1718,7 +1903,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": null
+      "bp": null,
+      "aliases": []
     },
     {
       "id": "tbk008",
@@ -1728,7 +1914,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": null
+      "bp": null,
+      "aliases": []
     },
     {
       "id": "gmvaav2sh",
@@ -1738,7 +1925,8 @@
       "weight": 50,
       "bm": 3,
       "bd": 15,
-      "bp": "x"
+      "bp": "x",
+      "aliases": []
     },
     {
       "id": "gmv9furss",
@@ -1748,7 +1936,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": null
+      "bp": null,
+      "aliases": []
     },
     {
       "id": "gmv9dkn4x",
@@ -1758,7 +1947,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": null
+      "bp": null,
+      "aliases": []
     },
     {
       "id": "tbk020",
@@ -1768,7 +1958,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": null
+      "bp": null,
+      "aliases": []
     },
     {
       "id": "tbk022",
@@ -1778,7 +1969,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": null
+      "bp": null,
+      "aliases": []
     },
     {
       "id": "tbk025",
@@ -1788,7 +1980,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": null
+      "bp": null,
+      "aliases": []
     },
     {
       "id": "gmv9he435",
@@ -1798,7 +1991,8 @@
       "weight": 0,
       "bm": null,
       "bd": null,
-      "bp": null
+      "bp": null,
+      "aliases": []
     },
     {
       "id": "gmv9iss6t",
@@ -1808,7 +2002,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": null
+      "bp": null,
+      "aliases": []
     },
     {
       "id": "gmv9bup7y",
@@ -1818,7 +2013,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": null
+      "bp": null,
+      "aliases": []
     },
     {
       "id": "gmv9by3y3",
@@ -1828,7 +2024,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": null
+      "bp": null,
+      "aliases": []
     },
     {
       "id": "gmv9c9c50",
@@ -1838,7 +2035,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": "x5"
+      "bp": "x5",
+      "aliases": []
     },
     {
       "id": "gmv9cppz0",
@@ -1848,7 +2046,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": "x"
+      "bp": "x",
+      "aliases": []
     },
     {
       "id": "gmv9ct5c2",
@@ -1858,7 +2057,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": null
+      "bp": null,
+      "aliases": []
     },
     {
       "id": "gmv9cu84b",
@@ -1868,7 +2068,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": null
+      "bp": null,
+      "aliases": []
     },
     {
       "id": "gmv9dhdrm",
@@ -1878,7 +2079,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": null
+      "bp": null,
+      "aliases": []
     },
     {
       "id": "gmv9dn0wp",
@@ -1888,7 +2090,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": null
+      "bp": null,
+      "aliases": []
     },
     {
       "id": "gmv9gkb6r",
@@ -1898,7 +2101,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": null
+      "bp": null,
+      "aliases": []
     },
     {
       "id": "gmv9gla9e",
@@ -1908,7 +2112,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": null
+      "bp": null,
+      "aliases": []
     },
     {
       "id": "gmv9gnorf",
@@ -1918,7 +2123,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": null
+      "bp": null,
+      "aliases": []
     },
     {
       "id": "gmv9h4so1",
@@ -1928,7 +2134,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": null
+      "bp": null,
+      "aliases": []
     },
     {
       "id": "gmv9hp3mg",
@@ -1938,7 +2145,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": null
+      "bp": null,
+      "aliases": []
     },
     {
       "id": "gmv9hv8l4",
@@ -1948,17 +2156,19 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": null
+      "bp": null,
+      "aliases": []
     },
     {
       "id": "gmv9i7hnx",
       "name": "Hyperglitch",
       "born": 2002,
-      "desc": "",
+      "desc": "# Hyperglitch\n\n**Hyperglitch**（ハイパーグリッチ）とは、[Glitch]、[IDM]、[実験音楽]等の流れを汲みつつも、それらとは一線を画す[電子音楽]の一ジャンルである。ここでの「ハイパー」は、単なる速度や音量の肥大を指すにあらず、「ハイパーテキスト」的な相互連関や深化を意味するものとされる。\n\n## 音楽的特徴\n\n従来のグリッチが偶然性や空間の余白を重んじるミニマリズム的傾向を帯びていたのに対し、Hyperglitchは完全なる制御と過剰さを求めるマキシマリズム的志向を根幹とする。\n\n* **情報密度と知覚への過負荷**\n* 冗長性を極限まで排し、緻密に構築された音響のグリッチを密に配置する。\n* 圧倒的な情報量によって聴取者の知覚に負荷を与える音響設計が顕著である。\n\n* **立体的かつ物理的な音像**\n* 従来の平面的なデジタル音とは異なり、金属のねじれや液体の沸騰、ゴムの弾性等を想起させる物理的テクスチャを備える。\n* 刻々と形状を変じつつ空間を飛び交うような立体的な音像が特徴である。\n\n\n\n\n\n## 歴史と展開\n\n2000年代初頭のAutechre『Gantz Graf』（2002年）等を萌芽とし、2010年代にはVaetxh『Libet Tones』（2012年）や、提唱者とも目されるWoulg（『Dragged』、2016年等）の活動を通じて様式の輪郭が形作られた。当初は高度な技術と膨大な制作コストゆえに敷居が高かったものの、2019年頃に「glitch dot cool」が設立され、制作手法やサンプルの共有・還元が進んだこと、さらに2020年よりWoulg主導のコンピレーション・シリーズ『Hyperglitch』が展開されたこと等により、シーンの形成と浸透が図られた。",
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": null
+      "bp": null,
+      "aliases": []
     },
     {
       "id": "gmv9iep3a",
@@ -1968,7 +2178,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": null
+      "bp": null,
+      "aliases": []
     },
     {
       "id": "gmv9ihfl2",
@@ -1978,7 +2189,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": null
+      "bp": null,
+      "aliases": []
     },
     {
       "id": "gmv9iifha",
@@ -1988,7 +2200,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": null
+      "bp": null,
+      "aliases": []
     },
     {
       "id": "gmv9iketz",
@@ -1998,7 +2211,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": null
+      "bp": null,
+      "aliases": []
     },
     {
       "id": "gmv9ioazj",
@@ -2008,7 +2222,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": null
+      "bp": null,
+      "aliases": []
     },
     {
       "id": "gmv9jgpks",
@@ -2018,7 +2233,8 @@
       "weight": 0,
       "bm": null,
       "bd": null,
-      "bp": null
+      "bp": null,
+      "aliases": []
     },
     {
       "id": "gmv9jk8kb",
@@ -2028,7 +2244,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": "x2"
+      "bp": "x2",
+      "aliases": []
     },
     {
       "id": "gmv9jqi2s",
@@ -2038,7 +2255,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": null
+      "bp": null,
+      "aliases": []
     },
     {
       "id": "gmv9juir0",
@@ -2048,7 +2266,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": null
+      "bp": null,
+      "aliases": []
     },
     {
       "id": "gmv9jykez",
@@ -2058,7 +2277,8 @@
       "weight": 0,
       "bm": null,
       "bd": null,
-      "bp": null
+      "bp": null,
+      "aliases": []
     },
     {
       "id": "gmv9jytzg",
@@ -2068,7 +2288,8 @@
       "weight": 0,
       "bm": null,
       "bd": null,
-      "bp": null
+      "bp": null,
+      "aliases": []
     },
     {
       "id": "gmv9jz0nu",
@@ -2078,7 +2299,8 @@
       "weight": 50,
       "bm": null,
       "bd": null,
-      "bp": null
+      "bp": null,
+      "aliases": []
     },
     {
       "id": "gmv9kve29",
@@ -2088,7 +2310,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": null
+      "bp": null,
+      "aliases": []
     },
     {
       "id": "gmv9kxtxt",
@@ -2098,7 +2321,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": null
+      "bp": null,
+      "aliases": []
     },
     {
       "id": "gmv9l6mzc",
@@ -2108,7 +2332,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": null
+      "bp": null,
+      "aliases": []
     },
     {
       "id": "gmv9lkxu7",
@@ -2118,7 +2343,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": null
+      "bp": null,
+      "aliases": []
     },
     {
       "id": "gmv9m7ibq",
@@ -2128,7 +2354,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": null
+      "bp": null,
+      "aliases": []
     },
     {
       "id": "gmv9mr3d2",
@@ -2138,7 +2365,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": null
+      "bp": null,
+      "aliases": []
     },
     {
       "id": "gmv9n5xd8",
@@ -2148,7 +2376,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": null
+      "bp": null,
+      "aliases": []
     },
     {
       "id": "gmv9ngsu2",
@@ -2158,7 +2387,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": null
+      "bp": null,
+      "aliases": []
     },
     {
       "id": "gmva80ayy",
@@ -2168,7 +2398,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": null
+      "bp": null,
+      "aliases": []
     },
     {
       "id": "gmva9rtqd",
@@ -2178,7 +2409,8 @@
       "bm": 11,
       "bd": 21,
       "weight": 0,
-      "bp": null
+      "bp": null,
+      "aliases": []
     },
     {
       "id": "gmvaac7ez",
@@ -2188,7 +2420,8 @@
       "bp": "x2",
       "weight": null,
       "bm": null,
-      "bd": null
+      "bd": null,
+      "aliases": []
     },
     {
       "id": "gmvaajsov",
@@ -2198,7 +2431,8 @@
       "bp": "x3",
       "weight": null,
       "bm": null,
-      "bd": null
+      "bd": null,
+      "aliases": []
     },
     {
       "id": "gmvaalyki",
@@ -2208,17 +2442,21 @@
       "bp": "x1",
       "weight": null,
       "bm": null,
-      "bd": null
+      "bd": null,
+      "aliases": []
     },
     {
       "id": "gmvaaxgnt",
-      "name": "Cantata",
+      "name": "カンタータ",
       "born": 1589,
-      "desc": "",
+      "desc": "# カンタータ\n\n**カンタータ**（伊: cantata）とは、[バロック音楽]の時代を中心に発展した、器楽伴奏を伴う[声楽]作品の一形式である。教会においては説教の前後等に奏され、宗教的あるいは世俗的な文脈において多様な表現を展開した。\n\n## 構成要素および編成\n\nカンタータは声楽と器楽の複合によって成り立ち、その音楽的要素は多岐にわたる。\n\n* **声楽および歌唱形態**\n* **アリア**：オペラ的旋律を伴う独唱であり、複数の詩節に分かれた歌詞を通じて信徒の宗教的感情等を歌い上げる。\n\n\n* **レチタティーヴォ**：抑揚を付した朗唱であり、主として通奏低音のみを伴奏とし、合唱隊とアリア等を繋ぐ役割を担う。\n\n\n* **合唱隊**：ソプラノ、アルト、テノール、バスの四声部等を基本とし、作品によっては二群に分けて交互に歌唱する場合もある。教会において女性の歌唱が禁じられていた時代には、女性パートをボーイ・ソプラノやカストラート等が担った。\n\n\n\n\n* **器楽および伴奏形態**\n* **通奏低音（バッソ・コンティーヌオ）**：低音部の和音を演奏し続け、即興的に伴奏声部を展開する要素であり、鍵盤楽器を軸としつつリュートやチェロ、ファゴット等が加わることもある。\n\n\n* **コンチェルタンテ**：複数の楽器奏者が独奏的（ソリスト）に振る舞う手法であり、イタリア様式カンタータ等から導入され、アリアの対旋律等を奏する。\n\n\n* **オーケストラ**：楽曲の様式や表現内容、楽団の規模等に応じて編成が変化する。\n\n\n\n\n\n## 種類とバッハにおける展開\n\nカンタータには、教会礼拝等と結びつく「[宗教カンタータ]」と、それ以外の「[世俗カンタータ]」が存在する。\n\nなかでもヨハン・ゼバスティアン・バッハは、二百曲を超える宗教カンタータと三十曲ほどの世俗カンタータを手掛けた（現存するもののほかにも散逸した作品が少なくなく、実際にはその倍ほどに及ぶともされる）。バッハはイタリア様式カンタータにおけるコンチェルタンテ技法やオペラ的独唱、フランス様式カンタータ由来の舞踊リズム等を吸収し、さらにルター・コラールの音節的旋律や厳格な対位法を織り交ぜることで、一貫した芸術的構造へと昇華させた。",
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": null
+      "bp": null,
+      "aliases": [
+        "Cantata"
+      ]
     },
     {
       "id": "gmvab1dfl",
@@ -2228,7 +2466,8 @@
       "bp": "x4",
       "weight": null,
       "bm": null,
-      "bd": null
+      "bd": null,
+      "aliases": []
     },
     {
       "id": "gmvacb6xq",
@@ -2238,7 +2477,8 @@
       "weight": 80,
       "bm": null,
       "bd": null,
-      "bp": null
+      "bp": null,
+      "aliases": []
     },
     {
       "id": "gmvacw9ql",
@@ -2248,7 +2488,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": null
+      "bp": null,
+      "aliases": []
     },
     {
       "id": "gmvad0gbn",
@@ -2258,7 +2499,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": "x3"
+      "bp": "x3",
+      "aliases": []
     },
     {
       "id": "gmvad30pv",
@@ -2268,7 +2510,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": "x3"
+      "bp": "x3",
+      "aliases": []
     },
     {
       "id": "gmvad5f9o",
@@ -2278,7 +2521,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": "x1"
+      "bp": "x1",
+      "aliases": []
     },
     {
       "id": "gmvad8uo3",
@@ -2288,7 +2532,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": null
+      "bp": null,
+      "aliases": []
     },
     {
       "id": "gmvardxee",
@@ -2298,7 +2543,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": "x4"
+      "bp": "x4",
+      "aliases": []
     },
     {
       "id": "gmvas2i5f",
@@ -2308,7 +2554,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": "x3"
+      "bp": "x3",
+      "aliases": []
     },
     {
       "id": "gmvas6pqb",
@@ -2318,7 +2565,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": "x4"
+      "bp": "x4",
+      "aliases": []
     },
     {
       "id": "gmvasnswc",
@@ -2328,7 +2576,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": null
+      "bp": null,
+      "aliases": []
     },
     {
       "id": "gmvat1afm",
@@ -2338,7 +2587,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": "x"
+      "bp": "x",
+      "aliases": []
     },
     {
       "id": "gmvat5ke9",
@@ -2348,7 +2598,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": "x3"
+      "bp": "x3",
+      "aliases": []
     },
     {
       "id": "gmwj8dzt7",
@@ -2358,7 +2609,8 @@
       "weight": null,
       "bm": null,
       "bd": null,
-      "bp": "x1"
+      "bp": "x1",
+      "aliases": []
     },
     {
       "id": "gmwjamwps",
@@ -2368,7 +2620,8 @@
       "weight": null,
       "bm": 3,
       "bd": null,
-      "bp": null
+      "bp": null,
+      "aliases": []
     },
     {
       "id": "gmwjbvpqe",
@@ -2378,7 +2631,97 @@
       "weight": null,
       "bm": null,
       "bd": null,
+      "bp": null,
+      "aliases": []
+    },
+    {
+      "id": "gmwkc67fj",
+      "name": "Power Stomp",
+      "born": 2005,
+      "desc": "",
+      "weight": null,
+      "bm": null,
+      "bd": null,
+      "bp": null,
+      "aliases": []
+    },
+    {
+      "id": "gmwkmt8g2",
+      "name": "Bit Music",
+      "born": null,
+      "desc": "",
+      "weight": null,
+      "bm": null,
+      "bd": null,
+      "bp": null,
+      "aliases": []
+    },
+    {
+      "id": "gmwn2gbp7",
+      "name": "電子音楽",
+      "born": 1897,
+      "desc": "# 電子音楽\n\n**電子音楽**（でんしおんがく、英: Electronic Music）とは、電子楽器や録音テープ、あるいは計算機（コンピュータ）等を用いて制作・生成される音楽の総称である。広義には電子音や電子楽器を伴う多様な様式や[ダンス・ミュージック]等を広く指す一方、狭義には電子機器やテープ編集等の技法なくしては成立し得ない前衛的・実験的な[現代音楽]を指す。また、計算機を用いて制作されるものは「[コンピュータ音楽]」と称される。\n\n## 概要と広狭の区分\n\n用語としての「電子音楽」は、単なる電気的機構に留まらず、真空管や半導体等のエレクトロニクス技術の発展と連動して定着した概念である。日常的・広義の文脈においては、[Techno]や[Electro]、[Electronica]等の諸ジャンルを包括する総称として扱われることが多いものの、音楽史やジャンル論の観点においては各々の文脈や手法によって厳密に区別される。代表的な存在としてKraftwerk等が挙げられる。\n\n## 歴史と展開\n\n電子音楽の歩みは、電子楽器の創成とその技術革新と軌を一にする。\n\n* **電子楽器の黎明（十九世紀末〜二十世紀初頭）**\n* 電話機や無線通信、マイクロフォン等の発達を背景に、一八九七年のテルハーモニウム、一九一八年頃のテルミン、さらには発振器（オシレーター）を用いた初期電子楽器群が登場した。\n\n\n\n\n* **戦後の実験音楽・現代音楽との交錯**\n* 第二次世界大戦後、音楽の概念そのものを問い直す現代音楽や実験音楽の潮流のなかで、テープ編集を主軸とする[ミュージック・コンクレート]や、電子生成音を扱う狭義の電子音楽が発展し、やがて両者の境界も融解していった。\n\n\n\n\n* **シンセサイザーおよびリズムマシンの普及**\n* 一九五〇年代初頭の実験的装置を経て、一九六四年のモーグ・シンセサイザー等の登場により電子音は芸術音楽の枠を超え、ロックやポップス等へと浸透した。一九七〇年代から八〇年代にかけてはデジタル制御やシーケンサー、プログラミング可能なリズムマシン（Roland TR-808やTR-909等）が発達し、クラブ・ミュージックや現代の多様な電子音楽へと連なる基盤が築かれた。",
+      "weight": null,
+      "aliases": [],
+      "bm": null,
+      "bd": null,
       "bp": null
+    },
+    {
+      "id": "gmwn3v3fb",
+      "name": "オペラ",
+      "born": 1597,
+      "desc": "# オペラ\n\n**オペラ**（伊: opera、歌劇）とは、音楽と詩、演劇等とが一体となり舞台上にて展開する総合芸術の一形態である。16世紀末から17世紀初頭にかけてのイタリアに端を発し、[バロック音楽]の隆盛とともに欧州各地へと広まり、時代や風土に応じて多様な様式を形作った。\n\n## 起源と初期の展開\n\nオペラは、古代ギリシャ悲劇の理想化を契機として、イタリア・フィレンツェの芸術家集団「カメラータ」等を中心に成立したとされる。当初はメディチ家等の宮廷における祝宴や催しとして上流階級に楽しまれ、1597年の創生説や1600年の『エウリディーチェ』、1607年の『オルフェオ』等を経て発展を遂げた。\n\n1637年にヴェネツィアにて商業的・公共的なサン・カッシアーノ劇場が開設されたことを転機とし、切符さえ購えば市民も観覧し得る大衆化の道が開かれた。また、カストラートの人気や喜劇・軽い演目等の登場も、劇場へと人びとを誘う一因となった。\n\n## 各国への波及と後世への影響\n\nオペラは欧州各地の宮廷や都市へと伝播し、それぞれの文化と結びつきながら変容を遂げた。\n\n* **フランス**：ルイ十四世の宮廷文化やバレエとの結びつきのもと、リュリやラモー等を輩出しつつ独自の[フランス・オペラ]を築いた。\n* **イギリスおよびドイツ**：イギリスにおいてはパーセルが『ディドとエネアス』等を残し、またドイツ出身のヘンデルがロンドンにて『リナルド』等を成功させ国際的名声を博した。さらに十八世紀末から十九世紀にかけては、ウェーバー（『魔弾の射手』等）によるドイツ語台本オペラの確立や、ベートーヴェン（『フィデリオ』）、[イタリア・オペラ]のロッシーニ、ドニゼッティ、ベルリーニ、ヴェルディ、プッチーニ等へと連なる系譜を生んだ。\n\n* **派生と大衆娯楽への展開**：十九世紀半ば以降、オペラをより庶民的・喜劇的に親しめるものとした「[オペレッタ]」がパリやウィーンを中心に流行し、英米の[サヴォイ・オペラ]や[アメリカン・オペレッタ]を経て、のちの[ミュージカル]へと繋がる流れも形作られた。また、日本においても近代化のなかで明治・大正期の「[浅草オペラ]」や[少女歌劇]・[レヴュー]等の文脈と交差し、多様な舞台芸能の展開に関わった。",
+      "aliases": [
+        "Opera",
+        "歌劇"
+      ],
+      "weight": null,
+      "bm": null,
+      "bd": null,
+      "bp": null
+    },
+    {
+      "id": "gmwn6j0yu",
+      "name": "Trancecore",
+      "born": 1996,
+      "desc": "",
+      "weight": null,
+      "aliases": [],
+      "bm": null,
+      "bd": null,
+      "bp": null
+    },
+    {
+      "id": "gmwn6w9ri",
+      "name": "Bleep",
+      "born": 1990,
+      "desc": "米国から伝わってきた[House]や[Techno]に独自のスタイルを確立しようとした、英国における初期の試みの一つ",
+      "weight": null,
+      "aliases": [],
+      "bm": null,
+      "bd": null,
+      "bp": null
+    },
+    {
+      "id": "gmwn7l1f0",
+      "name": "Hardcore Rave",
+      "born": 2000,
+      "desc": "",
+      "weight": null,
+      "aliases": [],
+      "bm": null,
+      "bd": null,
+      "bp": null
+    },
+    {
+      "id": "gmwnagpdw",
+      "name": "Makina",
+      "born": 2000,
+      "desc": "# 概要\n**マキナ**(**Mákina**)とは、スペイン発祥の[テクノ]・ミュージックのサブジャンルである。[UKハードコア]と同様に、[バウンシー・テクノ]や[ハード・トランス]の要素を取り入れており、[ユーロダンス]からの影響も存在する。また、テンポの範囲がBPM150から180となっている。\n\nDJのミックススタイルとして産声を上げたこのジャンルは、多様なジャンルと融合を重ね、現在の様なハードコアを主体としたレイブミュージックに成長した。音色や構成は[Oldskool Happy Hardcore]と近いものがあるが、[German Trance]から影響を受けた物が多く、哀愁を感じさせる旋律のトラックが大部分を占めている。\n\n代表的なDJ/アーティストは、Pastis&Buenri、Xavi BCN、DJ Ruboy、DJ Konik、Xavi Metralla、Frank Diaz、Jordi Roure、Gerard Requena、DJ Pildo、Ricardo F、DJ K-rlos、Skudero、Oscar Elemento など。 代表的なレーベルは、BIT MUSIC、Up Tempo、ADN Sound、NOX Records、Al-khemie Records など（Up Tempo、ADN Sound は既にレーベル活動を中止している）。日本では主に M-Project や DJ DEPATH がマキナの普及に努めている。\n\n# 歴史\n## 1990年代初頭: 興り\nスペインの[ダンス・ミュージック]は、1988年に[Acid House]の隆盛と共に発展した。マキナはその潮流から生まれ、1990年代初頭のスペインバレンシアが発祥となる。また、[バカラオ]([bakalao])と呼ばれる、バレンシアのナイトクラブで親しまれていた他ジャンルも由来の一つとされる\n\n## 1990年代中期: ブレイクスルーと成功\nジャンルが世に広まったのは、1991年にスペインのプロデューサー、チモ・バヨのシングル「Así me gusta a mí」がリリースされたことに起因する。この楽曲はヨーロッパ全土で聞かれ、それに伴いマキナ自体の認知にも貢献した。さらに、1995年から1997年にはさらにスペイン内での認知度を広げたスペイン圏内のシングルチャートでは多数の楽曲が1位を取ることとなり、特にスペインのマキナ・グループであるEX-3は、前述の1位を取った楽曲の内「Extres」と「Ex-P-Cial」の2曲を発表している。アメリカで最も認知されたマキナとされている楽曲はNewtonの「Streamline」であり、2006年のペプシコーラのテレビCMにも起用された。\n\n1990年代から現在に至るまで、ノース・イースト・イングランド やスコットランドのレイブシーンにおいて、マキナは定番ジャンルとして扱われている。著名な音楽スポット、特にナイトクラブThe New Monkeyの閉店に伴い、現在は縮小傾向かつスカウス・ハウスにその人気を譲ったものの、ニューカッスル・ユナイテッドFCやサンダーランドAFCが遠征試合を行う際にバス内で流すなど、文化的な遺産として強く根付いている。",
+      "aliases": [
+        "Mákina"
+      ]
     }
   ],
   "edges": [
@@ -2618,11 +2961,6 @@
       "b": "gmv9nbr04"
     },
     {
-      "t": "h",
-      "a": "gmv9bwled",
-      "b": "tbk004"
-    },
-    {
       "t": "i",
       "a": "gmv9cwfaq",
       "b": "tbk004"
@@ -2686,11 +3024,6 @@
       "t": "i",
       "a": "gmv9c2x3w",
       "b": "tbk005"
-    },
-    {
-      "t": "h",
-      "a": "tbk016",
-      "b": "gmv9cnfaz"
     },
     {
       "t": "i",
@@ -2841,16 +3174,6 @@
       "t": "i",
       "a": "gmv9cwfaq",
       "b": "gmv9fr898"
-    },
-    {
-      "t": "h",
-      "a": "gmv9bwled",
-      "b": "gmv9h7xip"
-    },
-    {
-      "t": "i",
-      "a": "gmv9d3r55",
-      "b": "gmv9h7xip"
     },
     {
       "t": "i",
@@ -4219,16 +4542,6 @@
     },
     {
       "t": "h",
-      "a": "gmv9cf1pw",
-      "b": "gmv9c6hcs"
-    },
-    {
-      "t": "h",
-      "a": "tbk016",
-      "b": "gmv9c6hcs"
-    },
-    {
-      "t": "h",
       "a": "gmv9cjprw",
       "b": "gmvat842x"
     },
@@ -4918,11 +5231,6 @@
       "b": "gmv9e2bfj"
     },
     {
-      "t": "h",
-      "a": "tbk016",
-      "b": "gmv9dtjl4"
-    },
-    {
       "t": "i",
       "a": "gmv9dqd09",
       "b": "gmv9dtjl4"
@@ -5040,11 +5348,6 @@
     {
       "t": "h",
       "a": "gmv9cc68b",
-      "b": "gmv9hk6z4"
-    },
-    {
-      "t": "i",
-      "a": "tbk040",
       "b": "gmv9hk6z4"
     },
     {
@@ -5644,11 +5947,6 @@
     },
     {
       "t": "h",
-      "a": "gmv9c9c50",
-      "b": "gmv9jxmys"
-    },
-    {
-      "t": "h",
       "a": "gmv9fndyt",
       "b": "gmv9iasvk"
     },
@@ -5726,6 +6024,151 @@
       "t": "h",
       "a": "gmv9c9c50",
       "b": "gmvaav2sh"
+    },
+    {
+      "t": "h",
+      "a": "gmv9dtjl4",
+      "b": "gmwkc67fj"
+    },
+    {
+      "t": "h",
+      "a": "gmwkmt8g2",
+      "b": "tbk004"
+    },
+    {
+      "t": "h",
+      "a": "gmwkmt8g2",
+      "b": "gmv9bwled"
+    },
+    {
+      "t": "i",
+      "a": "gmv9bwled",
+      "b": "gmv9h7xip"
+    },
+    {
+      "t": "h",
+      "a": "gmwkmt8g2",
+      "b": "gmv9h7xip"
+    },
+    {
+      "t": "h",
+      "a": "gmv9d3r55",
+      "b": "gmv9h7xip"
+    },
+    {
+      "t": "h",
+      "a": "tbk010",
+      "b": "gmv9cvi63"
+    },
+    {
+      "t": "i",
+      "a": "gmv9m7ibq",
+      "b": "tbk035"
+    },
+    {
+      "t": "i",
+      "a": "tbk035",
+      "b": "gmv9fjwq6"
+    },
+    {
+      "t": "h",
+      "a": "gmv9dbjdu",
+      "b": "gmvaaxgnt"
+    },
+    {
+      "t": "i",
+      "a": "gmv9jxgfv",
+      "b": "mmv9k8fbm"
+    },
+    {
+      "t": "i",
+      "a": "gmv9gcxqm",
+      "b": "mmv9k8fbm"
+    },
+    {
+      "t": "h",
+      "a": "tbk010",
+      "b": "mmv9fx8g4"
+    },
+    {
+      "t": "h",
+      "a": "gmv9cxx9n",
+      "b": "gmv9jxmys"
+    },
+    {
+      "t": "h",
+      "a": "gmv9c9c50",
+      "b": "gmwn6j0yu"
+    },
+    {
+      "t": "h",
+      "a": "gmv9c9c50",
+      "b": "gmwn6w9ri"
+    },
+    {
+      "t": "i",
+      "a": "tbk017",
+      "b": "gmwn6w9ri"
+    },
+    {
+      "t": "i",
+      "a": "gmv9c2x3w",
+      "b": "gmwn6w9ri"
+    },
+    {
+      "t": "h",
+      "a": "tbk017",
+      "b": "gmwn7l1f0"
+    },
+    {
+      "t": "h",
+      "a": "tbk016",
+      "b": "gmwn7l1f0"
+    },
+    {
+      "t": "i",
+      "a": "gmwn6j0yu",
+      "b": "gmv9dtjl4"
+    },
+    {
+      "t": "h",
+      "a": "gmv9c9c50",
+      "b": "gmv9jyc8b"
+    },
+    {
+      "t": "i",
+      "a": "tbk035",
+      "b": "gmwn6j0yu"
+    },
+    {
+      "t": "i",
+      "a": "tbk017",
+      "b": "gmwn6j0yu"
+    },
+    {
+      "t": "i",
+      "a": "gmv9dqd09",
+      "b": "gmwn6j0yu"
+    },
+    {
+      "t": "h",
+      "a": "gmv9c2x3w",
+      "b": "gmwnagpdw"
+    },
+    {
+      "t": "i",
+      "a": "gmv9dqd09",
+      "b": "gmwnagpdw"
+    },
+    {
+      "t": "i",
+      "a": "gmvadltfv",
+      "b": "gmwnagpdw"
+    },
+    {
+      "t": "i",
+      "a": "gmv9hp3mg",
+      "b": "gmwnagpdw"
     }
   ],
   "majors": [
@@ -5755,16 +6198,13 @@
       "name": "Hardcore Techno",
       "color": "#e42f2f",
       "roots": [
-        "gmv9cnfaz",
         "gmv9cxx9n",
-        "gmv9dqd09",
         "gmv9c9c50",
-        "gmv9jyc8b",
         "gmv9dkn4x",
         "gmvamb12j",
         "tbk016",
-        "gmvaav2sh",
-        "tbk006"
+        "tbk006",
+        "gmwnagpdw"
       ],
       "top": true,
       "subs": [
@@ -5787,7 +6227,7 @@
           ]
         }
       ],
-      "desc": ""
+      "desc": "# Hardcore Techno\n\n**Hardcore Techno**（ハードコア・テクノ）は、1990年代初頭から発展した、速いテンポとエネルギッシュなビートを特徴とする[EDM]の一形態を総称する広範な音楽ジャンルである。多くは高速な4つ打ちのリズムを基調とし、極めて多様なサブジャンルや派生スタイルを内包している。\n\n## 主な特徴と大別\n\n* **リズムとサウンド**\n* 高いBPMと激しい推進力が特徴であり、そのサウンドの傾向によって大きく二つの系統に分類されることが多い。\n* **[Gabber]（ガバ）系**: バスドラムを過剰に歪ませ、キックの低音域そのものがベースラインの役割を担う重厚で攻撃的なサウンドを特徴とする。\n* **[Core]系**: バスドラムの過度な歪みを抑え、ベースパートが独立した楽器として存在するものや、曲調の明るさやノリの良さを追求した[Happy Hardcore]・[UK Hardcore]などの系統を含む。\n\n\n\n\n\n## 歴史的背景と展開\n\nヨーロッパ各地のクラブやレイヴシーンにおいて、テクノやアシッド・ハウスなどの高速化・先鋭化の過程で同時多発的に誕生した。以降、[Gabber]や[Breakbeat Hardcore]を源流としながら、超高速のキック連打を主体とする[Speedcore]や、日本独自の文脈と結びついた[J-core]・[ナードコア]など、多方面へと枝分かれし、現在に至るまでアンダーグラウンドおよびクラブミュージックの重要な一角を形成し続けている。"
     },
     {
       "id": "mmv9g3pcv",
@@ -5910,7 +6350,8 @@
         "gmv9dd3ci",
         "gmv9gkb6r",
         "gmv9gla9e",
-        "gmv9ghx0r"
+        "gmv9ghx0r",
+        "tbk007"
       ],
       "top": true,
       "subs": [
@@ -6030,7 +6471,7 @@
           "desc": ""
         }
       ],
-      "desc": ""
+      "desc": "# Jazz\n\n**Jazz**（ジャズ）とは、二十世紀初頭頃、米国南部のアフリカ系アメリカ人コミュニティを中心に誕生した音楽ジャンルである。ニューオーリンズの[ブラスバンド・アンサンブル]や[ラグタイム]、[ブルース]等の影響を受けつつ発展し、即興演奏や独特のリズム感・和声感覚等を軸としながら多様な様式へと分岐・展開した。\n\n## 起源と歴史的変遷\n\nJazzの源流は19世紀末から20世紀初頭の米国南部やニューオーリンズ等に求められ、[ラグタイム]や[ブルース]、あるいは欧州由来の[マーチ]や[舞曲]等の要素が交錯するなかから形作られた。\n\n* **初期ジャズ〜スウィングの隆盛**\n* 1910年代の[ニューオーリンズ・ジャズ]や[ディキシーランド・ジャズ]、[ラグタイム]に根ざす[ストライド]等の形態を経て、1920年代の「ジャズ・エイジ」や1930年代の[スウィング・ジャズ]、[ビッグバンド・ジャズ]の隆盛とともに大衆的な人気を獲得した。\n\n\n\n\n* **モダン・ジャズ以降の展開**\n* 1940年代には即興性や技巧を先鋭化させた[ビバップ]が登場し、ダンス・エンタメの文脈から芸術・鑑賞としての側面を強めた。以降、[クール・ジャズ]や[ウエスト・コースト・ジャズ]、[ハード・バップ]、[モード・ジャズ]、[ポスト・バップ]、さらには[フリー・ジャズ]や[アヴァンギャルド・ジャズ]等へと表現領域を広げた。\n\n\n\n\n* **融合と多様化**\n* 1960年代後半から1970年代にかけては[ロック]や[ファンク]、[ラテン音楽]等と結びつく[フュージョン]（[ジャズ・フュージョン]）や[クロスオーバー]の潮流を生み、また[スムース・ジャズ]や[アシッド・ジャズ]、[ヒップホップ]との交錯等を通じて今日に至るまで多様な派生・融合様式を形作っている。\n\n\n\n\n\n## 主な様式と派生領域\n\nJazzはその歴史的展開のなかで数多のサブジャンルおよび関連様式を生んだ。\n\n* **初期・舞踊関連**：ニューオーリンズ・ジャズ、ディキシーランド・ジャズ、ストライド、スウィング・ジャズ、ビッグバンド・ジャズ、スウィート・ジャズ、ヴォーカル・ジャズ等。\n* **モダン・前衛系**：ビバップ、クール・ジャズ、ウエスト・コースト・ジャズ、ハード・バップ、ソウル・ジャズ、モード・ジャズ、ポスト・バップ、ネオ・バップ、フリー・ジャズ、アヴァンギャルド・ジャズ、サード・ストリーム等。\n* **融合・他ジャンルとの交錯**：ジャズ・フュージョン、スムース・ジャズ、ラテン・ジャズ、フォーク・ジャズ、ジャジー・ヒップホップ等。"
     },
     {
       "id": "mmv9mv3qt",
@@ -6052,9 +6493,9 @@
         "gmv9jykez",
         "gmv9nze4q",
         "gmva80ayy",
-        "gmvaav2sh",
         "gmv9o3pas",
-        "gmvap8snf"
+        "gmvap8snf",
+        "gmvaav2sh"
       ],
       "subs": [],
       "desc": ""
@@ -6066,16 +6507,10 @@
       "roots": [
         "gmv9bwled",
         "tbk025",
-        "gmwjamwps"
+        "gmwjamwps",
+        "tbk004",
+        "gmwkmt8g2"
       ],
-      "subs": [],
-      "desc": ""
-    },
-    {
-      "id": "mmwhnn10y",
-      "name": "新しい大ジャンル",
-      "color": "#e4572e",
-      "roots": [],
       "subs": [],
       "desc": ""
     }
@@ -6303,6 +6738,18 @@
       "yp": "x",
       "genres": [
         "gmv9dbjdu"
+      ],
+      "desc": ""
+    },
+    {
+      "id": "emwn8yeso",
+      "title": "Happy Hardcoreの最盛期",
+      "year": 1996,
+      "ym": null,
+      "yd": null,
+      "yp": null,
+      "genres": [
+        "gmv9dqd09"
       ],
       "desc": ""
     }

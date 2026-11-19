@@ -301,3 +301,8 @@
   color: #d9534f;
   border-bottom: 1px dashed #d9534f;
 }
+
+.lang-switch button.active {
+  background: var(--ink);
+  color: var(--bg);
+}

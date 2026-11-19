@@ -93,3 +93,27 @@ if ($('#imp') && $('#file')) {
     e.target.value = '';
   };
 }
+
+// 表示言語スイッチの同期＆クリック処理
+function syncLangSwitch() {
+  const cur = viewOpt.lang || 'en';
+  document.querySelectorAll('.lang-switch [data-lang]').forEach(btn => {
+    btn.classList.toggle('active', btn.dataset.lang === cur);
+    btn.setAttribute('aria-pressed', btn.dataset.lang === cur ? 'true' : 'false');
+  });
+}
+
+document.addEventListener('click', ev => {
+  const btn = ev.target.closest('.lang-switch [data-lang]');
+  if (!btn) return;
+  const nextLang = btn.dataset.lang;
+  if (!['en', 'ja', 'kan'].includes(nextLang)) return;
+  viewOpt.lang = nextLang;
+  saveView();
+  syncLangSwitch();
+  if (typeof render === 'function') render();
+});
+
+// 初期描画時にも状態を合わせる
+if (!viewOpt.lang) viewOpt.lang = 'en';
+syncLangSwitch();

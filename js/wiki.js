@@ -1,27 +1,28 @@
 /* ---------- Wiki View Mode ---------- */
 let wikiQuery = '';
 
-// 説明文中の [ジャンル名] や Markdown 風見出しを変換するパーサー
-// 内部リンク・Cosense記法・インラインMarkdownを変換するヘルパー
+const wGLabel = g => (typeof resolveGenreLabel === 'function' ? resolveGenreLabel(g) : { name: String(g?.name ?? ''), aliases: g?.aliases || [] });
+const aliasTextOf = a => (a && typeof a === 'object' ? String(a.text ?? '') : String(a ?? ''));
+const aliasTagOf = a => {
+  if (!a || typeof a !== 'object' || !a.lang) return '';
+  return typeof ALIAS_LANG_LABEL === 'object' && ALIAS_LANG_LABEL[a.lang] ? ALIAS_LANG_LABEL[a.lang] : a.lang;
+};
+
 function parseInline(raw) {
   let s = esc(raw);
 
-  // 1. インラインコード `code` (内部が変換されないよう先に退避)
   const codes = [];
   s = s.replace(/`([^`]+)`/g, (_, c) => {
     codes.push(`<code>${c}</code>`);
     return `\x00CODE${codes.length - 1}\x00`;
   });
 
-  // 2. 画像 ![alt](url)
-  s = s.replace(/!\[([^\]]*)\]\((https?:\/\/[^\s)]+|[^\s)]+)\)/g,
+  s = s.replace(/!\[([^\]]*)\]\((https?:\/\/[^\s)]+\vert{}[^\s)]+)\)/g,
     (_, alt, url) => `<img class="wiki-img" src="${url}" alt="${alt}" loading="lazy">`);
 
-  // 3. Markdown外部リンク [label](url)
   s = s.replace(/\[([^\]]+)\]\((https?:\/\/[^\s)]+)\)/g,
     (_, label, url) => `<a class="wlink ext" href="${url}" target="_blank" rel="noopener noreferrer">${label} ↗</a>`);
 
-  // 4. Cosense風装飾 [*** 見出し], [* 太字], [/ 斜体], [- 取消] & [url title]
   s = s.replace(/\[(\*{1,3})\s+([^\]]+)\]/g, (_, stars, body) => {
     if (stars.length === 3) return `<strong style="font-size:1.25em">${body}</strong>`;
     if (stars.length === 2) return `<strong style="font-size:1.1em">${body}</strong>`;
@@ -32,48 +33,46 @@ function parseInline(raw) {
   s = s.replace(/\[(https?:\/\/[^\s\]]+)\s+([^\]]+)\]/g,
     '<a class="wlink ext" href="$1" target="_blank" rel="noopener noreferrer">$2 ↗</a>');
 
-  // 5. ブラケット内部リンク [項目名] または [項目名|表示名]
   s = s.replace(/\[([^\]]+)\]/g, (match, inner) => {
     const [targetRaw, aliasRaw] = inner.split('|');
     const name = targetRaw.trim();
     const label = (aliasRaw || targetRaw).trim();
     const low = name.toLowerCase();
 
-    const targetG = db.genres.find(g =>
-      g.name.toLowerCase() === low ||
-      (g.aliases || []).some(a => a.toLowerCase() === low)
-    );
+    const targetG = db.genres.find(g => {
+      const r = wGLabel(g);
+      return String(g.name || '').toLowerCase() === low ||
+        String(r.name || '').toLowerCase() === low ||
+        (g.aliases || []).some(a => aliasTextOf(a).toLowerCase() === low) ||
+        (r.aliases || []).some(a => aliasTextOf(a).toLowerCase() === low);
+    });
     if (targetG) return `<a class="wlink" data-go="${targetG.id}">${label}</a>`;
 
-    const targetM = db.majors.find(m => m.name.toLowerCase() === low);
+    const targetM = db.majors.find(m => String(m.name || '').toLowerCase() === low);
     if (targetM) return `<a class="wlink" data-major="${targetM.id}">${label}</a>`;
 
     for (const maj of db.majors) {
-      const targetSub = (maj.subs || []).find(sb => sb.name.toLowerCase() === low);
+      const targetSub = (maj.subs || []).find(sb => String(sb.name || '').toLowerCase() === low);
       if (targetSub) return `<a class="wlink" data-major="${maj.id}" title="中ジャンル: ${esc(targetSub.name)}">${label}</a>`;
     }
 
-    const targetE = (db.events || []).find(e => e.title.toLowerCase() === low);
+    const targetE = (db.events || []).find(e => String(e.title || '').toLowerCase() === low);
     if (targetE) return `<a class="wlink" data-event="${targetE.id}">⚡${label}</a>`;
 
-    const targetW = db.works.find(w => (w.title || '').toLowerCase() === low);
+    const targetW = db.works.find(w => String(w.title || '').toLowerCase() === low);
     if (targetW) return `<a class="wlink" data-work="${targetW.id}">💿${label}</a>`;
 
-    // 未登録のジャンル名は赤リンク（クリックで検索へ）
-    return `<a class="wlink missing" data-missing="${name}" title="未登録の項目（クリックで新規作成）">${label}</a>`;
+    return `<a class="wlink missing" data-missing="${esc(name)}" title="未登録の項目（クリックで新規作成）">${label}</a>`;
   });
 
-  // 6. 一般的なMarkdownインライン記法 (**bold**, *italic*, ~~strike~~)
   s = s.replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
   s = s.replace(/\*([^*\s][^*]*)\*/g, '<em>$1</em>');
   s = s.replace(/~~([^~]+)~~/g, '<del>$1</del>');
 
-  // 7. 退避したインラインコードを復元
   s = s.replace(/\x00CODE(\d+)\x00/g, (_, idx) => codes[+idx]);
   return s;
 }
 
-// ブロック要素（見出し・リスト・引用・表・コードブロック・目次）を含むフルパーサー
 function formatWikiText(text, opts = { toc: true }) {
   if (!text || !text.trim()) {
     return '<span class="wiki-body empty">説明文はまだ記述されていません。右側のパネルからマークアップ記法（# 見出し、- リスト、[ジャンル名] リンク等）を使って編集できます。</span>';
@@ -83,7 +82,7 @@ function formatWikiText(text, opts = { toc: true }) {
   const out = [];
   const headings = [];
   let inCode = false, codeBuf = [];
-  let listStack = []; // 'ul' | 'ol'
+  let listStack = [];
   let inQuote = false, quoteBuf = [];
   let tableBuf = [];
 
@@ -118,7 +117,6 @@ function formatWikiText(text, opts = { toc: true }) {
   for (let i = 0; i < lines.length; i++) {
     const rawLine = lines[i];
 
-    // コードブロック ```
     if (/^```/.test(rawLine.trim())) {
       closeLists(); closeQuote(); closeTable();
       if (!inCode) {
@@ -134,7 +132,6 @@ function formatWikiText(text, opts = { toc: true }) {
       continue;
     }
 
-    // テーブル行 | a | b |
     if (/^\|.+\|$/.test(rawLine.trim())) {
       closeLists(); closeQuote();
       tableBuf.push(rawLine.trim());
@@ -143,7 +140,6 @@ function formatWikiText(text, opts = { toc: true }) {
       closeTable();
     }
 
-    // 引用 >
     if (/^>\s?/.test(rawLine)) {
       closeLists();
       inQuote = true;
@@ -153,27 +149,24 @@ function formatWikiText(text, opts = { toc: true }) {
       closeQuote();
     }
 
-    // 水平線 --- or ***
     if (/^(-{3,}|\*{3,})$/.test(rawLine.trim())) {
       closeLists();
       out.push('<hr class="wiki-hr">');
       continue;
     }
 
-    // 見出し # / ## / ###
     const hm = rawLine.match(/^(#{1,3})\s+(.+)$/);
     if (hm) {
       closeLists();
       const lvl = hm[1].length;
-      const id = ' wiki-h-' + headings.length;
+      const id = 'wiki-h-' + headings.length;
       const cleanTitle = hm[2].trim();
-      headings.push({ lvl, text: cleanTitle, id: id.trim() });
+      headings.push({ lvl, text: cleanTitle, id });
       const tag = lvl === 1 ? 'h3' : lvl === 2 ? 'h4' : 'h5';
-      out.push(`<${tag} id="${id.trim()}" class="wiki-h wiki-h${lvl}">${parseInline(cleanTitle)}</${tag}>`);
+      out.push(`<${tag} id="${id}" class="wiki-h wiki-h${lvl}">${parseInline(cleanTitle)}</${tag}>`);
       continue;
     }
 
-    // 箇条書きリスト (- または *)
     const ulm = rawLine.match(/^(\s*)[-*]\s+(.+)$/);
     if (ulm) {
       const depth = ulm[1].length >= 2 ? 2 : 1;
@@ -187,7 +180,6 @@ function formatWikiText(text, opts = { toc: true }) {
       continue;
     }
 
-    // 番号付きリスト (1. )
     const olm = rawLine.match(/^(\s*)\d+\.\s+(.+)$/);
     if (olm) {
       const depth = olm[1].length >= 2 ? 2 : 1;
@@ -203,20 +195,17 @@ function formatWikiText(text, opts = { toc: true }) {
 
     closeLists();
 
-    // 空行は段落区切り
     if (!rawLine.trim()) {
       out.push('<div class="wiki-spacer"></div>');
       continue;
     }
 
-    // 通常テキスト行
     out.push(`<p class="wiki-p">${parseInline(rawLine)}</p>`);
   }
 
   closeLists(); closeQuote(); closeTable();
   if (inCode) out.push(`<pre class="wiki-pre"><code>${esc(codeBuf.join('\n'))}</code></pre>`);
 
-  // 見出しが2つ以上ある場合は目次(TOC)を自動生成
   let tocHtml = '';
   if (opts.toc && headings.length >= 2) {
     tocHtml = `<nav class="wiki-toc"><strong>目次</strong><ol>` +
@@ -227,7 +216,6 @@ function formatWikiText(text, opts = { toc: true }) {
   return `<div class="wiki-body">${tocHtml}${out.join('')}</div>`;
 }
 
-// ジャンルの系譜（最上位からのルート）を探索
 function getAncestors(gid) {
   const ups = [];
   let cur = gid;
@@ -241,6 +229,12 @@ function getAncestors(gid) {
   }
   return ups;
 }
+
+const entityLabel = x => {
+  if (!x) return '';
+  if (gen(x.id)) return wGLabel(x).name;
+  return x.name || x.title || '';
+};
 
 function drawWiki() {
   const box = $('#wiki');
@@ -256,6 +250,7 @@ function drawWiki() {
   // 1. ジャンルが選択されている場合
   const g = gen(sel);
   if (g && !wikiQuery) {
+    const curLabel = wGLabel(g);
     const mList = majorMap()[g.id] || [];
     const cols = colorMap()[g.id] || [];
     const headBg = cols.length ? cols[0] : 'var(--grid)';
@@ -266,19 +261,27 @@ function drawWiki() {
     const downG = relList(g, REL[1]).map(r => getEntity(r.e.b)).filter(Boolean);
     const srcG = relList(g, REL[2]).map(r => getEntity(r.e.a)).filter(Boolean);
     const infG = relList(g, REL[3]).map(r => getEntity(r.e.b)).filter(Boolean);
-    const relWorks = db.works.filter(w => w.genres.includes(g.id)).sort((a,b) => (tOf(a)||0) - (tOf(b)||0));
+    const relWorks = db.works.filter(w => (w.genres || []).includes(g.id)).sort((a,b) => (tOf(a)||0) - (tOf(b)||0));
     const relEvents = (db.events || []).filter(e => (e.genres || []).includes(g.id)).sort((a,b) => (tOf(a)||0) - (tOf(b)||0));
 
     const chipLinks = arr => arr.length
-      ? arr.map(x => `<a class="wlink" data-go="${x.id}">${esc(x.name || x.title)}</a>`).join('、')
+      ? arr.map(x => `<a class="wlink" data-go="${x.id}">${esc(entityLabel(x))}</a>`).join('、')
+      : '<span class="hint">—</span>';
+
+    const aliasHtml = (curLabel.aliases || []).length
+      ? curLabel.aliases.map(a => {
+          const txt = esc(aliasTextOf(a));
+          const tag = aliasTagOf(a);
+          return tag ? `${txt} <span class="hint">[${esc(tag)}]</span>` : txt;
+        }).join('、')
       : '<span class="hint">—</span>';
 
     box.innerHTML = `<div class="wiki-wrap">${navHtml}
       <article class="wiki-article">
         <div class="wiki-main">
-          ${ancestors.length ? `<div class="wiki-sub">${ancestors.map(a => `<a class="wlink" data-go="${a.id}">${esc(a.name)}</a>`).join(' › ')} › ${esc(g.name)}</div>` : ''}
+          ${ancestors.length ? `<div class="wiki-sub">${ancestors.map(a => `<a class="wlink" data-go="${a.id}">${esc(wGLabel(a).name)}</a>`).join(' › ')} › ${esc(curLabel.name)}</div>` : ''}
           <h2 class="wiki-title">
-            ${esc(g.name)}
+            ${esc(curLabel.name)}
             ${mList.map(m => `<span class="wiki-badge" data-major="${m.id}" style="background:${m.color};color:${textOn([m.color])}">${esc(m.name)}</span>`).join('')}
           </h2>
           <div class="wiki-sub">成立時期: <strong>${dlabel(g)}</strong></div>
@@ -293,7 +296,7 @@ function drawWiki() {
 
           ${relWorks.length ? `<div class="wiki-section"><h3>💿 代表的な作品 (${relWorks.length})</h3><div class="wiki-cards">
             ${relWorks.map(w => {
-              const u = audioUrl(w);
+              const u = typeof audioUrl === 'function' ? audioUrl(w) : '';
               return `<div class="wiki-card" data-work="${w.id}">
                 <h4><span>${esc(w.title || '(無題)')}</span><span class="hint">${dlabel(w)}</span></h4>
                 <div class="hint">${esc(w.artist || '')}</div>
@@ -305,10 +308,10 @@ function drawWiki() {
         </div>
 
         <aside class="wiki-infobox">
-          <div class="wiki-infobox-head" style="background:${headBg};color:${headFg}">${esc(g.name)}</div>
+          <div class="wiki-infobox-head" style="background:${headBg};color:${headFg}">${esc(curLabel.name)}</div>
           <table>
             <tr><th>誕生時期</th><td>${dlabel(g)}</td></tr>
-            <tr><th>別名</th><td>${(g.aliases && g.aliases.length) ? g.aliases.map(a => esc(a)).join('、') : '<span class="hint">—</span>'}</td></tr>
+            <tr><th>別名</th><td>${aliasHtml}</td></tr>
             <tr><th>大ジャンル</th><td>${mList.length ? mList.map(m => `<a class="wlink" data-major="${m.id}">${esc(m.name)}</a>`).join('、') : '<span class="hint">未所属</span>'}</td></tr>
             <tr><th>上位系統</th><td>${chipLinks(upG)}</td></tr>
             <tr><th>下位派生</th><td>${chipLinks(downG)}</td></tr>
@@ -330,7 +333,7 @@ function drawWiki() {
     const srcM = relList(m, REL[2]).map(r => getEntity(r.e.a)).filter(Boolean);
     const infM = relList(m, REL[3]).map(r => getEntity(r.e.b)).filter(Boolean);
     const chipLinks = arr => arr.length
-      ? arr.map(x => `<a class="wlink" data-go="${x.id}">${esc(x.name || x.title)}</a>`).join('、')
+      ? arr.map(x => `<a class="wlink" data-go="${x.id}">${esc(entityLabel(x))}</a>`).join('、')
       : '<span class="hint">—</span>';
 
     box.innerHTML = `<div class="wiki-wrap">${navHtml}
@@ -349,8 +352,8 @@ function drawWiki() {
                     <span class="dot" style="background:${sb.color}"></span>${esc(sb.name)}
                     <span class="hint" style="font-weight:normal;font-size:12px">（所属 ${sbMem.length} 件）</span>
                   </h4>
-                  ${sb.desc ? `<div style="font-size:13.5px;line-height:1.7;margin-bottom:8px;white-space:pre-wrap">${ formatWikiText(sb.desc).replace(/^<div class="wiki-body">|<\/div>$/g, '') }</div>` : '<div class="hint" style="margin-bottom:8px">（説明未入力）</div>'}
-                  <div style="font-size:12.5px;color:var(--sub)"><strong>所属:</strong> ${sbMem.map(g => `<a class="wlink" data-go="${g.id}">${esc(g.name)}</a>`).join('、') || 'なし'}</div>
+                  ${sb.desc ? `<div style="font-size:13.5px;line-height:1.7;margin-bottom:8px">${formatWikiText(sb.desc, { toc: false })}</div>` : '<div class="hint" style="margin-bottom:8px">（説明未入力）</div>'}
+                  <div style="font-size:12.5px;color:var(--sub)"><strong>所属:</strong> ${sbMem.map(g => `<a class="wlink" data-go="${g.id}">${esc(wGLabel(g).name)}</a>`).join('、') || 'なし'}</div>
                 </div>`;
               }).join('')}
             </div>
@@ -359,7 +362,7 @@ function drawWiki() {
           <div class="wiki-section"><h3>所属ジャンル一覧（全 ${mem.length} 件・年代順）</h3>
             <div class="wiki-cards">
               ${mem.map(x => `<div class="wiki-card" data-go="${x.id}">
-                <h4><span>${esc(x.name)}</span><span class="hint">${yr(x)}</span></h4>
+                <h4><span>${esc(wGLabel(x).name)}</span><span class="hint">${yr(x)}</span></h4>
                 <p>${esc(x.desc || '（説明未入力）')}</p>
               </div>`).join('')}
             </div>
@@ -370,7 +373,7 @@ function drawWiki() {
           <div class="wiki-infobox-head" style="background:${m.color};color:${textOn([m.color])}">${esc(m.name)}</div>
           <table>
             <tr><th>種別</th><td>大ジャンル</td></tr>
-            <tr><th>起点</th><td>${m.roots.map(gen).filter(Boolean).map(x => `<a class="wlink" data-go="${x.id}">${esc(x.name)}</a>`).join('、') || '<span class="hint">なし</span>'}</td></tr>
+            <tr><th>起点</th><td>${m.roots.map(gen).filter(Boolean).map(x => `<a class="wlink" data-go="${x.id}">${esc(wGLabel(x).name)}</a>`).join('、') || '<span class="hint">なし</span>'}</td></tr>
             <tr><th>所属数</th><td>${mem.length} ジャンル</td></tr>
             <tr><th>上位系統</th><td>${chipLinks(upM)}</td></tr>
             <tr><th>下位派生</th><td>${chipLinks(downM)}</td></tr>
@@ -395,7 +398,7 @@ function drawWiki() {
           <div class="wiki-sub">発生時期: <strong>${dlabel(ev)}</strong></div>
           ${formatWikiText(ev.desc)}
           <div class="wiki-section"><h3>関連するジャンル</h3>
-            <p>${gl.map(x => `<a class="wlink" data-go="${x.id}">${esc(x.name)} (${yr(x)})</a>`).join('、') || '<span class="hint">なし</span>'}</p>
+            <p>${gl.map(x => `<a class="wlink" data-go="${x.id}">${esc(wGLabel(x).name)} (${yr(x)})</a>`).join('、') || '<span class="hint">なし</span>'}</p>
           </div>
         </div>
       </article>
@@ -406,7 +409,7 @@ function drawWiki() {
   const wk = db.works.find(x => x.id === selW);
   if (wk && !wikiQuery) {
     const gl = (wk.genres || []).map(gen).filter(Boolean);
-    const u = audioUrl(wk);
+    const u = typeof audioUrl === 'function' ? audioUrl(wk) : '';
     box.innerHTML = `<div class="wiki-wrap">${navHtml}
       <article class="wiki-article" style="grid-template-columns:1fr">
         <div>
@@ -416,7 +419,7 @@ function drawWiki() {
           ${u ? `<audio controls preload="none" src="${esc(u)}" style="width:100%;max-width:420px;margin:8px 0 16px"></audio>` : ''}
           ${formatWikiText(wk.desc)}
           <div class="wiki-section"><h3>ジャンル</h3>
-            <p>${gl.map(x => `<a class="wlink" data-go="${x.id}">${esc(x.name)} (${yr(x)})</a>`).join('、') || '<span class="hint">なし</span>'}</p>
+            <p>${gl.map(x => `<a class="wlink" data-go="${x.id}">${esc(wGLabel(x).name)} (${yr(x)})</a>`).join('、') || '<span class="hint">なし</span>'}</p>
           </div>
         </div>
       </article>
@@ -426,14 +429,17 @@ function drawWiki() {
 
   // 4. 未選択時 または 検索時：全ジャンルのポータル目次を表示
   const q = wikiQuery.trim().toLowerCase();
-  const filteredG = [...db.genres].sort(byBorn).filter(x =>
-    !q ||
-    x.name.toLowerCase().includes(q) ||
-    (x.desc || '').toLowerCase().includes(q) ||
-    (x.aliases || []).some(a => a.toLowerCase().includes(q))
-  );
-  const filteredE = (db.events || []).filter(x => q && (x.title.toLowerCase().includes(q) || (x.desc || '').toLowerCase().includes(q)));
-  const filteredW = db.works.filter(x => q && (x.title.toLowerCase().includes(q) || (x.artist || '').toLowerCase().includes(q)));
+  const filteredG = [...db.genres].sort(byBorn).filter(x => {
+    const r = wGLabel(x);
+    return !q ||
+      String(x.name || '').toLowerCase().includes(q) ||
+      String(r.name || '').toLowerCase().includes(q) ||
+      String(x.desc || '').toLowerCase().includes(q) ||
+      (x.aliases || []).some(a => aliasTextOf(a).toLowerCase().includes(q)) ||
+      (r.aliases || []).some(a => aliasTextOf(a).toLowerCase().includes(q));
+  });
+  const filteredE = (db.events || []).filter(x => q && (String(x.title || '').toLowerCase().includes(q) || String(x.desc || '').toLowerCase().includes(q)));
+  const filteredW = db.works.filter(x => q && (String(x.title || '').toLowerCase().includes(q) || String(x.artist || '').toLowerCase().includes(q)));
 
   let portalHtml = `<div class="wiki-wrap">${navHtml}`;
   if (!q) {
@@ -443,7 +449,7 @@ function drawWiki() {
   }
   portalHtml += `<div class="wiki-section" style="margin-top:0;border-top:0"><h3>ジャンル一覧 (${filteredG.length}件)</h3><div class="wiki-cards">
     ${filteredG.map(x => `<div class="wiki-card" data-go="${x.id}">
-      <h4><span>${esc(x.name)}</span><span class="hint">${yr(x)}</span></h4>
+      <h4><span>${esc(wGLabel(x).name)}</span><span class="hint">${yr(x)}</span></h4>
       <p>${esc(x.desc || '（説明未入力）')}</p>
     </div>`).join('')}
   </div></div>`;
@@ -465,15 +471,12 @@ function drawWiki() {
   if (sInput && q) { sInput.focus(); sInput.setSelectionRange(sInput.value.length, sInput.value.length); }
 }
 
-// Wiki 固有の操作イベント
 document.addEventListener('click', e => {
-  if (e.target.id === 'modeTl') { setMode('tl'); }
-  else if (e.target.id === 'modeWiki') { setMode('wiki'); }
-  else if (e.target.id === 'wikiHome') { wikiQuery = ''; sel = selM = selW = selE = null; render(); }
-  else if (e.target.id === 'jumpToTl') { setMode('tl'); }
-  else if (viewOpt.mode === 'wiki' && (e.target.closest('[data-go]') || e.target.closest('[data-major]') || e.target.closest('[data-work]') || e.target.closest('[data-event]'))) {
-    wikiQuery = '';
-  }
+  if (e.target.id === 'modeTl') { setMode('tl'); return; }
+  if (e.target.id === 'modeWiki') { setMode('wiki'); return; }
+  if (e.target.id === 'wikiHome') { wikiQuery = ''; sel = selM = selW = selE = null; render(); return; }
+  if (e.target.id === 'jumpToTl') { setMode('tl'); return; }
+
   const miss = e.target.closest('[data-missing]');
   if (miss) {
     const newName = miss.dataset.missing;
@@ -486,6 +489,10 @@ document.addEventListener('click', e => {
     }
     return;
   }
+
+  if (viewOpt.mode === 'wiki' && (e.target.closest('[data-go]') || e.target.closest('[data-major]') || e.target.closest('[data-work]') || e.target.closest('[data-event]'))) {
+    wikiQuery = '';
+  }
 });
 
 document.addEventListener('input', e => {
@@ -495,7 +502,6 @@ document.addEventListener('input', e => {
   }
 });
 
-// 年表上のノードをダブルクリックしたら即座にそのジャンルのWikiを開くショートカット
 document.addEventListener('dblclick', e => {
   const node = e.target.closest('.node');
   const evnode = e.target.closest('.evnode');

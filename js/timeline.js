@@ -3,6 +3,7 @@ function drawTimeline() {
   const wpos = {};
   const epos = {};
   normalize();
+  const gName = g => (typeof resolveGenreLabel === 'function' ? resolveGenreLabel(g).name : String(g.name ?? ''));
   const scale = +$('#zoom').value, PAD = 60, LH = 46, H = 30;
   const minS = viewOpt.minScale / 100, thr = viewOpt.minWeight;
   
