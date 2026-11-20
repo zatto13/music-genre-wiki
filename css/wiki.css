@@ -351,11 +351,36 @@ body.wiki-mode .tl-only {
   .wiki-article {
     grid-template-columns: 1fr !important;
     gap: 16px;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    box-sizing: border-box;
+    overflow: visible;
   }
 
+  .wiki-wrap,
   .wiki-infobox {
+    max-width: 100% !important;
+    min-width: 0 !important;
+    box-sizing: border-box;
+    overflow: visible;
+  }
+
+  .wiki-infobox table {
     width: 100%;
-    order: 2; /* 本文のあとにInfoboxを置く（先に置きたい場合は order: -1 に変更可） */
+    table-layout: fixed;
+    border-collapse: collapse;
+  }
+
+  .wiki-infobox th {
+    width: 28%;
+    word-break: keep-all;
+    overflow-wrap: anywhere;
+  }
+
+  .wiki-infobox td {
+    width: 72%;
+    word-break: break-word;
+    overflow-wrap: anywhere;
   }
 
   .wiki-main {
