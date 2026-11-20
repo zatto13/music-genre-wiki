@@ -313,8 +313,23 @@ body.wiki-mode .tl-only {
 
 /* スマホ・小型画面向けレスポンシブ対応 */
 @media (max-width: 768px) {
-  html, body {
-    overflow-x: hidden;
+  html,
+  body,
+  #wiki,
+  .wiki-wrap,
+  .wiki-article,
+  .wiki-main,
+  .wiki-infobox {
+    height: auto !important;
+    min-height: 0 !important;
+    max-height: none !important;
+    overflow: visible !important;
+    overflow-y: visible !important;
+  }
+
+  html,
+  body {
+    overflow-x: clip;
     -webkit-text-size-adjust: 100%;
   }
 
@@ -349,12 +364,13 @@ body.wiki-mode .tl-only {
 
   /* Wiki記事＋Infoboxを縦積みに */
   .wiki-article {
+    display: flex;
+    flex-direction: column;
     grid-template-columns: 1fr !important;
     gap: 16px;
     max-width: 100% !important;
     min-width: 0 !important;
     box-sizing: border-box;
-    overflow: visible;
   }
 
   .wiki-wrap,
@@ -362,7 +378,10 @@ body.wiki-mode .tl-only {
     max-width: 100% !important;
     min-width: 0 !important;
     box-sizing: border-box;
-    overflow: visible;
+  }
+
+  .wiki-infobox {
+    order: 2;
   }
 
   .wiki-infobox table {
@@ -424,6 +443,11 @@ body.wiki-mode .tl-only {
     flex-wrap: wrap;
     gap: 6px;
   }
+}
+
+/* Wikiモード時は年表専用UIを非表示にする */
+body.wiki-mode .tl-only {
+  display: none !important;
 }
 
 /* 閲覧モード時は編集系UIを非表示にする */
