@@ -50,12 +50,16 @@
       <label class="vopt tl-only" title="すべての日付をここまで粗く扱います(項目ごとの精度より細かくはなりません)">表示精度 <select id="precCap"><option value="d">すべて表示</option><option value="m">月まで</option><option value="y">年まで</option><option value="q">年代の時期まで</option><option value="x">年代まで</option></select></label>
       <label class="vopt tl-only" title="新しい時代ほど間隔を広げます">年表の目盛り <select id="axisMode"><option value="log">対数(現代ほど広く)</option><option value="sqrt">平方根(ゆるやか)</option><option value="linear">線形</option></select></label>
       <span class="zoom tl-only">横の縮尺 <input type="range" id="zoom" min="2" max="24" value="8"></span>
+      <div class="mode-switch view-mode-switch" role="group" aria-label="閲覧・編集モード">
+        <button id="modeRead" data-readonly="1" title="誤編集を防いで閲覧に集中">閲覧</button>
+        <button id="modeEdit" data-readonly="0" title="ジャンルや記事の編集を有効化">編集</button>
+      </div>
     </header>
     <div id="relbar" hidden></div>
     <main>
       <div id="tl"></div>
       <div id="wiki" hidden></div>
-      <aside id="panel"></aside>
+      <aside id="panel" class="edit-only"></aside>
     </main>
     <script src="js/data.js"></script>
     <script src="js/state.js"></script>

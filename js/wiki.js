@@ -562,3 +562,30 @@ function syncModeClass() {
   document.body.classList.toggle('wiki-mode', isWiki);
 }
 syncModeClass();
+
+function syncReadonlyMode() {
+  const isReadonly = Boolean(typeof viewOpt !== 'undefined' && viewOpt.readonly);
+  document.body.classList.toggle('readonly-mode', isReadonly);
+  if ($('#modeRead')) {
+    $('#modeRead').classList.toggle('active', isReadonly);
+    $('#modeRead').setAttribute('aria-pressed', isReadonly ? 'true' : 'false');
+  }
+  if ($('#modeEdit')) {
+    $('#modeEdit').classList.toggle('active', !isReadonly);
+    $('#modeEdit').setAttribute('aria-pressed', !isReadonly ? 'true' : 'false');
+  }
+}
+
+document.addEventListener('click', ev => {
+  const btn = ev.target.closest('[data-readonly]');
+  if (!btn) return;
+  viewOpt.readonly = btn.dataset.readonly === '1';
+  if (typeof saveView === 'function') saveView();
+  syncReadonlyMode();
+});
+
+// 初期ロード時にも反映
+if (typeof viewOpt !== 'undefined' && viewOpt.readonly === undefined) {
+  viewOpt.readonly = false;
+}
+syncReadonlyMode();

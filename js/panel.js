@@ -3,6 +3,7 @@ function relList(g, d) {
   const other = d.me === 'a' ? 'b' : 'a';
   return db.edges.map((e,i) => ({e,i})).filter(x => x.e.t === d.t && x.e[d.me] === g.id && getEntity(x.e[other]));
 }
+
 function subsHtml(m, mem) {
   const cards = m.subs.map(sb => {
     const roots = sb.roots.map(gen).filter(Boolean);

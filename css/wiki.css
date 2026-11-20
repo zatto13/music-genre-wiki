@@ -400,3 +400,8 @@ body.wiki-mode .tl-only {
     gap: 6px;
   }
 }
+
+/* 閲覧モード時は編集系UIを非表示にする */
+body.readonly-mode .edit-only {
+  display: none !important;
+}
