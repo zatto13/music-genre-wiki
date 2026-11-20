@@ -1,74 +1,74 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>音楽ジャンルWiki</title>
-<link rel="stylesheet" href="css/base.css">
-<link rel="stylesheet" href="css/layout.css">
-<link rel="stylesheet" href="css/panel.css">
-<link rel="stylesheet" href="css/timeline.css">
-<link rel="stylesheet" href="css/forms.css">
-<link rel="stylesheet" href="css/overlays.css">
-<link rel="stylesheet" href="css/wiki.css">
-</head>
-<body>
-<header>
-  <h1>音楽ジャンルWiki</h1>
-  <div class="mode-switch" role="group" aria-label="表示モード">
-    <button id="modeTl" class="active">年表</button>
-    <button id="modeWiki">Wiki</button>
-  </div>
-  <div class="mode-switch lang-switch" role="group" aria-label="表示言語">
-    <button data-lang="en" title="英語スロットを優先（未設定時も英語標準）">EN</button>
-    <button data-lang="ja" title="日本語スロットを優先（未設定時は英語標準）">JA</button>
-    <button data-lang="kan" title="漢字表記スロット・別名を優先（未設定時は英語標準）">漢</button>
-  </div>
-  <select class="primary" id="addMenu" style="padding:5px 12px; font-weight:bold; cursor:pointer; background:var(--ink); color:var(--bg); border:1px solid var(--ink); border-radius:6px; outline:none;">
-    <option value="" disabled selected hidden>＋ 追加する...</option>
-    <option value="genre" style="background:var(--panel); color:var(--ink);">ジャンルを追加</option>
-    <option value="major" style="background:var(--panel); color:var(--ink);">大ジャンルを追加</option>
-    <option value="work" style="background:var(--panel); color:var(--ink);">作品を追加</option>
-    <option value="event" style="background:var(--panel); color:var(--ink);">出来事を追加</option>
-  </select>
-  <button id="rel" aria-pressed="false" title="選んだ大ジャンルを、一時的に年表へ反映させない">大ジャンル一時解除</button>
-  <button id="exp">JSONに書き出す</button>
-  <button id="imp">JSONを読み込む</button>
-  <input type="file" id="file" accept=".json,application/json" hidden>
-  <span class="legend tl-only"><span><i></i>上位 → 下位</span><span><i class="d"></i>源流 → 影響先</span><span><i class="m"></i>大ジャンルの起点</span></span>
-  <label class="opt tl-only"><input type="checkbox" id="newTop">新しいジャンルを上に</label>
-  <label class="opt tl-only"><input type="checkbox" id="showW">作品を表示</label>
-  <label class="opt tl-only"><input type="checkbox" id="showE">出来事を表示</label>
-  <label class="opt tl-only"><input type="checkbox" id="focusMode">選択周辺のみ表示</label>
-  <label class="opt tl-only"><input type="checkbox" id="showHier">構造線(上位/下位)</label>
-  <label class="opt tl-only"><input type="checkbox" id="showInfl">歴史線(源流/影響)</label>
-  <label class="opt tl-only" title="間接的な関係を整理してスッキリさせます"><input type="checkbox" id="prune">線の整理</label>
-  <label class="vopt tl-only" title="重要度がこの値より小さいジャンルを年表から消します(選択中のジャンルは表示)">重要度の下限 <input type="range" id="minW" min="0" max="100" value="0"><b id="minWv">0</b></label>
-  <label class="vopt tl-only" title="重要度0のジャンルの大きさ。重要度が高いほど100%に近づきます">最小サイズ <input type="range" id="minS" min="30" max="100" value="55"><b id="minSv">55%</b></label>
-  <label class="vopt tl-only" title="大ジャンルの帯の並び順">帯の順序 <select id="majorSort"><option value="auto">自動(古い順)</option><option value="manual">手動(リスト順)</option></select></label>
-  <label class="vopt tl-only" title="帯をどう積むか">帯の配置 <select id="bandOrder"><option value="center">中央から交互</option><option value="topDown">上から順</option></select></label>
-  <label class="vopt tl-only" title="すべての日付をここまで粗く扱います(項目ごとの精度より細かくはなりません)">表示精度 <select id="precCap"><option value="d">すべて表示</option><option value="m">月まで</option><option value="y">年まで</option><option value="q">年代の時期まで</option><option value="x">年代まで</option></select></label>
-  <label class="vopt tl-only" title="新しい時代ほど間隔を広げます">年表の目盛り <select id="axisMode"><option value="log">対数(現代ほど広く)</option><option value="sqrt">平方根(ゆるやか)</option><option value="linear">線形</option></select></label>
-  <span class="zoom tl-only">横の縮尺 <input type="range" id="zoom" min="2" max="24" value="8"></span>
-</header>
-<div id="relbar" hidden></div>
-<main>
-  <div id="tl"></div>
-  <div id="wiki" hidden></div>
-  <aside id="panel"></aside>
-</main>
-<script src="js/data.js"></script>
-<script src="js/state.js"></script>
-<script src="js/model.js"></script>
-<script src="js/dates.js"></script>
-<script src="js/timeline.js"></script>
-<script src="js/panel.js"></script>
-<script src="js/events.js"></script>
-<script src="js/addmenu.js"></script>
-<script src="js/controls.js"></script>
-<script src="js/tooltip.js"></script>
-<script src="js/contextmenu.js"></script>
-<script src="js/wiki.js"></script>
-<script src="js/main.js"></script>
-</body>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>音楽ジャンルWiki</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/panel.css">
+    <link rel="stylesheet" href="css/timeline.css">
+    <link rel="stylesheet" href="css/forms.css">
+    <link rel="stylesheet" href="css/overlays.css">
+    <link rel="stylesheet" href="css/wiki.css">
+  </head>
+  <body>
+    <header>
+      <h1>音楽ジャンルWiki</h1>
+      <div class="mode-switch" role="group" aria-label="表示モード">
+        <button id="modeTl" class="active">年表</button>
+        <button id="modeWiki">Wiki</button>
+      </div>
+      <div class="mode-switch lang-switch" role="group" aria-label="表示言語">
+        <button data-lang="en" title="英語スロットを優先（未設定時も英語標準）">EN</button>
+        <button data-lang="ja" title="日本語スロットを優先（未設定時は英語標準）">JA</button>
+        <button data-lang="kan" title="漢字表記スロット・別名を優先（未設定時は英語標準）">漢</button>
+      </div>
+      <select class="primary" id="addMenu" style="padding:5px 12px; font-weight:bold; cursor:pointer; background:var(--ink); color:var(--bg); border:1px solid var(--ink); border-radius:6px; outline:none;">
+        <option value="" disabled selected hidden>＋ 追加する...</option>
+        <option value="genre" style="background:var(--panel); color:var(--ink);">ジャンルを追加</option>
+        <option value="major" style="background:var(--panel); color:var(--ink);">大ジャンルを追加</option>
+        <option value="work" style="background:var(--panel); color:var(--ink);">作品を追加</option>
+        <option value="event" style="background:var(--panel); color:var(--ink);">出来事を追加</option>
+      </select>
+      <button id="rel" aria-pressed="false" title="選んだ大ジャンルを、一時的に年表へ反映させない">大ジャンル一時解除</button>
+      <button id="exp">JSONに書き出す</button>
+      <button id="imp">JSONを読み込む</button>
+      <input type="file" id="file" accept=".json,application/json" hidden>
+      <span class="legend tl-only"><span><i></i>上位 → 下位</span><span><i class="d"></i>源流 → 影響先</span><span><i class="m"></i>大ジャンルの起点</span></span>
+      <label class="opt tl-only"><input type="checkbox" id="newTop">新しいジャンルを上に</label>
+      <label class="opt tl-only"><input type="checkbox" id="showW">作品を表示</label>
+      <label class="opt tl-only"><input type="checkbox" id="showE">出来事を表示</label>
+      <label class="opt tl-only"><input type="checkbox" id="focusMode">選択周辺のみ表示</label>
+      <label class="opt tl-only"><input type="checkbox" id="showHier">構造線(上位/下位)</label>
+      <label class="opt tl-only"><input type="checkbox" id="showInfl">歴史線(源流/影響)</label>
+      <label class="opt tl-only" title="間接的な関係を整理してスッキリさせます"><input type="checkbox" id="prune">線の整理</label>
+      <label class="vopt tl-only" title="重要度がこの値より小さいジャンルを年表から消します(選択中のジャンルは表示)">重要度の下限 <input type="range" id="minW" min="0" max="100" value="0"><b id="minWv">0</b></label>
+      <label class="vopt tl-only" title="重要度0のジャンルの大きさ。重要度が高いほど100%に近づきます">最小サイズ <input type="range" id="minS" min="30" max="100" value="55"><b id="minSv">55%</b></label>
+      <label class="vopt tl-only" title="大ジャンルの帯の並び順">帯の順序 <select id="majorSort"><option value="auto">自動(古い順)</option><option value="manual">手動(リスト順)</option></select></label>
+      <label class="vopt tl-only" title="帯をどう積むか">帯の配置 <select id="bandOrder"><option value="center">中央から交互</option><option value="topDown">上から順</option></select></label>
+      <label class="vopt tl-only" title="すべての日付をここまで粗く扱います(項目ごとの精度より細かくはなりません)">表示精度 <select id="precCap"><option value="d">すべて表示</option><option value="m">月まで</option><option value="y">年まで</option><option value="q">年代の時期まで</option><option value="x">年代まで</option></select></label>
+      <label class="vopt tl-only" title="新しい時代ほど間隔を広げます">年表の目盛り <select id="axisMode"><option value="log">対数(現代ほど広く)</option><option value="sqrt">平方根(ゆるやか)</option><option value="linear">線形</option></select></label>
+      <span class="zoom tl-only">横の縮尺 <input type="range" id="zoom" min="2" max="24" value="8"></span>
+    </header>
+    <div id="relbar" hidden></div>
+    <main>
+      <div id="tl"></div>
+      <div id="wiki" hidden></div>
+      <aside id="panel"></aside>
+    </main>
+    <script src="js/data.js"></script>
+    <script src="js/state.js"></script>
+    <script src="js/model.js"></script>
+    <script src="js/dates.js"></script>
+    <script src="js/timeline.js"></script>
+    <script src="js/panel.js"></script>
+    <script src="js/events.js"></script>
+    <script src="js/addmenu.js"></script>
+    <script src="js/controls.js"></script>
+    <script src="js/tooltip.js"></script>
+    <script src="js/contextmenu.js"></script>
+    <script src="js/wiki.js"></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>

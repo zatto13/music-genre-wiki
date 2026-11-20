@@ -310,3 +310,93 @@
 body.wiki-mode .tl-only {
   display: none !important;
 }
+
+/* スマホ・小型画面向けレスポンシブ対応 */
+@media (max-width: 768px) {
+  html, body {
+    overflow-x: hidden;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  /* ヘッダーの折り返しとボタンの押しやすさ */
+  header {
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 8px 10px;
+  }
+
+  header button,
+  header select,
+  .mode-switch button,
+  .lang-switch button {
+    min-height: 36px;
+    padding: 6px 10px;
+    font-size: 13px;
+  }
+
+  /* Wikiナビゲーション（全ジャンル目次 / 検索 / 年表へ）を縦または折り返し配置 */
+  .wiki-nav {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .wiki-nav input[type="search"] {
+    width: 100%;
+    flex: 1 1 100%;
+    min-width: 0;
+    font-size: 16px; /* iOSでフォーカス時に自動ズームされるのを防ぐ */
+  }
+
+  /* Wiki記事＋Infoboxを縦積みに */
+  .wiki-article {
+    grid-template-columns: 1fr !important;
+    gap: 16px;
+  }
+
+  .wiki-infobox {
+    width: 100%;
+    order: 2; /* 本文のあとにInfoboxを置く（先に置きたい場合は order: -1 に変更可） */
+  }
+
+  .wiki-main {
+    order: 1;
+    min-width: 0;
+  }
+
+  /* 表・コードブロックの横スクロール逃がし */
+  .wiki-table {
+    display: block;
+    overflow-x: auto;
+    max-width: 100%;
+  }
+
+  .wiki-pre {
+    overflow-x: auto;
+    max-width: 100%;
+  }
+
+  .wiki-img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* 編集パネル・フォーム要素のタップしやすさと横幅 */
+  #panel {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box;
+  }
+
+  #panel input,
+  #panel select,
+  #panel textarea,
+  #panel button {
+    font-size: 16px; /* iOS自動ズーム防止 */
+    min-height: 38px;
+  }
+
+  .chips {
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+}
